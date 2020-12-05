@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Protocoles et applications audio</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Protocoles et applications audio</h1>
+</header>
+<h2 id="client-server">Client / Server</h2>
+<p>Trajet d’un message Instagram / messenger, etc …</p>
+<p><img src="images/fusion-instagram-direct-messenger.jpg" style="background-color:white;" /></p>
+<p>Architecture client-server VS peer-to-peer :</p>
+<p><img src="images/client-server-vs-p2p.png" style="background-color:white;" /></p>
+<p>Modèle client-server :</p>
+<ul>
+<li>asymétrie de rôles</li>
+<li>le serveur est en attente</li>
+<li>les clients vont et viennent, envoyant des requêtes au serveur</li>
+</ul>
+<h3 id="collection-de-données">Collection de données</h3>
+<p>Essayez de télécharger les données que Facebook stocke sur vous :</p>
+<p><img src="images/facebook-data.png" /></p>
+<h2 id="protocoles-tcp-udp">Protocoles TCP / UDP</h2>
+<h3 id="tcp">TCP</h3>
+<ul>
+<li><strong>(+)</strong> permet d’assurer l’intégrité des messages transmis. Pas de perte</li>
+<li><strong>(-)</strong> Pas le plus rapide</li>
+<li><strong>(-)</strong> Messages peuvent arriver dans un ordre différent que celui dans lequel ils ont été envoyés</li>
+</ul>
+<p><strong>Utilisation</strong> : communication par WebSocket, chats, messages qui requierent une certaine fiabilité</p>
+<h3 id="udp">UDP</h3>
+<ul>
+<li><strong>(+)</strong> Rapide</li>
+<li><strong>(+)</strong> Messages arrivent toujours dans l’ordre d’envoi</li>
+<li><strong>(-)</strong> Perte de packets</li>
+</ul>
+<p><strong>Utilisation</strong> : streaming, flux de controle</p>
+<h3 id="numéros-de-ports">Numéros de ports</h3>
+<ul>
+<li>Permet à plusieurs applications d’émettre / de recevoir sur le même hôte (et donc même addresse IP)
+<ul>
+<li>Ports system : 0-1023,</li>
+<li>Ports utilisateurs : 1024-49151</li>
+<li>Ports dynamiques ou privés : 49152-65535</li>
+</ul></li>
+<li><a href="https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.txt">IANA assignation des ports</a>
+<ul>
+<li>À quoi sont associés les ports 22, 80, 443 ? D’autres ports que vous reconnaissez ?</li>
+</ul></li>
+</ul>
+<p>Le numéro de port peut être accolé à l’addresse IP ou au nom de domaine (notamment dans le navigateur Internet), en ajoutant <code>:</code>, suivis du numéro de port en question.</p>
+<p>Exemples avec le port <code>9999</code> :</p>
+<pre><code>192.168.0.78:9999
+178.17.98.3:9999
+localhost:9999
+mon-domaine-cheri.fr:9999</code></pre>
+<h2 id="protocoles-pour-applications-créatives">Protocoles pour applications créatives</h2>
+<h3 id="protocole-midi">Protocole midi</h3>
+<ul>
+<li>MIDI : Musical Instrument Digital Interface</li>
+<li>Spécification publiée en 1981, standardisé en 1983</li>
+<li>Protocole de communication, connecteur, format de fichier</li>
+<li>inter-operabilité des instruments de musique, synthetiseurs, samplers, etc …</li>
+</ul>
+<p><img src="images/midi-message-format.png" style="background-color:white;" /></p>
+<h3 id="protocole-osc">Protocole OSC</h3>
+<ul>
+<li>OSC : Open Sound Control</li>
+<li>Protocole utilisé par de nombreuses applications de production visuelle / audio.</li>
+<li>Pour établir une connexion OSC :
+<ul>
+<li>clients / serveur</li>
+<li>addresses IP</li>
+<li>ports</li>
+<li>protocole de transport sous-jacent (tcp, udp, … ?)</li>
+<li>format du message :
+<ul>
+<li>addresse OSC, type <code>/boutons/nouvelleValeur</code></li>
+<li>arguments OSC, type <code>couleur 255.0 255.0 0.0</code></li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="websockets">WebSockets</h3>
+<ul>
+<li>echo server https://www.websocket.org/echo.html</li>
+<li>de plus en plus d’applications supportent ce protocole</li>
+</ul>
+<p><strong>Utilisation</strong> : en général pour connecter une page web avec d’autres pages web, ou avec une installation implémentée avec une autre technologie (e.g. Pure Data, …)</p>
+<h2 id="typologies-dinstallations-en-réseau">Typologies d’installations en réseau</h2>
+<h3 id="installations-locales">Installations locales</h3>
+<h4 id="requis">Requis</h4>
+<ul>
+<li>Nécessite un routeur, soit filaire, soir Wi-Fi</li>
+<li>Assignation d’addresses IP statiques pour les hôtes permanents du réseau (serveurs, installations, etc …)</li>
+<li>Utilisation d’un switch si nombreuses connexions cablées</li>
+</ul>
+<h4 id="en-option">En option</h4>
+<ul>
+<li>Possibilité de mettre en place un serveur DNS sur le réseau local</li>
+<li>Possibilité (avec inconvénients), d’exposer un service local à l’Internet</li>
+<li>Possibilité de mettre en place un portail captif</li>
+</ul>
+<h4 id="avantages-inconvenients">Avantages / inconvenients</h4>
+<ul>
+<li><strong>(+)</strong> Utilisation en autonomie (dans un lieu sans Internet, ni même aucune infrastructure)</li>
+<li><strong>(+)</strong> Pour une installation très simple, la seule chose nécessaire est un petit router Wi-Fi (coût ~20 euros)</li>
+<li><strong>(-)</strong> Nombre de connexions limité :
+<ul>
+<li>max ~30 sur le même point d’accès Wi-Fi</li>
+<li>max 254 sur l’ensemble du réseau local</li>
+</ul></li>
+<li><strong>(-)</strong> Accès local uniquement</li>
+</ul>
+<h4 id="murmurate-rhizome">Murmurate / rhizome</h4>
+<iframe src="https://player.vimeo.com/video/144312243" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+</iframe>
+<p>Installation en Wi-Fi la plus simple</p>
+<p><img src="images/rhizome-network-diagram1.png" style="background-color:white;" /></p>
+<p><a href="#rhizome">*</a></p>
+<p>Installation en Wi-Fi pour une centaine de clients</p>
+<p><img src="images/rhizome-network-diagram2.png" style="background-color:white;" /></p>
+<p><a href="#rhizome">*</a></p>
+<p>Murmurate au festival Sanctuary, Forêt de Galloway, Écosse.</p>
+<p><img src="images/fields-sanctuary.jpeg" style="background-color:white;" /></p>
+<h3 id="installations-en-ligne">Installations en ligne</h3>
+<h4 id="requis-1">Requis</h4>
+<ul>
+<li>Nécessite un serveur. Les prix varient :
+<ul>
+<li>gratuit pour une page html simple</li>
+<li>~15 euros / mois pour un serveur qui permettra l’utilisation par exemple de WebSocket.</li>
+</ul></li>
+<li>Nécessite une addresse IP fixe, ou un nom de domaine (~10 euros par an pour .com)</li>
+</ul>
+<h4 id="avantages-inconvenients-1">Avantages / inconvenients</h4>
+<ul>
+<li><strong>(+)</strong> Accessible depuis le monde entier</li>
+<li><strong>(+)</strong> Pas (ou peu) de limites en terme de nombre de clients connectés simultanément</li>
+<li><strong>(-)</strong> Potentiellement coûteux</li>
+<li><strong>(-)</strong> Nécessite un accès Internet</li>
+</ul>
+<h4 id="github-pages">Github pages</h4>
+<p>Github (une entreprise appartenant à Microsoft), propose un service gratuit pour servir du contenu statique (page html, images, sons, etc …). l’éspace est limité à 1Go. Pour le mettre en place :</p>
+<p><strong>Obtenir un nouveau repo</strong></p>
+<ul>
+<li>Ouvrez un compte sur https://github.com</li>
+<li>Créez un nouveau repository. Il doit être public</li>
+</ul>
+<p><strong>Ajouter une page web au repo</strong></p>
+<ul>
+<li>Cliquez sur “create a new file”</li>
+<li>Copiez / collez le code suivant dans l’éditeur de texte :</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1"></a><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="kw">&lt;html</span><span class="ot"> lang=</span><span class="st">&quot;fr&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>    <span class="kw">&lt;head&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>        <span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;utf-8&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>        <span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;viewport&quot;</span><span class="ot"> content=</span><span class="st">&quot;width=device-width, initial-scale=1&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a>        <span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;theme-color&quot;</span><span class="ot"> content=</span><span class="st">&quot;#000000&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>        <span class="kw">&lt;title&gt;</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>            TITRE DE LA PAGE</span>
+<span id="cb2-9"><a href="#cb2-9"></a>        <span class="kw">&lt;/title&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a>    <span class="kw">&lt;/head&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a>    <span class="kw">&lt;body&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>        CONTENU DE LA PAGE</span>
+<span id="cb2-13"><a href="#cb2-13"></a>    <span class="kw">&lt;/body&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="kw">&lt;/html&gt;</span></span></code></pre></div>
+<ul>
+<li>Dans le champ “Nom de fichier”, entrez <code>index.html</code></li>
+<li>Descendez en bas de la page puis, cliquez sur “Commit new file”</li>
+</ul>
+<p><strong>Publiez la page web</strong></p>
+<ul>
+<li>Dans la page principale de votre repo, cliquez sur “Settings”</li>
+<li>Descendez en bas de la page pour trouver la section “GitHub Pages”</li>
+<li>Dans la sous-section “source”, cliquez sur le dropdown qui dit “None”, selectionnez “main”, puis cliquez sur “Save”</li>
+<li>Retournez dans la section “GitHub Pages”, un bandeau devrait apparaître avec l’url à laquelle votre site est publié</li>
+</ul>
+<h2 id="technologies-pour-laudio-en-réseau">Technologies pour l’audio en réseau</h2>
+<h3 id="html5-audio">HTML5 Audio</h3>
+<ul>
+<li>Simple lecture d’un fichier audio dans une page web</li>
+<li>Attention tous les navigateurs ne supportent pas tous les formats. Pour un support maximal, il est donc nécessaire de fournir plusieurs encodages. <a href="https://developer.cdn.mozilla.net/fr/docs/Web/HTML/Element/audio">Plus d’informations sur MDN</a></li>
+</ul>
+<h4 id="ajouter-de-laudio-à-une-page-html-un-seul-encodage">Ajouter de l’audio à une page HTML (un seul encodage)</h4>
+<ul>
+<li>Prenez un fichier son au format mp3 ou ogg.</li>
+<li>Copiez / collez le code suivant dans l’éditeur de texte, placez le après la balise html <code>&lt;body&gt;</code> et <strong>avant</strong> la balise correspondante de fermeture <code>&lt;/body&gt;</code> :</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">&lt;audio</span><span class="ot"> controls</span><span class="kw">&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;monAudio.mp3&quot;</span><span class="ot"> type=</span><span class="st">&quot;audio/mpeg&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">&lt;/audio&gt;</span></span></code></pre></div>
+<h3 id="web-audio-api">Web Audio API</h3>
+<ul>
+<li>environnement complet de synthèse sonore dans le navigateur</li>
+<li>programmation avec JavaScript</li>
+<li>Accès au midi avec Web Midi</li>
+</ul>
+<h4 id="examples">Examples</h4>
+<ul>
+<li>http://sebpiq.github.io/paulstretch.js/examples/expendable-music/dist/index.html</li>
+<li>https://github.com/sebpiq/WebPd</li>
+<li>http://cuinjune-purr-data.glitch.me/</li>
+</ul>
+<h3 id="streaming">Streaming</h3>
+<p>Nécessite :</p>
+<ul>
+<li>un serveur de streaming. La référence est <a href="https://icecast.org">icecast</a></li>
+<li>un client source qui va envoyer l’audio au serveur icecast</li>
+<li>un client recepteur qui va se connecter pour écouter le stream audio</li>
+</ul>
+<p><img src="images/icecast-shema.svg" style="background-color:white;" /></p>
+<h4 id="examples-1">Examples</h4>
+<p>Le site d’icecast contient un <a href="http://dir.xiph.org/">répertoire de streams</a> (web radios et autres). Example Goa psytrance https://amoris.sknt.ru/goa.mp3</p>
+<ul>
+<li>Ouvrez le stream avec VLC “Media &gt; Open Network Stream”</li>
+<li>Créez une balise html audio avec en source l’url du stream</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a name="rhizome"></a> Rhizome - network topologies https://github.com/sebpiq/funktion.fm/blob/master/templates/posts/network-topologies.md</li>
+</ul>
+</body>
+</html>

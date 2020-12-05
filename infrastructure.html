@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Cours Son et Réseaux - Infrastructures</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Cours Son et Réseaux - Infrastructures</h1>
+</header>
+<h2 id="le-réseau-le-plus-simple">Le réseau le plus simple</h2>
+<ul>
+<li>Quel est le réseau le plus simple que vous pouvez imaginer ?</li>
+<li>Comment organiser / interpréter les bits transmis d’une machine à l’autre ? Qui a la parole ?</li>
+</ul>
+<h2 id="protocoles">Protocoles</h2>
+<p>Sémaphore</p>
+<p><img src="images/alphabet-semaphore.png" style="background-color:white;" /></p>
+<ul>
+<li>“Protocole” est un terme générique, et de nombreux protocoles co-existent à différents niveaux des ordinateurs.</li>
+<li>Les protocoles réseaux servent de standard de communication entre plusieurs machines de nature différente.</li>
+<li>Ils sont du coup indépendants de la couche physique de transport de l’information (câble, ondes radio, satellites, etc …)</li>
+</ul>
+<h2 id="réseaux-topologies-infrastructure-physique">Réseaux, topologies, infrastructure physique</h2>
+<ul>
+<li>Mécanisme de routage:
+<ul>
+<li>par circuit</li>
+<li>par packets</li>
+</ul></li>
+<li>Les données sont transmises par câbles et ?</li>
+</ul>
+<p><a href="http://www.opte.org/content/20150711.coords_10000x8000.png" target="_blank"> <img src="images/internet-map.png" style="background-color:white;" /> </a></p>
+<h2 id="bref-historique-de-linternet">Bref historique de l’Internet</h2>
+<p>1960 - 1970 :</p>
+<p>Premières conceptualisation de l’Internet comme un réseau résistant aux attaques nucléaires.</p>
+<p><img src="images/rand-reseaux-topologies.png" style="background-color:white;" /></p>
+<p>Conception et mise en place d’ARPANET</p>
+<blockquote>
+<p>“The objective of this program is twofold: (1) to develop techniques and obtain experience on interconnecting computers in such a way that a very broad class of interactions are possible, and (2) to improve and increase computer research productivity through resource sharing.” <a href="#the_conversation_how_internet_was_born">*</a></p>
+</blockquote>
+<p>1969 :</p>
+<p>Octobre : Première communication à distance entre 2 ordinateurs</p>
+<p>Décembre : 4 ordinateurs connectés en réseau</p>
+<p><img src="images/arpanet-1969.jpg" style="background-color:white;" /></p>
+<p>1970 - … : Apparition de nombreux réseaux de recherche : MFENet (chercheurs en Énergie de fusion magnétique), HEPNet (physique des hautes énergies), SPAN (NASA), CSNET (sciences informatiques), …</p>
+<p>1972 : Invention de l’email</p>
+<p>1990 : le World Wide Web - www</p>
+<p>Le premier “navigateur Internet” implémenté par Tim Berners-Lee permettait aussi de modifier les pages (comme un wiki) :</p>
+<p><img src="images/first-www.gif" style="background-color:white;" /></p>
+<p>1995 : Le 24 octobre 1995, le FNC adopta unanimement une résolution définissant le terme Internet.</p>
+<h2 id="cyber-utopies-dystopies">Cyber Utopies / Dystopies</h2>
+<blockquote>
+<p>The virtual territory of cyberspace does not map onto geographic territory. Its physical layer of computers and networks cannot completely avoid territorial authority, but when the physical layer devices are interconnected and interoperating they are participating continuously in a global virtual space that is not under any state’s complete control. It is a global commons. <em>Hague Keynote: Sovereignty in Cyberspace, Milton Mueller, 2020</em></p>
+</blockquote>
+<h3 id="conception-ouverte-logiciel-libre-partage-de-connaissances">Conception ouverte, logiciel libre, partage de connaissances</h3>
+<p>RFC - Request For Comments</p>
+<blockquote>
+<p>“The significance of both the RFC method and the NWG goes far beyond the critical part they played in setting up the standards for today’s Internet. Both helped shape and strengthen a new revolutionary culture that in the name of knowledge and problem-solving tends to disregard power hierarchies as nuisances, while highlighting networking as the only path to find the best solution to a problem, any problem. Within this kind of environment, it is not one’s particular vision or idea that counts, but the welfare of the environment itself: that is, the network.” <a href="#the_conversation_how_internet_was_born">*</a></p>
+</blockquote>
+<h3 id="transhumanisme-cyberdelic-culture-cyberpunk">Transhumanisme, Cyberdelic culture, Cyberpunk</h3>
+<blockquote>
+<p>The purposes of this paper are to present the concept and, hopefully, to foster the development of man-computer symbiosis by analyzing some problems of interaction between men and computing machines, calling attention to applicable principles of man-machine engineering, and pointing out a few questions to which research answers are needed. The hope is that, in not too many years, human brains and computing machines will be coupled together very tightly, and that the resulting partnership will think as no human brain has ever thought and process data in a way not approached by the information-handling machines we know today. <em>Man-Computer Symbiosis, J. C. R. Licklider, 1960</em></p>
+</blockquote>
+<video src="videos/the-future-is-not-what-it-used-to-be.mp4" controls>
+</video>
+<blockquote>
+<p>People who grew up using electronic appliances for thinking and communicating would constitute a new species, which Leary calls the New Breed, or the cyberpunks. Leary writes that the New Breed of the 80s and 90s are people who have learned how to use technology to reach their own private goals and change the world to the better. According to Leary, this New Breed is creating a new post-political cybernetic society which is based on personal freedom and functions according to the cybernetic principles of self-organization and feedback (I will explain these principles later). It would be a society that does not operate on the basis of obedience and conformity to dogma - a society based on individual thinking, scientific know-how, quick exchange of facts around feedback networks, high-tech ingenuity, and front-line creativity <em>Think for Yourself; Question Authority, Arno Ruthofer, 1997</em></p>
+</blockquote>
+<p>LSD france culture Timothy Leary</p>
+<h3 id="le-cyberspace-disputé">Le cyberspace disputé</h3>
+<blockquote>
+<p>This new faith has emerged from a bizarre fusion of the cultural bohemianism of San Francisco with the hi-tech industries of Silicon Valley…the Californian Ideology promiscuously combines the free-wheeling spirit of the hippies and the entrepreneurial zeal of the yuppies. <em>The Californian Ideology, Richard Barbrook and Andy Cameron, 1995</em></p>
+</blockquote>
+<p>Disputes noms de domaines : - etoy.com : “virtual sit-in” - .amazon : Amazon inc. VS Bolivia, Brazil, Colombia, Ecuador, Guyana, Peru, Suriname et Venezuela</p>
+<p>Révélations Snowden</p>
+<p><img src="images/prism1.jpg" style="background-color:white;" /> <img src="images/prism2.jpg" style="background-color:white;" /></p>
+<p>Cambridge Analytica, 2018</p>
+<p><img src="images/cambridge-analytica.jpg" style="background-color:white;" /></p>
+<h2 id="le-protocole-ip">Le protocole IP</h2>
+<p><strong>IP</strong> est l’acronyme pour <strong>Internet Protocol</strong>, et le protocole central sur lequel l’Internet est construit.</p>
+<p>La conception du protocole IP prend en compte les facteurs suivants :</p>
+<ul>
+<li>Chaque hôte (ordinateur, téléphone, …) connecté au réseau doit être contactable</li>
+<li>Le réseau est organisé en une structure arborescente</li>
+<li>Le réseau n’est pas fiable</li>
+</ul>
+<p>Découpe de données à envoyer en packets de taille maximale 65535 octets.</p>
+<p><img src="images/ip-packet-headers.png" style="background-color:white;" /></p>
+<p>Commutation de paquets (“packet switching”). Packets autonomes, sans garantie de livraison, sans garantie d’ordre d’arrivée.</p>
+<p><img src="images/packet-switching.jpg" style="background-color:white;" /></p>
+<p>Système d’addressage (envoyeur, destinataire)</p>
+<p><img src="images/ip-sender-recipient.png" style="background-color:white;" /></p>
+<p>Structure d’une addresse IP</p>
+<p><img src="images/addresse-ipv4.svg" style="background-color:white;" /></p>
+<p>1:1 (2), Lisa Jevbratt, 1999-2002 <a href="http://128.111.69.4/~jevbratt/1_to_1/interface_i/index.html">lien</a></p>
+<p><img src="images/lisa-jevbratt-1-1.png" style="background-color:white;" /></p>
+<p>every computer in the internet has a so - called “ip- adress”. this is, so to say, the equivalent to a physical adress in the real world. but: in the real world the neighbour of e.g. a head of state won’t be an anarchist. in cyberspace this is possible. this machine lets you find out something about cyber- neighbourhoods. <a href="http://archive.rhizome.org/artbase/29571/index.php">lien</a></p>
+<p><img src="images/neighbourhood-research.png" style="background-color:white;" /></p>
+<h3 id="petit-test-ip">Petit test IP</h3>
+<p>Recherchez “what’s my ip” avec votre téléphone / ordinateur.</p>
+<ul>
+<li>possédez vous la même IP ?</li>
+</ul>
+<p>Si vous possédez la même IP, déconnectez votre téléphone du réseau Wi-Fi pour être connecté en réseau mobile.</p>
+<ul>
+<li>Et maintenant avez vous la même IP ?</li>
+</ul>
+<p>Maintenant cherchez votre localisation avec votre téléphone ET votre ordinateur</p>
+<ul>
+<li>Où se trouvent vos deux appareils ?</li>
+</ul>
+<p>Pour finir, trouvez l’addresse IP de votre téléphone dans les paramètres (Android -&gt; “À propos”)</p>
+<ul>
+<li>Est-elle la même que celle trouvée par le site internet “what’s my ip” ?</li>
+</ul>
+<h3 id="comment-sont-attribuées-les-addresses-ip">Comment sont attribuées les addresses IP?</h3>
+<p>Assignement des addresses IPs : https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml</p>
+<p><img src="images/distribution-addresses-ipv4.png" style="background-color:white;max-width:15em;" /></p>
+<p>Addresse IP privée ≠ publique</p>
+<ul>
+<li>Classe A : plage de 10.0.0.0 à 10.255.255.255</li>
+<li>Classe B : plage de 172.16.0.0 à 172.31.255.255</li>
+<li>Classe C : plage de 192.168.0.0 à 192.168.255.55</li>
+</ul>
+<h3 id="cartes-de-linternet">Cartes de l’Internet</h3>
+<ul>
+<li>Que pouvez-vous dire maintenant sur ces cartes http://www.opte.org/the-internet/ ?</li>
+</ul>
+<h2 id="dns">DNS</h2>
+<p>Associer une addresse IP à un nom de domaine</p>
+<p><img src="images/dns-manager.png" style="background-color:white;" /></p>
+<h2 id="infrastructure-de-linternet">Infrastructure de l’Internet</h2>
+<p>Câbles sous-marins: https://www.submarinecablemap.com/</p>
+<p>Satellites : http://stuffin.space/</p>
+<p>Réseaux mobiles : ?</p>
+<p>Réseaux Wi-Fi : https://wigle.net/</p>
+<h2 id="le-wi-fi">Le Wi-Fi</h2>
+<h2 id="les-réseaux-profonds">Les réseaux profonds</h2>
+<h2 id="dark-web-deep-web">dark web / deep web</h2>
+<p>TOR : https://torflow.uncharted.software/#?ML=0.791015625,51.39920565355378,3</p>
+<h2 id="references">References</h2>
+<ul>
+<li></li>
+<li>fields, freedom portal</li>
+<li>pirate cinema</li>
+<li>https://www.reddit.com/r/datasets/</li>
+<li><a name="the_conversation_how_internet_was_born"></a> https://theconversation.com/au/topics/how-the-internet-was-born-32844</li>
+<li>https://www.internetsociety.org/fr/internet/history-internet/brief-history-internet/</li>
+</ul>
+</body>
+</html>

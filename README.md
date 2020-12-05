@@ -90,3 +90,8 @@ Références
 - Internet of Things Hacks https://www.vice.com/en/article/nzqayz/this-teen-hacked-150000-printers-to-show-how-the-internet-of-things-is-shit
 - Facebook confirms that it tracks how you move mouse on the computer screen https://www.indiatoday.in/technology/news/story/facebook-confirms-that-it-tracks-how-you-move-mouse-on-the-computer-screen-1258189-2018-06-12#close-overlay
     
+
+
+- Cercle de clients OSC
+- mosaique de streams audio
+- programmation Web Audio API

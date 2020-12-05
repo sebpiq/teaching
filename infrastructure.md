@@ -1,3 +1,7 @@
+---
+title:  'Cours Son et Réseaux - Infrastructures'
+...
+
 ## Le réseau le plus simple
 
 - Quel est le réseau le plus simple que vous pouvez imaginer ?
@@ -158,7 +162,7 @@ Pour finir, trouvez l'addresse IP de votre téléphone dans les paramètres (And
 
 Assignement des addresses IPs : https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml
 
-<img src="distribution-addresses-ipv4.png" style="background-color:white;" />
+<img src="images/distribution-addresses-ipv4.png" style="background-color:white;max-width:15em;" />
 
 Addresse IP privée ≠ publique
 

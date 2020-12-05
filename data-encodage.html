@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Protocoles et applications audio</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Protocoles et applications audio</h1>
+</header>
+<h1 id="data-information-encodage">Data, information, encodage</h1>
+<p>Enjeu : stocker, traiter l’information pour pouvoir :</p>
+<ul>
+<li>la transmettre</li>
+<li></li>
+</ul>
+<h2 id="arithmétiques">Arithmétiques</h2>
+<p>Décimale</p>
+<p>Binaire</p>
+<p>Hexadecimale</p>
+<p>Question : Pourquoi la prédominance du système en <strong>base 10</strong> ?</p>
+<p>Question : Pourquoi dit-on <strong>Quatre-vingts</strong> <a href="#leibniz_1703">*</a>?</p>
+<p>À cause du système vicésimal (ou vigésimal), sur une base 20. Il était utilisé par les plus grandes civilisations de l’Amérique précolombienne, les Aztèques par exemple, ou les Mayas. Mais aussi en Europe. Sur le vieux continent, il a connu son apogée pendant le Moyen Âge, pour disparaître à la fin de cette période.</p>
+<h2 id="le-code-binaire">Le code binaire</h2>
+<p><img src="images/leibniz.jpg" /></p>
+<p><a href="#leibniz_1703">*</a></p>
+<p><img src="images/boole.jpg" /></p>
+<p><em>George Boole, inventeur de l’arithmétique booléenne</em></p>
+<p>_</p>
+<p><img src="images/and.png" /></p>
+<p>_</p>
+<p><img src="images/or.png" /></p>
+<p>_</p>
+<p><img src="images/not.png" /></p>
+<p><img src="images/shannon.jpg" /></p>
+<blockquote>
+<p>“Le problème fondamental de la communication est de reproduire exactement ou approximativement un message donné d’un point à un autre” <em>La Théorie Mathématique de la Communication - Claude E. Shannon, 1948</em> <a href="#shannon_1948">*</a></p>
+</blockquote>
+<p>Octets, bytes, MBytes, kBytes, etc … VS bits</p>
+<p>Un message peut être une lettre, un nombre, un texte, une image, une vidéo… tout ce que l’on veut transmettre d’un endroit à un autre. A cette époque, communication et information signifient la même chose. Mais Shannon est le premier à s’interroger à ce sujet : qu’est-ce que l’information ? Pour lui, c’est ce qui permet de lever une incertitude.</p>
+<h3 id="pourquoi-le-binaire">Pourquoi le binaire ?</h3>
+<p>OU Exclusif :</p>
+<p><img src="images/xor-circuit.png" /> <img src="images/xor.png" /></p>
+<p>Table de vérité de l’addition binaire :</p>
+<p><img src="images/demi-additionneur.png" /></p>
+<h2 id="analogique-vs-numérique">Analogique VS numérique</h2>
+<p>Encodage</p>
+<p>Numérisation = Perte de fidélité</p>
+<p>Théorème de Shannon</p>
+<p>Un fichier codé en binaire pourrait très bien être codé en décimal.</p>
+<p>Paradoxe du singe savant</p>
+<p>Pifs : https://github.com/philipl/pifs</p>
+<p>Donnée :</p>
+<ul>
+<li>“Quantité connue dans l’énoncé d’un problème et qui sert à trouver la solution.”</li>
+<li>“Ce qui est connu et admis, et qui sert de base, à un raisonnement, à un examen ou à une recherche.”</li>
+</ul>
+<p>representing symbols digitally is rather simpler than conversion of continuous or analog information to digital.</p>
+<p>Codecs free VS licensed (jpg, mp3, etc …)</p>
+<p>aplay</p>
+<p>databending</p>
+<p>Data ?</p>
+<p>Symbole ?</p>
+<p>binary -&gt; morse code</p>
+<ul>
+<li><p><a name="leibniz_1703"></a> https://hal.archives-ouvertes.fr/ads-00104781/document</p></li>
+<li><p><a name="shannon_1948"></a> https://journals.openedition.org/bibnum/1190</p></li>
+<li><p><a name="cnrs_theorie_info"></a> https://centenaire-shannon.cnrs.fr/chapter/la-theorie-de-information</p></li>
+<li><p><a name="quatre_vingts"></a> https://www.francetvinfo.fr/replay-radio/les-pourquoi/pourquoi-dit-on-quatre-vingts-et-non-pas-octante-un-heritage-celtique_1786389.html</p></li>
+<li><p>http://www.digitalethereal.com/</p></li>
+</ul>
+</body>
+</html>
