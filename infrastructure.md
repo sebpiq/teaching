@@ -108,7 +108,7 @@ Cambridge Analytica, 2018
 
 La conception du protocole IP prend en compte les facteurs suivants :
 
-- Chaque appareil (ordinateur, téléphone, ...) connecté au réseau doit être contactable
+- Chaque hôte (ordinateur, téléphone, ...) connecté au réseau doit être contactable
 - Le réseau est organisé en une structure arborescente
 - Le réseau n'est pas fiable
 
@@ -204,9 +204,7 @@ References
 -------------
 
 - 
-- http://www.digitalethereal.com/
 - fields, freedom portal
-- future is not what it used to be
 - pirate cinema
 - https://www.reddit.com/r/datasets/
 - <a name="the_conversation_how_internet_was_born"></a> https://theconversation.com/au/topics/how-the-internet-was-born-32844

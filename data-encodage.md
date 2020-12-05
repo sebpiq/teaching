@@ -123,3 +123,8 @@ binary -> morse code
 - <a name="shannon_1948"></a> https://journals.openedition.org/bibnum/1190
 - <a name="cnrs_theorie_info"></a> https://centenaire-shannon.cnrs.fr/chapter/la-theorie-de-information
 - <a name="quatre_vingts"></a> https://www.francetvinfo.fr/replay-radio/les-pourquoi/pourquoi-dit-on-quatre-vingts-et-non-pas-octante-un-heritage-celtique_1786389.html
+
+
+
+
+- http://www.digitalethereal.com/
