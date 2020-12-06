@@ -243,7 +243,9 @@ Nécessite :
 
 #### Examples
 
-Le site d'icecast contient un [répertoire de streams](http://dir.xiph.org/) (web radios et autres). Example Goa psytrance https://amoris.sknt.ru/goa.mp3 
+Radio Garden, une carte avec plein de streams radio du monde entier [http://radio.garden]()
+
+Le site d'icecast contient un [répertoire de streams](http://dir.xiph.org/) (web radios et autres). Example Goa psytrance [https://amoris.sknt.ru/goa.mp3]()
 
 - Ouvrez le stream avec VLC "Media > Open Network Stream"
 - Créez une balise html audio avec en source l'url du stream

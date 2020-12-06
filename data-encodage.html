@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Protocoles et applications audio</title>
+  <title>Data &amp; encodage</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -12,6 +12,68 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="styles.css" />
   <!--[if lt IE 9]>
@@ -20,62 +82,163 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Protocoles et applications audio</h1>
+<h1 class="title">Data &amp; encodage</h1>
 </header>
-<h1 id="data-information-encodage">Data, information, encodage</h1>
-<p>Enjeu : stocker, traiter l’information pour pouvoir :</p>
 <ul>
-<li>la transmettre</li>
-<li></li>
+<li>Qu’est ce qu’un ordinateur ?</li>
+<li>Qu’est ce que le binaire ?</li>
+<li>Qu’est ce qu’une donnée ?</li>
+<li>Qu’est ce qu’un fichier ?</li>
 </ul>
-<h2 id="arithmétiques">Arithmétiques</h2>
-<p>Décimale</p>
-<p>Binaire</p>
-<p>Hexadecimale</p>
-<p>Question : Pourquoi la prédominance du système en <strong>base 10</strong> ?</p>
-<p>Question : Pourquoi dit-on <strong>Quatre-vingts</strong> <a href="#leibniz_1703">*</a>?</p>
-<p>À cause du système vicésimal (ou vigésimal), sur une base 20. Il était utilisé par les plus grandes civilisations de l’Amérique précolombienne, les Aztèques par exemple, ou les Mayas. Mais aussi en Europe. Sur le vieux continent, il a connu son apogée pendant le Moyen Âge, pour disparaître à la fin de cette période.</p>
+<h2 id="quest-ce-que-le-numérique-vs-analogique">Qu’est ce que le numérique (VS analogique) ?</h2>
+<h3 id="numérique-vs-analogique">numérique VS analogique</h3>
+<p><img src="images/record-grooves.jpg" /></p>
+<ul>
+<li>Notre monde est analogique. Les grandeurs physiques ont une infinité de valeurs possibles.</li>
+<li>En règle générale :</li>
+</ul>
+<pre><code>numérique = discret
+analogique = continu</code></pre>
+<ul>
+<li>Une information est dite “numérique” quand on utilise un nombre pour représenter une grandeur physique.</li>
+</ul>
+<h4 id="questions">Questions</h4>
+<ul>
+<li>Exemples de systèmes analogiques ? Numériques ?</li>
+<li>Combien de valeurs y a-t-il entre <strong>1.1</strong> et <strong>1.2</strong> ?</li>
+</ul>
+<h3 id="résolution">Résolution</h3>
+<p><img src="images/signal-resolution.png" /></p>
+<ul>
+<li>effet “bit crusher”, <a href="https://blokdust.com/?c=VJq0KCBjt&amp;t=%C3%96kjen">exemple</a></li>
+</ul>
+<h3 id="taux-déchantillonage">Taux d’échantillonage</h3>
+<p><img src="images/signal-sampling.png" /></p>
+<ul>
+<li>Fréquence d’échantillonage en audio, 44100Hz, 48000Hz, etc …</li>
+</ul>
+<h3 id="pourquoi-le-numérique">Pourquoi le numérique ?</h3>
+<ul>
+<li>À cause du bruit dans les circuits. Les données numériques sont plus faciles à stocker et à transmettre.</li>
+</ul>
+<p><img src="images/noise-digital-analog.png"></p>
+<ul>
+<li>Parce qu’un nombre est une abstraction que nous (humains) pouvons manipuler plus facilement</li>
+</ul>
+<h2 id="quest-ce-que-le-binaire">Qu’est ce que le binaire ?</h2>
+<h3 id="décimale">Décimale</h3>
+<p><img src="images/base-decimal.gif" /></p>
+<h3 id="hexadecimale">Hexadecimale</h3>
+<p><img src="images/base-hexadecimal.gif" /></p>
+<h3 id="binaire">Binaire</h3>
+<p><img src="images/base-binary.png" /></p>
+<h3 id="questions-1">Questions</h3>
+<ul>
+<li>Pourquoi la prédominance du système en <strong>base 10</strong> ?</li>
+<li>Pourquoi dit-on <strong>Quatre-vingts</strong> <a href="#quatre_vingts">*</a>?</li>
+</ul>
+<p class="notes">
+À cause du système vicésimal (ou vigésimal), sur une base 20. Il était utilisé par les plus grandes civilisations de l’Amérique précolombienne, les Aztèques par exemple, ou les Mayas. Mais aussi en Europe. Sur le vieux continent, il a connu son apogée pendant le Moyen Âge, pour disparaître à la fin de cette période.
+</p>
+<ul>
+<li>Convertissons quelques nombres!</li>
+<li>Connaissez-vous un moyen de communication antérieur aux ordinateurs qui utilise un code binaire ?</li>
+</ul>
 <h2 id="le-code-binaire">Le code binaire</h2>
-<p><img src="images/leibniz.jpg" /></p>
-<p><a href="#leibniz_1703">*</a></p>
-<p><img src="images/boole.jpg" /></p>
-<p><em>George Boole, inventeur de l’arithmétique booléenne</em></p>
-<p>_</p>
-<p><img src="images/and.png" /></p>
-<p>_</p>
-<p><img src="images/or.png" /></p>
-<p>_</p>
-<p><img src="images/not.png" /></p>
-<p><img src="images/shannon.jpg" /></p>
-<blockquote>
-<p>“Le problème fondamental de la communication est de reproduire exactement ou approximativement un message donné d’un point à un autre” <em>La Théorie Mathématique de la Communication - Claude E. Shannon, 1948</em> <a href="#shannon_1948">*</a></p>
-</blockquote>
-<p>Octets, bytes, MBytes, kBytes, etc … VS bits</p>
-<p>Un message peut être une lettre, un nombre, un texte, une image, une vidéo… tout ce que l’on veut transmettre d’un endroit à un autre. A cette époque, communication et information signifient la même chose. Mais Shannon est le premier à s’interroger à ce sujet : qu’est-ce que l’information ? Pour lui, c’est ce qui permet de lever une incertitude.</p>
 <h3 id="pourquoi-le-binaire">Pourquoi le binaire ?</h3>
-<p>OU Exclusif :</p>
-<p><img src="images/xor-circuit.png" /> <img src="images/xor.png" /></p>
-<p>Table de vérité de l’addition binaire :</p>
-<p><img src="images/demi-additionneur.png" /></p>
-<h2 id="analogique-vs-numérique">Analogique VS numérique</h2>
-<p>Encodage</p>
-<p>Numérisation = Perte de fidélité</p>
-<p>Théorème de Shannon</p>
-<p>Un fichier codé en binaire pourrait très bien être codé en décimal.</p>
-<p>Paradoxe du singe savant</p>
-<p>Pifs : https://github.com/philipl/pifs</p>
-<p>Donnée :</p>
 <ul>
-<li>“Quantité connue dans l’énoncé d’un problème et qui sert à trouver la solution.”</li>
-<li>“Ce qui est connu et admis, et qui sert de base, à un raisonnement, à un examen ou à une recherche.”</li>
+<li>Simple à fabriquer</li>
+<li>Base d’un système de logique</li>
 </ul>
-<p>representing symbols digitally is rather simpler than conversion of continuous or analog information to digital.</p>
+<pre><code>vrai = 1
+faux = 0</code></pre>
+<p class="notes">
+Beaucoup de systèmes dans notre environnement ont un état binaire. Par exemple, une lampe allumée ou éteinte.
+</p>
+<h3 id="logique-booléenne">Logique booléenne</h3>
+<p>Opérateur logique <strong>ET</strong>. Le résultat est vrai si les deux variables sont simultanément vraies.</p>
+<p><img src="images/and.png" style="width:40%;" /></p>
+<p>Opérateur logique <strong>OU</strong>. Le résultat est vrai si l’une ou l’autre ou les deux variables sont vraies.</p>
+<p><img src="images/or.png" style="width:40%;" /></p>
+<p><img src="images/not.png" style="width:40%;" /></p>
+<h3 id="le-binaire-et-les-ordinateurs">Le binaire et les ordinateurs</h3>
+<ul>
+<li>Un CPU est un circuit qui éxecute des commandes très simples : chercher une valeur en mémoire, additionner deux nombres, etc …</li>
+</ul>
+<h4 id="exemple-laddition-binaire">Exemple : l’addition binaire</h4>
+<p><img src="images/addition-binaire-retenue.png" style="width:50%;" /></p>
+<p>Table de vérité de l’addition binaire :</p>
+<p><img src="images/demi-additionneur.png" style="width:50%;" /></p>
+<p>Opérateur logique <strong>OU EXCLUSIF</strong>. Le résultat est vrai si l’une ou l’autre des deux variables est vraie, mais pas les deux simultanément.</p>
+<p><img src="images/xor.png" style="width:40%;" /></p>
+<p>Circuit du <strong>OU EXCLUSIF</strong> en utilisant des opérateurs booléens élémentaires.</p>
+<p><img src="images/xor-circuit.png" /></p>
+<p>Unité arithmétique et logique du circuit intégré 74181</p>
+<p><img src="images/alu.png" /></p>
+<h2 id="les-données">Les données</h2>
+<h3 id="le-code-binaire-matière-brute">Le code binaire, matière brute</h3>
+<p><img src="images/hard-disk-bits.jpg" /></p>
+<ul>
+<li><p>au niveau de la donnée brute (le bit), il n’y a pas de différence entre une image, du texte, de la vidéo, etc … juste des 0 et des 1.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">sudo</span> tcpdump -vvv <span class="kw">|</span> <span class="fu">aplay</span> -c2 -r 2000 -f FLOAT_LE</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">cat</span> /var/log/kern.log <span class="kw">|</span> <span class="fu">aplay</span> -c2 -r 4000 -f MU_LAW</span></code></pre></div></li>
+<li><p>Pour faire sens, les bits doivent être structurés</p>
+<ul>
+<li>groupés en paquets</li>
+<li>ces paquets à leur tour structurés en fichiers</li>
+</ul></li>
+</ul>
+<p class="notes">
+<strong>NB</strong> : apparemment on peut faire la même chose avec <code>sox</code> sur mac (<a href="https://stackoverflow.com/questions/34809320/osx-equivalent-of-piping-sound-to-linuxs-aplay">lien</a>).
+</p>
+<h3 id="groupements-de-bits">Groupements de bits</h3>
+<ul>
+<li><code>1 octet = 8 bits</code> en anglais, octet se dit <code>byte</code>. Ne pas confondre avec <code>bit</code> !!!</li>
+<li>Multiples :
+<ul>
+<li><strong>kB</strong> est kilo bytes, <code>1 kB = 1000 octets = 8000 bits</code></li>
+<li><strong>MB</strong> est mega bytes, <code>1 MB = 1000000 octets = 8000000 bits</code></li>
+</ul></li>
+</ul>
+<h3 id="les-octets">Les octets</h3>
+<ul>
+<li>les processeurs traitent des paquets de plusieurs bits en même temps (architectures 32 bits (4 octets), 64 bits (8 octets), etc …).</li>
+<li>les octets sont souvent représentés au format hexadécimal</li>
+</ul>
+<p><img src="images/table-hex-bin.png" style="width:50%;" /></p>
+<h3 id="questions-2">Questions</h3>
+<ul>
+<li>Quel nombre maximum (en décimal) peut-on mettre dans un octet ?</li>
+<li>Avez-vous déjà vu ce nombre (ou de l’hexadécimal) quelque part?</li>
+</ul>
+<h2 id="le-fichier">Le fichier</h2>
+<ul>
+<li>Série d’octets organisés suivant un format défini</li>
+<li>Le fichier commence souvent par un en-tête</li>
+</ul>
+<h3 id="encodages-texte">Encodages texte</h3>
+<ul>
+<li>ASCII, UTF-8, UTF-16, etc …</li>
+<li>une valeur binaire stockée sur un ou plusieurs octets est mise en correspondance avec un caractère. Par exemple, pour ASCII :</li>
+</ul>
+<p><img src="images/ascii-table.svg" /></p>
+<h3 id="fichier-wav">Fichier Wav</h3>
+<h3 id="le-paradoxe-du-singe-savant-aka-infinite-monkey-theorem">Le paradoxe du singe savant (aka “Infinite monkey theorem”)</h3>
+<ul>
+<li>pifs : https://github.com/philipl/pifs</li>
+</ul>
+<h2 id="les-fichiers-audio">Les fichiers audio</h2>
 <p>Codecs free VS licensed (jpg, mp3, etc …)</p>
-<p>aplay</p>
-<p>databending</p>
+<h2 id="le-data-bending">Le data-bending</h2>
+<ul>
+<li>Formats audio WAV structure (header + PCM data), mp3. Lossy vs lessless (hands on experiment with data bending).</li>
+<li>Exemples / tutoriels databending / datamoshing : Databending tutorial series : https://www.youtube.com/playlist?list=PL7w4cOVVxL6HfT-FoqQ1ukW2G__l0fTr6 Datamoshing, tutoriels en français (un peu vieux) : https://ressources.labomedia.org/le_datamoshing</li>
+<li>Datamosh https://www.youtube.com/user/burntfritter/videos https://www.youtube.com/watch?v=gcppKXM12eY https://www.youtube.com/watch?v=ybdHLxsIFsE https://www.youtube.com/watch?v=gYMBUIR7C9o</li>
+</ul>
+<h2 id="visualisation-sonification-de-données">Visualisation / sonification de données</h2>
 <p>Data ?</p>
 <p>Symbole ?</p>
-<p>binary -&gt; morse code</p>
+<p>data sets, concevez une sonification. Est-ce qu’il y a une perte d’information ?</p>
 <ul>
 <li><p><a name="leibniz_1703"></a> https://hal.archives-ouvertes.fr/ads-00104781/document</p></li>
 <li><p><a name="shannon_1948"></a> https://journals.openedition.org/bibnum/1190</p></li>

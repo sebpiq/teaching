@@ -34,7 +34,23 @@ h1 {
     text-transform: uppercase;
 }
 
-img, video {
+img, video, iframe {
     width: 100%;
+    margin-bottom: 1em;
+}
+
+img {
+    background-color: white;
+}
+
+a, a:visited {
+    color: #aaa;
+}
+
+.notes {
+    display: none;
+}
+
+li {
     margin-bottom: 1em;
 }
