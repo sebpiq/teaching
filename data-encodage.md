@@ -14,14 +14,13 @@ title: 'Data & encodage'
 <img src="images/record-grooves.jpg" />
 
 - Notre monde est analogique. Les grandeurs physiques ont une infinité de valeurs possibles.
-- En règle générale :
+- Une information est dite "numérique" quand on utilise un nombre pour représenter une grandeur physique.
+- En règle générale pour les systèmes :
 
 ```
 numérique = discret
 analogique = continu
 ```
-
-- Une information est dite "numérique" quand on utilise un nombre pour représenter une grandeur physique.
 
 #### Questions
 
@@ -164,6 +163,7 @@ Unité arithmétique et logique du circuit intégré 74181
 
 <img src="images/table-hex-bin.png" style="width:50%;" />
 
+
 ### Questions
 
 - Quel nombre maximum (en décimal) peut-on mettre dans un octet ?
@@ -174,6 +174,7 @@ Unité arithmétique et logique du circuit intégré 74181
 
 - Série d'octets organisés suivant un format défini
 - Le fichier commence souvent par un en-tête
+- **NB** Éditeur hexadécimal sur mac Hex Fiend : [http://ridiculousfish.com/hexfiend/](http://ridiculousfish.com/hexfiend/)
 
 ### Encodages texte
 
@@ -182,57 +183,72 @@ Unité arithmétique et logique du circuit intégré 74181
 
 <img src="images/ascii-table.svg" />
 
-### Fichier Wav
+
+### Fichier WAVE
+
+<img src="images/wav-header.gif" />
+
+
+### Fichier MP3
+
+- Compressed sound format, loss of quality. 
+
 
 ### Le paradoxe du singe savant (aka "Infinite monkey theorem")
 
-- pifs : https://github.com/philipl/pifs
+- Un fichier est un nombre
+- [https://i-dat.org/2002-generator/](https://i-dat.org/2002-generator/)
+
+```
+NOTES 
 
 
+TOWARDS 
 
-## Les fichiers audio
+THE 
 
-Codecs free VS licensed (jpg, mp3, etc ...)
+COMPLETE WORKS 
+
+OF 
+
+SHAKESPEARE 
 
 
-## Le data-bending
+BY 
 
-- Formats audio WAV structure (header + PCM data), mp3. Lossy vs lessless (hands on experiment with data bending).
-- Exemples / tutoriels databending / datamoshing : 
-    Databending tutorial series : https://www.youtube.com/playlist?list=PL7w4cOVVxL6HfT-FoqQ1ukW2G__l0fTr6
-    Datamoshing, tutoriels en français (un peu vieux) : https://ressources.labomedia.org/le_datamoshing
-- Datamosh
-    https://www.youtube.com/user/burntfritter/videos
-    https://www.youtube.com/watch?v=gcppKXM12eY
-    https://www.youtube.com/watch?v=ybdHLxsIFsE
-    https://www.youtube.com/watch?v=gYMBUIR7C9o
+ELMO, GUM, HEATHER, 
+
+HOLLY, MISTLETOE & ROWAN 
+
+SULAWESI CRESTED MACAQUES (MACACANIGRA) 
+FROM PAIGNTON ZOO ENVIRONMENTAL PARK (UK) 
+```
+
+- πfs [https://github.com/philipl/pifs](https://github.com/philipl/pifs)
+
+<img src="images/pi.png" />
+
+
+## Data-bending
+
+- détourner des logiciels de production audiovisuelle pour créer des glitches
+- databending / datamoshing en utilisant des logiciels de son pour modifier des images, et vice-versa. Exemple modifier des images `.bmp` avec le logiciel audio Audacity
+- datamosh exemples
+    - [https://www.youtube.com/user/burntfritter/videos](https://www.youtube.com/user/burntfritter/videos)
+    - [https://www.youtube.com/watch?v=gcppKXM12eY](https://www.youtube.com/watch?v=gcppKXM12eY)
+    - [https://www.youtube.com/watch?v=ybdHLxsIFsE](https://www.youtube.com/watch?v=ybdHLxsIFsE)
+    - [https://www.youtube.com/watch?v=gYMBUIR7C9o](https://www.youtube.com/watch?v=gYMBUIR7C9o)
 
 
 ## Visualisation / sonification de données
 
+- Processus de transformation de données abstraites en image / son
+- Ryoji Ikeda, artiste numérique japonais, sonification de jeux de données scientifiques (CERN, génôme humain, etc ...) [data-verse 1, 11 MAY - 24 NOV 2019, Venice Biennale](https://www.youtube.com/watch?v=S-vSFDZGfF4)
+- Interspecifics, un collectif mexicain qui a beaucoup travaillé à la sonification de bactéries / plantes, etc ... [https://interspecifics.cc](https://interspecifics.cc)
+- Digital Ethereal, un système qui permet de visualiser les ondes Wi-Fi [http://www.digitalethereal.com/](http://www.digitalethereal.com/)
 
 
+### Question
 
-
-
-
-
-
-
-Data ?
-
-Symbole ?
-
-
-data sets, concevez une sonification. Est-ce qu'il y a une perte d'information ? 
-
-
-- <a name="leibniz_1703"></a> https://hal.archives-ouvertes.fr/ads-00104781/document
-- <a name="shannon_1948"></a> https://journals.openedition.org/bibnum/1190
-- <a name="cnrs_theorie_info"></a> https://centenaire-shannon.cnrs.fr/chapter/la-theorie-de-information
-- <a name="quatre_vingts"></a> https://www.francetvinfo.fr/replay-radio/les-pourquoi/pourquoi-dit-on-quatre-vingts-et-non-pas-octante-un-heritage-celtique_1786389.html
-
-
-
-
-- http://www.digitalethereal.com/
+- choisissez un jeu de données [ici](https://www.reddit.com/r/datasets/?f=flair_name%3A%22dataset%22), ou [là](https://www.kaggle.com/datasets) ou encore [là](https://data.opendatasoft.com/pages/home/), réfléchissez à une sonification (comment coder l'information présente dans les données en information sonore).
+- Que pensez-vous de ces approches ?

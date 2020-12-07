@@ -86,7 +86,10 @@ RFC  - Request For Comments
 > People who grew up using electronic appliances for thinking and communicating would constitute a new species, which Leary calls the New Breed, or the cyberpunks. Leary writes that the New Breed of the 80s and 90s are people who have learned how to use technology to reach their own private goals and change the world to the better. According to Leary, this New Breed is creating a new post-political cybernetic society which is based on personal freedom and functions according to the cybernetic principles of self-organization and feedback (I will explain these principles later). It would be a society that does not operate on the basis of obedience and conformity to dogma - a society based on individual thinking, scientific know-how, quick exchange of facts around feedback networks, high-tech ingenuity, and front-line creativity
 *Think for Yourself; Question Authority, Arno Ruthofer, 1997*
 
-LSD france culture Timothy Leary
+- Mondo2000 [https://www.mondo2000.com/]()
+- The Cyberpunk Project [http://project.cyberpunk.ru/]()
+- LSD france culture Timothy Leary [https://www.franceculture.fr/emissions/lsd-la-serie-documentaire/explorations-psychedeliques-14-la-grande-croisade-de-timothy-leary]()
+
 
 ### Le cyberspace disputé
 
