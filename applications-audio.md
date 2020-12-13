@@ -2,6 +2,11 @@
 title:  'Protocoles et applications audio'
 ...
 
+- Qu'est ce qu'un client / serveur ?
+- Que sont les protocoles UDP / TCP / OSC ?
+- Quelles topologies pour des installations en réseau ?
+- Quelles possibilités pour faire de l'audio en ligne ?
+
 ## Client / Server
 
 Trajet d'un message Instagram / messenger, etc ...
