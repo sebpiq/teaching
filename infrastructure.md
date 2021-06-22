@@ -238,7 +238,7 @@ every computer in the internet has a so - called "ip- adress". this is, so to sa
 - Câbles sous-marins: [https://www.submarinecablemap.com/](https://www.submarinecablemap.com/)
 - Satellites : [http://stuffin.space/](http://stuffin.space/)
 - Réseaux Wi-Fi : [https://wigle.net/](https://wigle.net/)
-- Réseaux mobiles : ?
+- Réseaux mobiles : 4G, 5G ... [pourquoi la 5G doit tuer le Wi-Fi](https://blogs.mediapart.fr/dominique-g-boullier/blog/310521/operateurs-contre-gafam-pourquoi-la-5g-doit-tuer-le-wifi)
 
 
 ## Les réseaux profonds
