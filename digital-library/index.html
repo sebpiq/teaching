@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Comprendre la matière numérique</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Comprendre la matière numérique</h1>
+</header>
+<h2 id="la-boite-noire">La boite noire</h2>
+<video src="videos/damasio.mp4">
+</video>
+<p><a href="https://www.youtube.com/watch?v=Y8SpcxR6FjQ">Blast - Interview avec Damasio : L’IMAGINAIRE CAPITALISTE EST DEVENU RINGARD, IL SE FISSURE DE PARTOUT</a></p>
+<blockquote>
+<p>Les symptômes d’une crise planétaire qui va s’accélérant sont manifestes. On en a de tous côtés cherché le pourquoi. J’avance pour ma part l’explication suivante : la crise s’enracine dans l’échec de l’entreprise moderne, à savoir la substitution de la machine à l’homme. Le grand projet s’est métamorphosé en un implacable procès d’asservissement du producteur et d’intoxication du consommateur.</p>
+<p>La relation de l’homme à l’outil est devenue une relation de l’outil à l’homme. Ici il faut savoir reconnaître l’échec. Cela fait une centaine d’années que nous essayons de faire travailler la machine pour l’homme et d’éduquer l’homme à servir la machine. On s’aperçoit maintenant que la machine ne « marche » pas, que l’homme ne saurait se conformer à ses exigences, se faire à vie son serviteur. Durant un siècle, l’humanité s’est livrée à une expérience fondée sur l’hypothèse suivante : l’outil peut remplacer l’esclave. Or il est manifeste qu’employé à de tels desseins, c’est l’outil qui de l’homme fait son esclave. La dictature du prolétariat et la civilisation des loisirs sont deux variantes politiques de la même domination par un outillage industriel en constante expansion. L’échec de cette grande aventure fait conclure à la fausseté de l’hypothèse.</p>
+<p>La solution de la crise exige une radicale volte-face : ce n’est qu’en renversant la structure profonde qui règle le rapport de l’homme à l’outil que nous pourrons nous donner des outils justes. L’outil juste répond à trois exigences : il est générateur d’efficience sans dégrader l’autonomie personnelle, il ne suscite ni esclaves ni maîtres, il élargit le rayon d’action personnel. L’homme a besoin d’un outil avec lequel travailler, non d’un outillage qui travaille à sa place. Il a besoin d’une technologie qui tire le meilleur parti de l’énergie et de l’imagination personnelles, non d’une technologie qui l’asservisse et le programme.</p>
+</blockquote>
+<p><a href="https://archive.org/details/illich-convivialite">Ivan Illich - La convivialité (1973)</a></p>
+<h2 id="lordinateur">L’ordinateur</h2>
+<p>-&gt; Un ordinateur est-il complexe ou compliqué ?</p>
+<p><img title="a title" alt="Alt text" src="images/know-how-computer.jpg"></p>
+<p><a href="https://cstaecker.fairfield.edu/~cstaecker/files/machines/filer.php?name=knowhowarticle.pdf">WDR Papiercomputer (1983)</a></p>
+<p>5 Instructions :</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode txt"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>+ [reg] : ajoute 1 au registre [reg]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>- [reg] : soustrait 1 au registre [reg]</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>J [ligne] : saute à la ligne de code [ligne]</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>0 [reg] : si la valeur dans le registre [reg] est 0, saute une ligne de code et continue. Sinon, ne fait rien et passe à la ligne suivante.</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>stop : fin du programme</span></code></pre></div>
+<ul>
+<li>Exercice 1 : Vider le registre 1</li>
+<li>Exercice 2 : Additionner registres 1 et 2, mettre réponse dans registre 1</li>
+<li>Exercice 3 : Démarrer avec un nombre dans le registre 1, terminer avec 2 fois ce nombre dans le registre 2.</li>
+<li>Exercice 4 : Démarrer avec un nombre N dans le registre 1, terminer avec 0 dans le registre 2 si N est pair, ou 1 dans le registre 2 si N et impair</li>
+</ul>
+<p>-&gt; quelles fonctions peut-on programmer avec le WDR Papiercomputer ?</p>
+<p>-&gt; Comment des applications d’une complexité bien plus élevée emergent-elles d’une unité de calcul aussi simple ?</p>
+<p><strong>Refs</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?app=desktop&amp;v=Z27KQiBnkJI">Der Know How Computer (WDR Papiercomputer) - Paper Computers #1</a></li>
+</ul>
+<h2 id="la-donnée">La donnée</h2>
+<p>-&gt; Un fichier est un nombre</p>
+<ul>
+<li><a href="https://i-dat.org/2002-generator/">Le paradoxe du singe savant (aka “Infinite monkey theorem”)</a></li>
+<li><a href="https://github.com/philipl/pifs">pifs</a></li>
+</ul>
+<p>-&gt; Editeur hexadécimal en ligne : https://hexed.it/</p>
+<h3 id="matière-numérique">Matière numérique</h3>
+<p>Écouter un fichier texte :</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="fu">cat</span> /var/log/kern.log <span class="kw">|</span> <span class="fu">aplay</span> -c2 -r 4000 -f MU_LAW</span></code></pre></div>
+<p>Écouter le traffic réseau :</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="fu">sudo</span> tcpdump -vvv <span class="kw">|</span> <span class="fu">aplay</span> -c2 -r 2000 -f FLOAT_LE</span></code></pre></div>
+<p>Écouter une image :</p>
+<ul>
+<li>télécharger et installer <a href="https://www.audacityteam.org/">Audacity</a></li>
+<li>importer une image BMP :
+<ul>
+<li>sélectionner <code>File -&gt; Import -&gt; Raw Data</code></li>
+<li>choisir l’image</li>
+<li>choisir les options suivantes :
+<ul>
+<li><code>U-Law</code></li>
+<li><code>Little-endian</code></li>
+<li><code>1 Channel</code></li>
+<li>laisser les autres options avec leurs défauts</li>
+</ul></li>
+<li>cliquer sur <code>Import</code></li>
+</ul></li>
+</ul>
+<p>Lui appliquer des effets audios :</p>
+<ul>
+<li>Dans audacity, séléctionner un partie en milieu de l’image, en évitant bien les bords</li>
+<li>Choisir <code>Effect -&gt; Reverb</code>, pius appliquer l’effet</li>
+<li>Export le fichier à nouveau comme image :
+<ul>
+<li>Choisir <code>File -&gt; Export -&gt; Export audio</code></li>
+<li>sélectionner le format <code>Other uncompressed files</code>:
+<ul>
+<li>Header : <code>RAW (header-less)</code></li>
+<li>Encoding : <code>U-Law</code></li>
+</ul></li>
+<li>Sauver le fichier avec l’extension <code>.bmp</code></li>
+</ul></li>
+</ul>
+<p>-&gt; Si on applique un effet sur la fin ou le début de l’image, l’export est une image inutilisable … pourquoi ?</p>
+<h3 id="format-de-fichier-example-du-gif">Format de fichier : example du GIF</h3>
+<p>-&gt; Le format d’un fichier est arbitraire et décidé par les développeurs de l’application vouée à lire ce fichier.</p>
+<p>Pour faire du data-bending sur un GIF animé :</p>
+<ul>
+<li>importer un fichier animé GIF dans l’éditeur hexadécimal</li>
+<li>trouver l’octet 11 :
+<ul>
+<li>vérifier que le GIF contient une table globale de couleurs -&gt; le premier bit de l’octet 11 est <code>1</code>.</li>
+<li>vérifier que la taille de la table est 256 -&gt; les 3 bits suivants sont <code>1 1 1</code></li>
+</ul></li>
+<li><a href="./glitching-gifs.html">copier l’une des tables de couleurs suivantes</a></li>
+<li>la coller sur l’octet 14 :
+<ul>
+<li>vérifier qu’on est bien en mode “overwrite”</li>
+<li>vérifier qu’on prend bien de la donnée hexadécimale</li>
+</ul></li>
+</ul>
+<h3 id="un-programme-cest-aussi-de-la-donnée">Un programme c’est aussi de la donnée</h3>
+<p>Firefox corrompu : <a href="https://faultlore.com/glitch/">https://faultlore.com/glitch/</a></p>
+<p>Code binaire de Firefox :</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="ex">xxd</span> /snap/bin/firefox <span class="kw">|</span> <span class="fu">less</span></span></code></pre></div>
+<p><strong>Refs</strong></p>
+<ul>
+<li><a href="https://giflib.sourceforge.net/whatsinagif/bits_and_bytes.html">What’s in a GIF</a></li>
+<li><a href="http://blog.animalswithinanimals.com/2014/10/databending-and-glitch-art-primer-part.html?m=1">Glitching gifs</a></li>
+<li>http://nickbriz.com/databending101/</li>
+<li>https://github.com/topics/databending</li>
+</ul>
+<h2 id="le-code">Le code</h2>
+<p>-&gt; Le code c’est l’interface de programmation de l’ordinateur.</p>
+<p>-&gt; Code ouvert (open source), VS code fermé (cf code binaire de Firefox VS code source de Firefox)</p>
+<h3 id="le-web-plateforme-ouverte-par-excellence">Le web, plateforme ouverte par excellence</h3>
+<p><img title="a title" alt="Alt text" src="images/first-www.gif"></p>
+<p><a href="https://home.cern/fr/science/computing/birth-web/short-history-web">le World Wide Web - www Le premier “navigateur Internet” implémenté par Tim Berners-Lee, 1990</a></p>
+<h3 id="visualiser-le-code-dune-page">Visualiser le code d’une page</h3>
+<p>-&gt; Ouvrir la “developer console” sur son navigateur : Firefox ou Chrome : ctrl + shift + c / Cmd + Option + c sur mac</p>
+<p>Comment downloader du contenu sur instagram :</p>
+<ul>
+<li>Ouvrir Instagram dans la navigateur</li>
+<li>Ouvrir la console developeurs</li>
+<li>Cliquer sur la petite icone “pick an element” en haut à gauche de la console.</li>
+<li>Sélectionner l’image à télécharger</li>
+<li>trouver dans l’arbre des éléments html l’élément <code>&lt;img&gt;</code> correspondant.</li>
+<li>copier son attribut <code>src</code></li>
+<li>ouvrir cette url dans un autre onglet</li>
+</ul>
+<p>Comment lire les articles de certains journaux sans avoir à s’abonner</p>
+<ul>
+<li>Ouvrir la page du <a href="https://www.newyorker.com">New Yorker</a></li>
+<li>Sélectionner un article (après quelques lectures, le site va vous demander de vous abonner)</li>
+<li>Ouvrir la console dévelopeurs, onglet “Debugger”</li>
+<li>Repérer le bouton “pause” à droite</li>
+<li>Recharger la page, puis avant l’apparition de la popup d’abonnement, appuyer sur “pause”</li>
+</ul>
+<h3 id="jouer-avec-le-contenu-dune-page">Jouer avec le contenu d’une page</h3>
+<p>Extensions Chrome :</p>
+<ul>
+<li><a href="https://github.com/Steven-Roberts/Crazy-Page">Crazy page</a></li>
+<li>Do It ! Shia Labeouf</li>
+<li>libdoge</li>
+</ul>
+<p>Rendre des pages web plus intéressantes en executant du code directement dans la console :</p>
+<ul>
+<li>Copier coller dans la console <a href="./page-fuckups.html">les fonction suivantes</a></li>
+<li>Essayer de lancer l’une des fonctions en copiant collant son code (par exemple :</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a><span class="fu">shake</span>(<span class="st">&#39;div&#39;</span><span class="op">,</span> <span class="dv">100</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="fl">0.05</span><span class="op">,</span> <span class="kw">false</span>)</span></code></pre></div>
+<p>)</p>
+</body>
+</html>

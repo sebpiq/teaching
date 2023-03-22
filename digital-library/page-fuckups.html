@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>page-fuckups</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<pre><code>const shake2 = (selector, stepMs, shakeAmpPx, scaleAmp, hasTransitions) =&gt; {
+    const _rand = (amp) =&gt; amp * (Math.random() * 2 - 1)
+    const elems = document.querySelectorAll(selector)
+    if (hasTransitions) {
+        elems.forEach(d =&gt; d.style.transition = `transform ${stepMs / 1000}s`)//&lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;
+    }
+    setInterval(() =&gt; document.querySelectorAll(selector).forEach(d =&gt; {
+        const [x, y] = (d.style.transform || &#39;translate(0px, 0px) scale(1)&#39;)
+            .split(&#39; scale&#39;)[0]
+            .slice(&#39;translate(&#39;.length, -&#39;)&#39;.length)
+            .split(&#39;, &#39;).map(v =&gt; parseInt(v))
+        d.style.transform = `translate(${x + shakeAmpPx + _rand(shakeAmpPx)}px, ${y + shakeAmpPx + _rand(shakeAmpPx)}px) scale(${1 + _rand(scaleAmp)})`
+    }), stepMs)
+}
+// shake(&#39;div&#39;, 100, 1, 0.05, false)
+
+
+
+const colors = (selector, stepMs, hasTransitions) =&gt; {
+    const _colorPart = () =&gt; Math.floor(parseInt(&#39;ff&#39;, 16) * Math.random()).toString(16).padEnd(&#39;0&#39;)
+    let elems = document.querySelectorAll(selector)
+    if (hasTransitions) {
+        elems.forEach(d =&gt; d.style.transition = `color ${stepMs / 1000}s, background-color ${stepMs / 1000}s`)//&lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;
+    }
+    setInterval(() =&gt; document.querySelectorAll(selector).forEach(d =&gt; {
+        d.style.color = &#39;#&#39; + _colorPart() + &#39;00&#39; + _colorPart() + _colorPart()
+        d.style.backgroundColor = &#39;#&#39; + _colorPart() + &#39;00&#39; + _colorPart() + _colorPart()
+    }), stepMs)
+}
+// colors(&#39;a&#39;, 130, false)
+// colors(&#39;h1&#39;, 120, false)
+// colors(&#39;span&#39;, 110, false)
+// colors(&#39;div&#39;, 100, false)
+
+
+// infiniteZoom(15000, 0.02, 40, 120, 3) 
+const infiniteZoom = (stepMs, scale0, scale1, rotation, frequency) =&gt; {
+    const transitionFunc = &#39;cubic-bezier(1.000, 0.025, 0.950, 0.115)&#39;
+    const html = document.body.innerHTML
+    document.body.querySelectorAll(&#39;script&#39;).forEach(e =&gt; e.remove())
+    document.body.innerHTML = &#39;&#39;
+    document.body.style.height = &#39;100vh&#39;
+    document.body.style.overflow = &#39;hidden&#39;
+    document.body.style.transformOrigin = &#39;center center&#39;
+
+    const _transform = (root, initialize) =&gt; {
+        root.style.transition = `transform ${stepMs / 1000}s ${transitionFunc}`
+        root.style.transformOrigin = &#39;center center&#39;
+        root.style.height = &#39;100vh&#39;
+        root.style.width = &#39;100vw&#39;
+        root.style.overflow = &#39;hidden&#39;
+        root.style.position = &#39;fixed&#39;
+        root.style.top = &#39;0&#39;
+        root.style.left = &#39;0&#39;
+        if (initialize) {
+            root.style.transform = `scale(${scale0}) rotate(0deg)`
+        }
+        setTimeout(() =&gt; {
+            root.style.transform = `scale(${scale1}) rotate(${rotation}deg)`
+        }, 1)
+    }
+
+    const _iter = (initialize = true) =&gt; {
+        const newPage = document.createElement(&#39;div&#39;)
+        newPage.innerHTML = html
+        document.body.appendChild(newPage)
+        _transform(newPage, initialize)
+        setTimeout(() =&gt; {
+            newPage.remove()
+        }, stepMs + 1000)
+    }
+
+    setInterval(_iter, stepMs / frequency)
+
+    _iter(document.body, false)
+}
+
+
+const whirl = () =&gt; {
+    document.querySelectorAll(&#39;*&#39;).forEach(el =&gt; {
+        const spinning = [
+            { transform: &quot;rotate(0) scale(1)&quot; },
+            { transform: &quot;rotate(360deg) scale(0)&quot; },
+        ]
+          
+        const timing = {
+            duration: 10000,
+            iterations: 1,
+        }
+        el.style.transformOrigin = &#39;50vw 50vh&#39;
+        el.animate(spinning, timing)
+    })    
+}
+
+const richWhiteMales = () =&gt; {
+    document.querySelectorAll(&#39;img&#39;).forEach(img =&gt; {
+        const urls = [
+            // Zuck
+            &#39;https://static.businessinsider.com/image/55835f976bb3f786770aa3ad/image.jpg&#39;,
+            &#39;https://api.time.com/wp-content/uploads/2016/01/ap_794116323555.jpg&#39;,
+            &#39;https://static3.businessinsider.com/image/5aabc355cc502925008b46aa-1725/rtr49i7z.jpg&#39;,
+            &#39;https://technology.inquirer.net/files/2017/02/Facebook-Zuckerberg.jpg&#39;,
+            &#39;http://static1.businessinsider.com/image/552da630ecad04423c180c63-1977/mark-zuckerberg-393.jpg&#39;,
+            &#39;https://i.insider.com/53d2b0dbeab8ea563559b0b0&#39;,
+            &#39;https://cdn.cnn.com/cnnnext/dam/assets/170622131016-02-zuckerberg-interview-color-super-tease.jpg&#39;,
+            &#39;https://clipground.com/images/mark-zuckerberg-png-6.png&#39;,
+            &#39;https://api.time.com/wp-content/uploads/2016/01/ap_794116323555.jpg&#39;,
+    
+            // Bezos
+            &#39;https://nypost.com/wp-content/uploads/sites/2/2020/06/Bezos-Smile-2.jpg?quality=90&amp;strip=all&#39;,
+            &#39;https://observer.com/wp-content/uploads/sites/2/2019/06/gettyimages-1032941844.jpg?quality=80&amp;strip&#39;,
+            &#39;https://i.insider.com/5caeed65c57fa612d34e8cc3?width=1200&#39;,
+            &#39;https://s3.scoopwhoop.com/anj/photo/cc041081-6374-4e95-90ae-86711d48c680.jpg&#39;,
+            &#39;https://observer.com/wp-content/uploads/sites/2/2019/10/gettyimages-1079571578-e1572031138891.jpg?resize=320&#39;,
+            &#39;https://image.cnbcfm.com/api/v1/image/105462405-1537464466367gettyimages-1036099120.jpeg?v=1538582969&amp;w=1400&amp;h=950&#39;,
+            &#39;https://observer.com/wp-content/uploads/sites/2/2018/11/gettyimages-1032942782.jpg?resize=2048&#39;,
+            &#39;https://static3.businessinsider.com/image/5bb4ff979a4ab834ec62fd88-2400/jeff-bezos.jpg&#39;,
+    
+            // Musk
+            &#39;https://i.insider.com/5fa27f2d1df1d50018218c35?format=jpeg&#39;,
+            &#39;https://cdn.cnn.com/cnnnext/dam/assets/180907100732-elon-musk-smokes-marijuana-podcast-1-large-169.jpg&#39;,
+            &#39;https://nypost.com/wp-content/uploads/sites/2/2021/04/elon-musk-010.jpg?quality=90&amp;strip=all&#39;,
+            &#39;https://www.yourtechstory.com/wp-content/uploads/2020/04/spacex-ceo-elon-musk-2020.jpg&#39;,
+            &#39;https://www.pulseheadlines.com/wp-content/uploads/2017/01/Elon-Musk.jpg&#39;,
+            &#39;https://www.manners.nl/wp-content/uploads/2020/12/Elon-Musk-SpaceX.jpg&#39;,
+            &#39;https://www.financemagnates.com/wp-content/uploads/2020/12/Elon-Musk.jpg&#39;,
+            &#39;https://static5.businessinsider.com/image/5c754dd71631a378ce205226-1190-625/elon-musks-erratic-twitter-behavior-escalated-wednesday-when-he-changed-his-name-to-elon-tusk.jpg&#39;,
+            &#39;http://static1.businessinsider.com/image/57ed0ffeb0ef973f1b8b8b8a-1219/rtr49m2y.jpg&#39;
+    
+        ]
+        img.src = urls[Math.floor(Math.random() * urls.length)]
+    })
+}
+
+const eggplants = () =&gt; {
+    document.body.querySelectorAll(&#39;*&#39;).forEach(el =&gt; {
+        if ([&#39;style&#39;, &#39;script&#39;].includes(el.tagName)) {
+            return
+        }
+        if (el.textContent.length &amp;&amp; el.children.length === 0) {
+            el.textContent = Array.from(el.textContent).map(() =&gt; &#39;🍆&#39;).join(&#39;&#39;)
+        }
+    })
+}</code></pre>
+</body>
+</html>

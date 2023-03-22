@@ -1,36 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Shade&family=Geo&family=Orbitron&family=Quantico&family=Rubik+Iso&family=Silkscreen&family=Turret+Road&family=Wallpoet&family=Source+Code+Pro&display=swap');
 
 body {
     max-width: 900px;
     margin: auto;
-    font-family: 'Source Code Pro', monospace;
-    background-color: #222;
+    font-family: 'Source Code Pro';
+    background-color: #161616;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
     margin-top: 2em;
-}
-
-h5 {
-    color: red;
-}
-
-h4 {
-    color: fuchsia;
-}
-
-h3 {
-    color: yellow;
-}
-
-h2 {
-    color: lightgreen;
+    font-family: 'Silkscreen';
 }
 
 h1 {
-    color: white;
+    color: #FF499E;
+}
+
+h2 {
+    color: #D264B6;
+}
+
+h3 {
+    color: #A480CF;
+}
+
+h4 {
+    color: #779BE7;
+}
+
+h5 {
+    color: #49B6FF;
     text-transform: uppercase;
 }
 
@@ -52,5 +54,9 @@ a, a:visited {
 }
 
 li {
-    margin-bottom: 1em;
+    margin-bottom: 0;
+}
+
+.sourceCode {
+    background-color: black;
 }
