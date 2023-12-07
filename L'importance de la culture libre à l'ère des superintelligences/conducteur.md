@@ -1,13 +1,94 @@
-Trello : 
-    - sound board
-    - reading board
+L'importance de la culture libre à l'ère des superintelligences
+===================================================================
 
 
+Objectifs de cette présentation
+----------------------------------
 
-Expliquer les enjeux liés au droit d'auteur à l'ère des super-intelligences 
+- dresser un contour des enjeux politiques autour des superintelligences émergentes : collecte / archives de données, copyright, "enclosure" de la culture et de la connaissance.
+
+- adresser la technophobie contemporaine (et notamment du monde de la culture) liée (plus dernièrement) à l'émergence des intelligences artificielles génératives
+
+- ouvrir des perspectives positives sur ces enjeux, puisque ces technologies sont là pour rester
 
 
+Quoi : Superintelligences / Prothèses mentales
+------------------------------------------------
 
+Superintelligence : 
+> « un intellect beaucoup plus compétent que les meilleurs cerveaux humains dans pratiquement tous les domaines » Nick Bostrom
+
+Superintelligence n'implique pas d'intentionalité. Elle peut être un simple outil. 
+
+Superintelligences partielles, spectre Passif / archive / mémoire / partage -> Génération / Automatisation / création
+    -> Internet, hypermedia
+    -> Wikipedia
+    -> stackoverflow, google
+    -> GenIA
+
+Example random-color : recherche sur Stackoverflow permet d'accéder à un savoir-faire sans en avoir acquis les bases. 
+
+Example random-color : github copilot va encore plus loin 
+
+Comment fonctionnent ces systèmes (donnée + programme) (exemple github).
+
+
+Qui : Big tech : Capitalisme de surveillance : extraction de la donnée
+------------------------------------------------------------------------
+
+la découverte de la valeur économique de la donnée représente le grand tournant du capitalisme numérique, et l'avènement du capitalisme de surveillance. 
+
+business modèles aujourd'hui : mise en place d'infrastructures d'extraction des données. Données ensuite utilisées pour prédire et orienter les comportements. Dans une ironique inversion de la GenIA démontrée plus haut ou notre comportement est le résultat de l'algorithme de génération.
+
+Exemple d'Android : TODO
+
+Big tech lobby pour éviter d'être régulé, elle se place en acteur du progrès oeuvrant pour le bien commun, à condition qu'on la laisse faire.
+
+uilisations des utilisateurs comme des ressources, intégration à des systèmes de controle.
+
+-> scandales à répétition
+-> concentration de l'attention
+
+
+Qui : Big content : les industries culturelles
+-------------------------------------------------
+
+Ne pas se tromper : les industries culturelles fonctionnent sur un modèle de rente et de capital financier, et non sur un modèle de création.
+- exemples : UMG qui acquiert les copyrights d'artistes anciens parce que c'est ce qui fait le plus de thunes (TODO : chiffres). Disney qui acquiert Star Wars et Marvel.
+- Durée des copyrights : vie de l'auteur + 70(?) ans. Comment est-ce que ça pourrait encourager la création ? 
+
+À travers un lobby intense pour de nouvelles législations et le respect des copyright, Big Content a eu un rôle majeur dans la transformation des technologies numériques. 
+- Exemple des upload filters dans la loi européenne
+- Exemple de l'accès aux données d'entrainement des IAs
+- Mise en conformité avec les règles de copyrights extêmement complexe et couteux : avantages les grosses entreprises
+
+
+Techno-utopisme / Techno-prophétisme / Techno-scepticisme
+----------------------------------------------------------
+
+Compétition de récits sur l'impact du numérique sur nos sociétés
+
+**techno-utopiques** - Cyberespace, émergence d'une société réellement démocratique basée sur la libre circulation des idées et de la connaissance, et sur une liberté individuelle radicale. 
+    
+**techno-prophétiques** - Progrès technologique provoqué de manière mécanique par la libre compétition culmine en la singularité technologique, et à une fusion de l'homme et de la machine, ou à un remplacement de l'homme par la machine. Transhumanisme.
+
+**techno-sceptiques** - Les technologies numériques corrompent la société, nous déqualifient, polluent, permettent l'implémentation de systèmes de controle des populations (scandales à répétition), détruisent la démocratie et appauvrissent la culture.
+
+Tout simultanément vrai :
+- prophétique : sous le régime du marché libre mondialisé, si une technologie est possible, une entreprise la développera
+- sceptique : ces technologies sont invariablement mises au profit d'une forme d'exploitation des populations
+- utopique : ces technologies sont porteuses d'abondance, et d'un réel potentiel émancipateur pour l'humanité
+
+
+Fonctions de ces récits
+--------------------------
+
+**techno-prophétisme** - Big Tech : il faut déréguler, "on s'occupe de tout, c'est trop compliqué pour vous" (TODO : exemple ?) : hypnothiser le public pour le déposséder de ses données / de son libre arbitre et de sa capacité d'action.
+- Le simple fait de parler "d'intelligence" pour qualifier ce qu'on appelle IA, nourrit ce récit en "autonomisant" ces outils. Empêche les gens de s'en saisir.
+- Cache le fait que derrière l'utilisation de ces outils il y a des gens qui font des choix
+
+**techno-sceptique** - Big Content : il faut réguler pour empêcher la technologie de piller et de détruire tout ce qui fait de nous des êtres humains : empêcher le libre partage, censurer, bloquer, surveiller. 
+- en utilisant le terme de piratage / vol, masque le fait que abondance
 -> Réalité économique, technologique et culturelle a changé par rapport à l'époque de la culure analogue :
     -> Plus de rareté
     -> Internet basé sur la notion d'hypermedia, qui implique un réseau ouvert d'oeuvres 
@@ -15,60 +96,20 @@ Expliquer les enjeux liés au droit d'auteur à l'ère des super-intelligences
         européenne qui impose que linker vers un contenu / l'indexer, requiert l'autorisation du porteur de copyright.
         Pareil ajd avec l'IA)
 
--> Mise en conformité avec les règles de copyrights extêmement complexe et couteux : avantages les grosses entreprises
-    -> Exemple des upload filters dans la loi européenne
-    -> Exemple de l'accès aux données d'entrainement des IAs
-    -> Les copyrights ne sont pas des outils qui permettent d'émanciper la création et les créateurs indépendants, 
-        ils sont au contraire de grandes machines industrielles qui intègrent les créateurs indépendants 
-        comme des rouages interchangeables.
-    -> Exemple de UMG qui acquiert les copyrights d'aristes anciens parce que c'est ce qui fait le plus de thunes.
-        Les grandes entreprises des industries culturelles fonctionnent sur un modèle de rente et de capital financier,
-        et non sur un modèle de création.
-    
--> Politique publique doit être justifiée par un bénéfice global accru pour l'ensemble de la société : 
-    -> exercice d'équilibre : le copyright justifié comme étant une incitation financière à la création (voir article)
-    -> Link tax, blocages de sites internets, ... 
-    -> Durée des copyrights : vie de l'auteur + 70(?) ans. Comment est-ce que ça pourrait encourager la création ? 
-        Création se fait de manière croissante en dehors des industries culturelles (GenIA, DAW, Patreon, etc ... ).
 
+Inverser les mécanismes de contrôle
+-------------------------------------
 
-L'importance de la culture libre à l'ère des superintelligences
+> "L’outil juste répond à trois exigences : il est générateur d’efficience sans dégrader l’autonomie personnelle, il ne suscite ni esclaves ni maîtres, il élargit le rayon d’action personnel." La Convivialité - Ivan Illitch, 1973
 
--> Introduction
-    -> adresser la technophobie contemporaine (et notamment du monde de la culture) liée notamment (et plus dernièrement) à l'émergence des intelligences artificielles génératives
-    -> dresser un contour des enjeux politiques autour de la propriété intellectuelle et du partage de la culture et de la connaissance, en particulier en regard des technologies intelligentes émergentes
-    -> Faire passer un message qui est un avis personnel, offrir des perspectives positives sur cette observation (puisque le capitalisme & les technologies numériques sont là pour rester)
+Déconsruire les récits sur la technologie : comment nous mettons en place une technologie et quelle impact elle aura sur la société n'est pas une fatalité. Cela dépend avant tout du contexte social, culturel, économique dans lequel elle sera déployée et de QUI la déploiera. 
 
--> Compétition de récits sur l'impact du numérique sur nos sociétés
-    -> à l'origine de la création d'internet on a effectivement le récit d'un outil convivial : chercher la définition
-        -> utopie de l'internet Berners lee
-    -> libre compétition, techno-solutionisme qui culmine en la singularité technologique, progrès technique mène de manière prophétique à une fusion de l'homme et de la machine, ou à un remplacement de l'homme par la machine. Nouvelle étape dans le processus de l'évolution des espèces. 
-    -> les nouvelles technologies nous corrompent, elles rendent les jeunes plus idiots moins capables, créent des troubles de l'attention, elles polluent, permettent l'implémentation de systèmes de controle des populations (scandales à répétition). Elles détruisent la culture en permettant le piratage. Elles permettent un monopole et une concentration de pouvoir immense aux mains de quelques géants. Il faut les réguler de manière stricte, casser ces monopoles. Forcer les GAFAM à redistibuer leurs profits aux créateurs de contenu. 
-    
--> ces récits sont probablement tous vrais et faux simultanément
-    -> Oui le numérique amène des outils au potentiel émancipatoire inédit : partage du savoir, de la culture ; démocratisation de la production / distribution artistique ; création de communautés. Mais le capitalisme de surveillance mis en place par les GAFAMs nous aliène
-    -> tech comme une force positive de démocratisation et d'émancipation -> prothèses mentales
-        -> Internet, hypermedia, le global brain
-        -> Exemples GenIA, stackoverflow, google. 
-        -> Comment fonctionnent ces systèmes (donnée + programme)
-        -> IA coute moins d'energie pour créer une oeuvre donnée qu'un humain (MAIS : effet rebond)
+> “un marteau peut être utilisé [pour torturer quelqu’un] mais le [même] marteau peut être aussi utilisé pour construire une maison” Noam Chomsky Interviewed by Antosofia, 2003
 
--> Big tech : Capitalisme de surveillance : extraction de la donnée
-    -> Grand tournant de l'histoire des technologies numériques
-    -> Exemples de Google : mise en place d'infrastructures d'extraction des données : exemple d'Android.
-    -> Big tech lobby pour éviter d'être régulé, elle se place en acteur du progrès oeuvrant pour le bien commun, à condition qu'on la laisse faire.
-    -> scandales à répétition
-    -> uilisations des utilisateurs comme des ressources, intégration à des systèmes de controle.
+le capitalisme & les technologies sont là pour rester pas de révolution possible, pas de grand sursaut citoyen : lutte culturelle lente / réappropiation des outils de la tech pour émancipation. La question n'est pas devons-nous empêcher ces technologies de se développer ou non, mais plutôt comment s'assurer que les gains associés à ces technologies soient redistribués de manière juste.
 
--> Big content : les industries culturelles
+exemples du monde du numérique : mastodon
 
-
-
--> Inverser les mécanismes de contrôle
-    -> le capitalisme & les technologies sont là pour rester pas de révolution possible, pas de grand sursaut citoyen : lutte culturelle lente / réappropiation des outils de la tech pour émancipation. La question n'est pas devons-nous empêcher ces technologies de se développer ou non, mais plutôt comment s'assurer que les gains associés à ces technologies soient redistribués de manière juste.
-    -> sortir de l'affect IA / robots / dystopies : IA ne sont que des outils
-    -> convivialité
-    -> exemples du monde du numérique (mastodon?)
     -> Dans le domaine de l'IA : vrai enjeu, mais encore énormément de défis (voir papier CEO de Signal) : mozilla.ia, etc ...
     -> Création de communs, ressources que chacun.e peut utiliser librement (au lieu d'être nous-mêmes la ressource)
 
@@ -76,11 +117,14 @@ L'importance de la culture libre à l'ère des superintelligences
     -> Modèle memetique de la créativité
     -> Savoir / connaissance / récits / techniques / sont des communs
     -> Si je consomme une oeuvre sans la payer, je n'empêche pas les autres d'en profiter
+    -> il n'y a pas de classe moyenne chez les artistes
+    -> Création se fait de manière croissante en dehors des industries culturelles (GenIA, DAW, Patreon, etc ... ).
 
 -> cautionary tale
     -> quand vous partagez / stockez votre travail dans une archive privée : à qui cela profite-t-il ? 
         N'en profiterais-je pas plus s'il était publié en libre ? 
         La société n'en profiterait-elle pas plus ?
+        - Attention à la license du contenu, mais aussi à la plateforme : En uploadant notre code sur github, nous programmeurs open-source avons fait un immense cadeau à Microsoft.
     -> se battre grâce à l'outil du copyright est une erreur. 
 
 
@@ -90,21 +134,17 @@ L'importance de la culture libre à l'ère des superintelligences
 
 
 
-challenges liés aux archives traditionnelles : 
-    - authorité
-    - conservation à l'identique
-    - mémoire photographique
 
-procedural archive 
-    - demander à copilot de générer une image en code
-    - mémoire procédurale
 
-avantages archives procédurales :
-    - auteur pas d'importance, procédure est juste 
 
-politique : 
-    - qui produit, qui possède les données : age du capitalisme de surveillance / piratage
-    - question de la vérité : qu'est-ce qui est vrai
+
+Trello : 
+    - sound board
+    - reading board
+
+
+    
+
 
 
 
@@ -113,8 +153,6 @@ politique :
 
 - Puissance des récits
 - Californian ideology
-- Scepticism envers les nouvelles technologies
-    - gauche
 - Fragment on machines
 - Néoliberalisme : preuve que l'économie n'obéit pas à des lois immuables. Les populations humaines ont une forme de libre arbitre. 
     L'abondance amenée par le capitalisme a été accaparée par le nęoliberalisme (see : Mullainathan, S., Shafir, E., 2013. Scarcity: Why Having too Little Means so Much).
@@ -135,11 +173,6 @@ Ce qui est en train de se produire aujourd'hui :
     - mise au point de prothèses cognitives
     - exemple de github + codex / copilot
 
-
-
-Conception de ces prothèses est toujours la même : 
-    - Algorithme
-    - Données
 
 
 
