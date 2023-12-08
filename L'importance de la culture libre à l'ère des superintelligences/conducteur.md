@@ -12,11 +12,32 @@ Objectifs de cette présentation
 - ouvrir des perspectives positives sur ces enjeux, puisque ces technologies sont là pour rester
 
 
+Techno-utopisme / Techno-prophétisme / Techno-scepticisme
+----------------------------------------------------------
+
+Débat public s/ technologie : compétition de récits sur l'impact du numérique sur nos sociétés
+
+**techno-sceptiques** - Les technologies numériques corrompent la société, nous déqualifient, nous rendent dépendants, polluent, permettent l'implémentation de systèmes de controle des populations (scandales à répétition), détruisent la démocratie et appauvrissent la culture.
+
+**techno-prophétiques** - Progrès technologique mène à la singularité technologique, au transhumanisme, provoqué de manière mécanique par la libre compétition. Fusion de l'homme et de la machine, ou à un remplacement de l'homme par la machine.
+
+**techno-utopistes** - émergence d'une société réellement démocratique basée sur la libre circulation des idées et de la connaissance, et sur une liberté individuelle radicale. 
+
+Tout simultanément vrai :
+- sceptique : ces technologies sont invariablement mises au profit d'une forme d'exploitation des populations
+- prophétique : sous le régime du marché libre mondialisé, si une technologie est possible, une entreprise la développera : forme d'inévitabilité du progrès technologique
+- utopique : ces technologies sont porteuses d'abondance, et d'un réel potentiel émancipateur pour l'humanité
+
+
 Quoi : Superintelligences / Prothèses mentales
 ------------------------------------------------
 
 Superintelligence : 
 > « un intellect beaucoup plus compétent que les meilleurs cerveaux humains dans pratiquement tous les domaines » Nick Bostrom
+
+Technologies (ajd spéculatives) qui cristalisent ces différents récits.
+
+Intelligences artificielles, intelligence artificielle générale
 
 Superintelligence n'implique pas d'intentionalité. Elle peut être un simple outil. 
 
@@ -33,8 +54,28 @@ Example random-color : github copilot va encore plus loin
 Comment fonctionnent ces systèmes (donnée + programme) (exemple github).
 
 
+L'or noir du XXIè siècle
+----------------------------
+
+Systèmes d'IA comprènent toujours deux parties : 
+- le modèle (~carburant) : créé à partir de milliards d'exemples (exemple Midjourney ou ChatGPT). Requiert une immense quantité de données pour être entrainé.
+- le programme (~moteur) : traite les requêtes en interrogeant le modèle
+
+Données importance stratégique énorme aujourd'hui puisque ces systèmes en requièrent des quantités extraordinaires.
+
+
 Qui : Big tech : Capitalisme de surveillance : extraction de la donnée
 ------------------------------------------------------------------------
+
+au tournant des années 2000 l'industrie du numérique a découvert que les données des utilisateurs avaient énormément de valeur, pouvaient être monétisées notamment à travers la publicité ciblée. 
+
+Cette découverte a conditionné de manière assez profonde tout le développement des services numériques jusqu'à aujourd'hui. 
+
+De manière assez naive j'ai cru jusqu'à récemment que le modèle économique des services gratuits (google docs, gmail ?) était freemium.
+
+En fait modèle économique : offrir des services gratuits aux gens avec des termes d'utilisation incompréhensbiles et très permissifs ; puis vendre (ou monétiser directement) la donnée générée par l'utilisation. mise en place d'infrastructures d'extraction des données.
+
+---
 
 la découverte de la valeur économique de la donnée représente le grand tournant du capitalisme numérique, et l'avènement du capitalisme de surveillance. 
 
@@ -49,35 +90,44 @@ uilisations des utilisateurs comme des ressources, intégration à des systèmes
 -> scandales à répétition
 -> concentration de l'attention
 
+"Move fast and break things"
+-------------------------------
+
+Devise de Facebook qui pourrait résumer la posture du secteur de la tech.
+
+L'industrie du numérique avance très vite, ce qui lui permet d'opérer dans des espaces non-règlementés et donc de mettre en place des pratiques qui ne seraient jamais acceptées par le public si elles étaient transparentes d'emblée.
+
+quand l'opération est découverte trop tard pour l'empêcher car elle fait partie de nos vies.
+
 
 Qui : Big content : les industries culturelles
 -------------------------------------------------
 
-Ne pas se tromper : les industries culturelles fonctionnent sur un modèle de rente et de capital financier, et non sur un modèle de création.
-- exemples : UMG qui acquiert les copyrights d'artistes anciens parce que c'est ce qui fait le plus de thunes (TODO : chiffres). Disney qui acquiert Star Wars et Marvel.
-- Durée des copyrights : vie de l'auteur + 70(?) ans. Comment est-ce que ça pourrait encourager la création ? 
+Face à Big Tech : Big Content, les industries culturelles. 
 
-À travers un lobby intense pour de nouvelles législations et le respect des copyright, Big Content a eu un rôle majeur dans la transformation des technologies numériques. 
+Possèdent des catalogues énormes de copyrights (~ contenu protégé) et les font fructifier.
+
+Ne pas se tromper : les industries culturelles ne fonctionnent pas sur un modèle de création mais bien sur un modèle de rente. Elles sont allergiques au risque
+
+- exemples : UMG qui acquiert les copyrights d'artistes anciens parce que c'est ce qui fait le plus de thunes (TODO : chiffres). Disney qui acquiert Star Wars et Marvel.
+
+
+"Le piratage c'est du vol"
+----------------------------
+
+Les industries culturelles sont connues pour leur immenses efforts de lobbying, afin de mettre en place des réglementations pour protéger les copyrights et étendre leur périmètre. 
+
+Autour des années 2000, quand les applications de partage de fichiers sont apparues "Le piratage c'est du vol" - se placent en protecteurs des artistes pour manipuler l'opinion publique, alors qu'elles tentent simplement de protéger leur rente. 
+
+- Durée des copyrights : vie de l'auteur + 70(?) ans. Comment est-ce que ça pourrait encourager la création ? 
+- Automatisme du copyright
+
+Les industries culturelles ont eu un rôle majeur dans la transformation des technologies numériques.
+
 - Exemple des upload filters dans la loi européenne
 - Exemple de l'accès aux données d'entrainement des IAs
 - Mise en conformité avec les règles de copyrights extêmement complexe et couteux : avantages les grosses entreprises
 
-
-Techno-utopisme / Techno-prophétisme / Techno-scepticisme
-----------------------------------------------------------
-
-Compétition de récits sur l'impact du numérique sur nos sociétés
-
-**techno-utopiques** - Cyberespace, émergence d'une société réellement démocratique basée sur la libre circulation des idées et de la connaissance, et sur une liberté individuelle radicale. 
-    
-**techno-prophétiques** - Progrès technologique provoqué de manière mécanique par la libre compétition culmine en la singularité technologique, et à une fusion de l'homme et de la machine, ou à un remplacement de l'homme par la machine. Transhumanisme.
-
-**techno-sceptiques** - Les technologies numériques corrompent la société, nous déqualifient, polluent, permettent l'implémentation de systèmes de controle des populations (scandales à répétition), détruisent la démocratie et appauvrissent la culture.
-
-Tout simultanément vrai :
-- prophétique : sous le régime du marché libre mondialisé, si une technologie est possible, une entreprise la développera
-- sceptique : ces technologies sont invariablement mises au profit d'une forme d'exploitation des populations
-- utopique : ces technologies sont porteuses d'abondance, et d'un réel potentiel émancipateur pour l'humanité
 
 
 Fonctions de ces récits
@@ -108,17 +158,42 @@ Déconsruire les récits sur la technologie : comment nous mettons en place une 
 
 le capitalisme & les technologies sont là pour rester pas de révolution possible, pas de grand sursaut citoyen : lutte culturelle lente / réappropiation des outils de la tech pour émancipation. La question n'est pas devons-nous empêcher ces technologies de se développer ou non, mais plutôt comment s'assurer que les gains associés à ces technologies soient redistribués de manière juste.
 
+
+Alternatives numériques
+-------------------------
+
 exemples du monde du numérique : mastodon
+distribution pair à pair
+financement participatif 
 
-    -> Dans le domaine de l'IA : vrai enjeu, mais encore énormément de défis (voir papier CEO de Signal) : mozilla.ia, etc ...
-    -> Création de communs, ressources que chacun.e peut utiliser librement (au lieu d'être nous-mêmes la ressource)
 
--> Droits d'auteur / Logiciel libre / Creative commons
-    -> Modèle memetique de la créativité
-    -> Savoir / connaissance / récits / techniques / sont des communs
-    -> Si je consomme une oeuvre sans la payer, je n'empêche pas les autres d'en profiter
-    -> il n'y a pas de classe moyenne chez les artistes
-    -> Création se fait de manière croissante en dehors des industries culturelles (GenIA, DAW, Patreon, etc ... ).
+Renforcer les communs
+----------------------
+
+-> Création de communs, ressources que chacun.e peut utiliser librement (au lieu d'être nous-mêmes la ressource)
+
+Arguments éthiques : 
+- Modèle memetique de la créativité
+- Savoir / connaissance / récits / techniques / sont des communs
+
+Arguments économiques : 
+- Si je consomme une oeuvre sans la payer, je n'empêche pas les autres d'en profiter
+- il n'y a pas de classe moyenne chez les artistes
+- Création se fait de manière croissante en dehors des industries culturelles (GenIA, DAW, Patreon, etc ... ).
+
+Exemples :
+- Droits d'auteur / Logiciel libre / Creative commons
+- domaine public : compliqué 
+
+
+Statut de l'IA
+-----------------
+
+Dans le domaine de l'IA : vrai enjeu, mais encore énormément de défis (voir papier CEO de Signal) : mozilla.ia, etc ...
+
+
+En tant qu'artiste
+------------------------
 
 -> cautionary tale
     -> quand vous partagez / stockez votre travail dans une archive privée : à qui cela profite-t-il ? 

@@ -1,0 +1,37 @@
+/* @theme sebpiq */
+
+@import 'uncover';
+
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('./assets/Silkscreen-Regular.ttf');
+}
+
+h1, h2, h3 {
+    font-family: 'Silkscreen';
+}
+
+h1 {
+    font-size: 120%
+}
+
+h2 {
+    font-size: 100%
+}
+
+h3 {
+    font-size: 105%
+}
+
+header {
+    font-size: 140%;
+    font-family: 'Silkscreen';
+}
+
+footer {
+    font-family: 'Silkscreen';
+}
+
+strong { 
+    font-family: 'Silkscreen';
+}
