@@ -137,6 +137,8 @@ Fonctions de ces récits
 - Le simple fait de parler "d'intelligence" pour qualifier ce qu'on appelle IA, nourrit ce récit en "autonomisant" ces outils. Empêche les gens de s'en saisir.
 - Cache le fait que derrière l'utilisation de ces outils il y a des gens qui font des choix
 
+Mort de Steve Jobs, quelque chose de plus profond, énormément de gens croient au pouvoir des nouvelles technologies d'améliorer leur qualité de vie. 
+
 **techno-sceptique** - Big Content : il faut réguler pour empêcher la technologie de piller et de détruire tout ce qui fait de nous des êtres humains : empêcher le libre partage, censurer, bloquer, surveiller. 
 - en utilisant le terme de piratage / vol, masque le fait que abondance
 -> Réalité économique, technologique et culturelle a changé par rapport à l'époque de la culure analogue :
@@ -188,6 +190,8 @@ Exemples :
 
 Statut de l'IA
 -----------------
+
+Victime de son image et du terme "intelligence". Pourtant, et sans même parler des IAs, superintelligence != intentionalité. Forme de discours techno-prophétique.
 
 Dans le domaine de l'IA : vrai enjeu, mais encore énormément de défis (voir papier CEO de Signal) : mozilla.ia, etc ...
 

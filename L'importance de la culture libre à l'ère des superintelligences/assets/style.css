@@ -35,3 +35,14 @@ footer {
 strong { 
     font-family: 'Silkscreen';
 }
+
+blockquote p {
+    text-align: left;
+}
+
+blockquote strong {
+    display: block;
+    font-size: 70%;
+    text-align: right;
+    margin-top: 2em;
+}
