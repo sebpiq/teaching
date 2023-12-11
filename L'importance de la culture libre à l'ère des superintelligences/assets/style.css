@@ -7,6 +7,21 @@
     src: url('./assets/Silkscreen-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('./assets/Rajdhani-Regular.ttf');
+}
+
+* {
+    --sebpiq-color1: #f20089;
+    --sebpiq-color2: #bc00dd;
+    --sebpiq-color3: #6a00f4;
+}
+
+section {
+    font-family: 'Rajdhani';
+}
+
 h1, h2, h3 {
     font-family: 'Silkscreen';
 }

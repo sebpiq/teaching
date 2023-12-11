@@ -1,7 +1,6 @@
 ---
 class: invert
 theme: sebpiq
-paginate: true
 html: true
 ---
 
@@ -13,20 +12,61 @@ html: true
 
 <h1>L'importance <br/> de la culture libre <br/> à l'ère des superintelligences</h1>
 
----
-
-- contour des enjeux politiques
-- ouvrir des perspectives positives
-
-<!--
-- dresser un contour des enjeux politiques autour des superintelligences émergentes : collecte / archives de données, copyright, "enclosure" de la culture et de la connaissance.
-
-- adresser la technophobie contemporaine (et notamment du monde de la culture) liée (plus dernièrement) à l'émergence des intelligences artificielles génératives
-
-- ouvrir des perspectives positives sur ces enjeux, puisque ces technologies sont là pour rester
+<!-- 
+TODO : raccrocher au theme des archives
 -->
 
 ---
+
+<style scoped>
+    h1 {
+        font-size: 175%;
+    }
+    p {
+        text-align: left;
+        font-size: 90%;
+    }
+</style>
+
+1. **IA Géneratives & superintelligences**
+
+1. **Contour des enjeux politiques de ces technologies**
+
+1. **Inverser les mécanismes de contrôle grâce à des outils libres**
+
+<!--
+- définir les IA génératives, superintelligences et pourquoi on en parle autant en ce moment. 
+
+- dresser un contour des enjeux politiques de ces technologies : collecte et archives de données, copyright et privatisation de la culture et de la connaissance.
+
+- et enfin comment grâce au mouvement de la culture libre on peut envisager que ces technologies deviennent des outils au service du bien commun. 
+-->
+
+---
+
+<div class="image-container">
+    <div class="image-crop">
+        <img src="./assets/the-electrician.jpg" />
+    </div>
+    <div class="caption">
+    <em>The Electrician</em> - Boris Eladgsen vainqueur des Sony World Photography Award 2023
+    </div>
+</div>
+
+<div class="image-container">
+    <div class="image-crop">
+        <img src="./assets/theatre-d-opera-spatial.jpg" />
+    </div>
+    <div class="caption">
+    <em>Theatre d'Opera Spatial</em> - Jason Allen, vainqueur de la Colorado state fair 2022
+    </div>
+</div>
+
+<!-- 
+Depuis l'arrivée de Dall-e en 2021, Midjourney et chatgpt 2022 on parle beaucoup des intelligences arificielles génératives et plus généralement d'intelligences artificielles.
+
+Vous avez dû voir ces deux images qui ont fait le tour du monde car elle sont parmis les premières images générées par IA à avoir gagné des concours d'art d'envergure. 
+-->
 
 <style scoped>
     section {
@@ -34,64 +74,76 @@ html: true
         flex-direction: column;
         padding: 0 7em;
     }
-    p {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        height: 50vh;
-    }
     img {
         width: 100%;
         display: block;
+        filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%);
     }
-    p:first-child img {
+    .image-container {
+        position: relative;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .image-crop {
+        overflow: hidden;
+        height: 100%;
+    }
+    .caption {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(100%, -50%);
+        font-size: 50%;
+        width: 13vw;
+        text-align: left;
+        padding-left: 1em;
+    }
+    .image-container:first-child img {
         position: relative;
         bottom: 2.5em;
     }
-    p:last-child img {
+    .image-container:last-child img {
         position: relative;
         bottom: 0.2em;
     }
 </style>
 
-![](./assets/the-electrician.jpg)
-
-![](./assets/theatre-d-opera-spatial.jpg)
-
-<!-- 
-Theatre d'opera spatial, Jason Allen, vainqueur de la Colorado state fair, 2022.
-
-The electrician, Boris Eladgsen TODO
-
-Depuis l'arrivée de Dall-e en 2021, Midjourney en 2022, puis chatgpt 2022 on parle beaucoup d'intelligence arificielle. 
--->
-
 ---
 
 <!-- header: Intelligences artificielles génératives -->
 
-> l’art est mort, mec. C’est fini. L’IA a gagné. Les humains ont perdu **Jason Allen, New York Times, 2022**
+> L’art est mort, mec. C’est fini. L’IA a gagné. Les humains ont perdu **Jason Allen, New York Times, 2022**
 
-<!-- footer: IA génératives & superintelligences -->
+<!-- footer: ▣□□ IA génératives & superintelligences -->
 <!-- 
-Avec l'arrivée des IA générative un certain sentiment de panique. Comme si on s'apprêtait à changer de paradigme.
+Les intelligence artificielles génératives sont de nouveaux outils qui permettent de créer texte, images, son et même bientôt des vidéos avec une simple requête. Leur arrivée a aussi créé dans le débat public un certain sentiment de panique. Comme si on s'apprêtait à changer de paradigme.
+
+Jason Allen auteur de théatre d'opéra spatial annonçait par exemple en 2022 au NYT ...
 -->
 
 --- 
 
 <!-- header: Superintelligences -->
 
-> un intellect beaucoup plus compétent que les meilleurs cerveaux humains dans pratiquement tous les domaines **Nick Bostrom**
+> Un intellect beaucoup plus compétent que les meilleurs cerveaux humains dans pratiquement tous les domaines **Nick Bostrom**
 
 <!-- 
-Beaucoup ont cru voir, et annoncer (notamment les entreprises d'IA) que c'est une nouvelle étape vers la création de superintelligences, avec son lot de menaces existentielles pour l'humanité. Aujourd'hui bien sûr toutes les IA que nous connaissons sont des IA dites "étroites", c'est à dire expertes dans un domaine bien précis. Mais le nombre de domaines impactés a explosé (médecine, droit, programmation, ...)
+De nombreux auteurs et spécialistes annoncent que les IA génératives sont une nouvelle étape vers la création de superintelligences, c'est à dire [LIRE].
+
+Ces dernières amènerait leur lot de menaces existentielles pour l'humanité (chomage de masse, robot-apocalypse à la terminator). 
+
+Aujourd'hui bien sûr toutes les IA que nous connaissons sont des IA dites "étroites", c'est à dire expertes dans un domaine bien précis. Les superintelligences restent donc un fantasme.
+
+Cependant le nombre de domaines impactés par l'IA a explosé (culture, médecine, droit, programmation, ...)
 -->
 
 ---
 
-<!-- header: L'or noir du XXIè siècle -->
+<!-- header: applications d'IA -->
 
 ```
+
                               +-------------+                             
             Requête ____\____ |  PROGRAMME  | ____\____ Réponse
                         /     +------+------+     /                   
@@ -99,49 +151,53 @@ Beaucoup ont cru voir, et annoncer (notamment les entreprises d'IA) que c'est un
                                      |
                               +------+-----+                             
                               |   MODÈLE   |                             
-                              +------------+                             
+                              +------------+    
+
 ```
 
 <!-- 
-Systèmes d'IA comprènent toujours deux parties : 
-- le modèle (~carburant) : créé à partir de milliards d'exemples (exemple Midjourney ou ChatGPT). Requiert une immense quantité de données pour être entrainé.
-- le programme (~moteur) : traite les requêtes en interrogeant le modèle
+Les systèmes d'IA sont toujours constitués de deux élęments cruciaux : 
+- un modèle : créé à partir de milliards d'exemples (e.g. Midjourney ou ChatGPT). Requiert une immense quantité de données pour être entrainé.
+- un programme : code informatique, traite les requêtes en interrogeant le modèle
 
-Données importance stratégique énorme aujourd'hui puisque ces systèmes en requièrent des quantités extraordinaires.
+Données importance stratégique énorme aujourd'hui puisque les IAs en requièrent des quantités extraordinaires.
 -->
 
 ---
 
 <!-- header: Big Tech - Modèle économique -->
 
-Extraction de données, capitalisme de surveillance
+Bienvenue dans 
+"l'âge du capitalisme de surveillance"
 
-<!-- footer: contour des enjeux politiques > Big Tech -->
+<!-- footer: □▣□ contour des enjeux politiques > Big Tech -->
 <!-- 
-L'importance de la valeur des données pour l'IA est la prolongation d'un tournant qui a eu lieu autour du début des années 2000 où l'industrie du numérique (et notamment Google) a découvert que les données des utilisateurs pouvaient être utilisées pour faire énormément d'argent (notamment à travers la publicité ciblée).
+TODO: transition plus explicite
 
-Cette découverte a des ramifications très profondes sur tout le développement de l'économie du numériques jusqu'à aujourd'hui. L'autrice Shoshana Zuboff a nommé ce développement le capitalisme de surveillance. 
+L'importance de la valeur des données pour l'IA est la prolongation d'un tournant qui a eu lieu autour du début des années 2000 où l'industrie du numérique (et notamment Google) a découvert que les données des utilisateurs pouvaient être utilisées pour faire des profits énormes (notamment à travers la publicité ciblée).
+
+Cette découverte a des ramifications très profondes sur tout le développement de l'économie du numérique jusqu'à aujourd'hui. L'autrice Shoshana Zuboff a nommé ce développement "le capitalisme de surveillance".
+
+De manière assez naive j'ai cru jusqu'à récemment que le modèle économique de services gratuits (de grosses applis comme gmail, aux petites applis utilitaires pour mobiles) était la pub + éventuellement une version payante avec plus de functinalités.
+
+TODO: développer l'exemple de google docs + gmail
 -->
 
 ---
 
-<!-- header: Un phénomène généralisé -->
+<!-- header: Soif de données -->
 
 Instagram Facebook Linkedin Gmail Uber eats  YouTube Waze Ovia Deliveroo Radio France Duolingo ebay tiktok Reddit Google Chrome snapchat spotify Grindr tinder Twitter Nike Bumble SoundCloud IDF Mobilités Vinted Bet365 Uber booking.com HBO max robinhood Disney+ paypal coinbase amazon fitbit Whatsapp slack Sleepcycle Cast for chromecast Le monde speedy cleaner Picsart Fnac Canva Notepad Adobe Acrobat Deezer Google Play
 
 
 <!-- 
-De manière assez naive j'ai cru jusqu'à récemment que le modèle économique des services gratuits (google docs, gmail, petites applis) était freemium.
+En fait le modèle économique dominant de l'industrie du numérique est l'extraction de la donnée des utilisateurs, afin de la revendre ou de la monétiser directement.
 
-En fait modèle économique : offrir des services gratuits aux gens avec des termes d'utilisation incompréhensbiles et très permissifs ; puis vendre (ou monétiser directement) la donnée générée par l'utilisation. mise en place d'infrastructures d'extraction des données. Petite appli gratuite vend à un data broker qui va revendre en gros.
+D'après certains études, plus de 50% des applis mobiles collectent et partagent vos données, et ce dans toutes les catégories : sport tracker, suivi de règles, voyage, rencontre, jeux, ... Fait intéressant puisque c'est une appli très utilisée : Instagram est numéro 1 en terme de quantité de données extraites.
 
-Plus de 50% des applis collectent et partagent vos données. Données d'utilisation de l'appli, mais aussi en demandant des permissions d'accès qui n'ont rien à voir (e.g. location GPS, etc ... ).
+Les données extraites par ces applis comprennent les données générées par l'utilisation directe de l'appli, mais aussi les données générées par le téléphone et qui n'ont rien à voir avec l'appli (e.g. geolocalisation, fichiers, etc ... ). Si vous vous êtes déjà demandé pourquoi certaines applis demandent tant de permissions dont elles n'ont pas besoin, c'est la raison.
 
-Météo, presse, rencontre, jeux, voyages, prise de notes, ...
-
-Instagram numéro 1.
-
-Si vous avez Android je vous conseille d'installer l'application Exodus privacy. C'est instructif.
+Et bien sûr certaines de ces données sont ou seront utilisées pour entrainer des intelligences artificielles.
 
 sources : 
 https://www.pcloud.com/invasive-apps
@@ -152,51 +208,35 @@ https://surfshark.com/apps-that-track-you
 
 <style scoped>
 p {
-    font-family: 'Silkscreen';
-    font-size: 115%;
+    font-size: 1.35em;
     padding: 0;
-    list-style: none;
     text-align: justify;
+    line-height: 1.4em;
+    color: var(--color-header);
 }
 
 section {
-    padding: 0;
+    padding: 0.7em;
+    display: block;
+    position: relative;
 }
 
 header {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    right: auto;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--color-background) 10%, var(--color-background) 90%, rgba(0,0,0,0) 100%);; 
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: var(--color-foreground);
+    padding: 0 1.5em;
+}
+
+footer {
+    display: none;
 }
 </style>
-
----
-
-Incursion dans des espaces non-règlementés
-
-<!-- header: \\"Move fast and break things\\" -->
-<!-- 
-Ancienne devise interne de Facebook qui pourrait résumer la manière de fonctionner du secteur de la tech.
-
-L'industrie du numérique avance très vite, ce qui lui permet d'opérer dans des espaces non-règlementés et donc de mettre en place des pratiques qui ne seraient jamais acceptées par le public si elles étaient transparentes d'emblée.
-
-quand l'opération est découverte trop tard pour l'empêcher car elle fait partie de nos vies.
--->
-
----
-
-transhumanisme, libre compétition, inéluctabilité
-
-**Fonction anesthesique**
-
-<!-- header: Récits techno-prophétiques -->
-<!--
-La prédiction de l'arrivée de superintelligences, est une forme de discours techno-prophétique. C'est un type de discours qu'on entend à chaque nouveau scandale. 
-
-Le futur, le développement des nouvelles technologies du numérique est une fatalité. Si on régule trop on se crée un handicap économique par rapport à d'autres pays (Chine, États-Unis, ...). Ce que Mark Fisher a nommé le capitalisme réalisme.
-
-Fonction anesthesique. Empêcher la population de réagir, parce que l'industrie de numérique préfère la dérégulation. Faire passer ce qui est un choix stratégique d'industries comme un évènement inéluctable.
--->
 
 ---
 
@@ -204,98 +244,122 @@ Fonction anesthesique. Empêcher la population de réagir, parce que l'industrie
 
 Rente et capital financier sous forme de copyrights
 
-<!-- footer: contour des enjeux politiques > Big Content -->
+<!-- □▣□ footer: contour des enjeux politiques > Big Content -->
 <!-- 
-Face à Big Tech, un autre acteur de la donnée : Big Content, les industries culturelles.
+Face à Big Tech, un autre acteur de la donnée : Big Content, c'est à dire les industries culturelles.
 
-Possèdent des catalogues énormes de copyrights (~ contenu protégé) et les font fructifier.
+Je dis "acteur de la donnée" car les industries culturelles ne fonctionnent pas sur un modèle de création mais bien sur un modèle de rente.
 
-Ne pas se tromper : les industries culturelles ne fonctionnent pas sur un modèle de création mais bien sur un modèle de rente.
+Possèdent des catalogues énormes de copyrights (~ contenu protégé) et les font fructifier. En quelque sorte elles sont donc des gestionnaires d'actifs culturels.
 
-UMG la plus grande entreprise de musique au monde est en train d'acquérir les catalogues de musiciens comme Bob Dylan ou Sting.
+Exemple UMG (Universal Music) la plus grande entreprise de musique au monde, qui dépense immensemment plus d'argent pour acquérir les catalogues de musiciens comme Bob Dylan ou Sting, que pour produire de nouveaux artistes.
 -->
 
 ---
-
-Contrôler, censurer, punir
 
 <!-- header: \\"Le piratage c'est du vol\\" -->
 
+<div id="piratage_vol">
+    <img src="./assets/piratage_vol_1.jpg" />
+    <img src="./assets/piratage_vol_2.jpg" />
+    <img src="./assets/piratage_vol_3.jpg" />
+    <img src="./assets/piratage_vol_4.jpg" />
+</div>
+
 <!-- 
-Les industries culturelles sont connues pour leur immenses efforts de lobbying, afin de mettre en place des réglementations pour protéger les copyrights et étendre leur périmètre. 
+Les industries culturelles sont connues pour leur immenses efforts de lobbying et de propagande, afin de mettre en place des réglementations pour protéger les copyrights et étendre leur périmètre. 
 
-Autour des années 2000, quand les applications de partage de fichiers sont apparues "Le piratage c'est du vol" - se placent en protecteurs des artistes pour manipuler l'opinion publique, alors qu'elles tentent simplement de protéger leur rente. 
+Par exemple autour des années 2000, à la suite de l'apparition d'applications de partage de fichiers (comme napster), l'industrie du cinéma américaine a lancé la campagne "Le piratage c'est du vol", avec un spot publicitaire qu'on pouvait voir au début de chaque DVD et qui comparait l'action de copier un film à celle de voler une voiture ou un sac à main. 
 
-- Durée des copyrights : vie de l'auteur + 70(?) ans. Comment est-ce que ça pourrait encourager la création ? 
-- Automatisme du copyright
+Ça c'est pour le côté drôle de la propagande réalisée par ces industries. Mais moins drôle est le fait qu'elles attaquent en justice de manière très aggressive toute organisation qui marche sur leur plates-bandes. Par exemple elles attaquent en ce moment des bibliothèques publiques aux États-Unis pour empêcher le prêt de livres numériques, ou encore l'ONG archive.org pour l'empêcher d'archiver des disques 78 tours qui sont autrement voués à disparaitre. 
 
-Les industries culturelles ont eu un rôle majeur dans la transformation des technologies numériques.
-
-- Exemple des upload filters dans la loi européenne
-- Exemple de l'accès aux données d'entrainement des IAs
-- Mise en conformité avec les règles de copyrights extêmement complexe et couteux : avantages les grosses entreprises
+Aujourd'hui les industries culturelles sont engagées, de manière assez prévisible, dans un combat contre les entreprises d'IA qui utilisent du contenu sous copyright sans retribuer les détenteurs de ces copyrights.
 -->
+
+<style scoped>
+    #piratage_vol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #piratage_vol img {
+        width: 100%;
+        filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%) opacity(40%);
+    }
+    header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: auto;
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--color-background) 10%, var(--color-background) 90%, rgba(0,0,0,0) 100%);; 
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        color: var(--color-foreground);
+        padding: 0 1.5em;
+    }
+</style>
 
 ---
 
+<!-- header: Impact social du numérique -->
+
+**récits techno-prophétiques** 
+transhumanisme, libre compétition, inéluctabilité
+
+🗲
+
+**récits techno-sceptiques** 
 déqualification, abrutissement, corruption
 
-**fonction anxiogène**
 
-<!-- header: Récits techno-sceptiques -->
+<!-- □▣□ footer: contour des enjeux politiques > récits -->
 <!--
-Big Content : il faut réguler pour empêcher la technologie de piller et de détruire tout ce qui fait de nous des êtres humains : empêcher le libre partage, censurer, bloquer, surveiller. 
+Le numérique est donc un espace disputé par des acteurs industriels puissants qui exercent un lobbying et une propagande énorme pour protéger leurs intérêts  économiques respectifs.
 
-Fonction anxiogèneFaire accepter des atteintes aux libertés individuelles.
+En tant que public, et on peut le voir ajd avec les IA, on est au coeur d'une bataille de récits sur l'impact social du numérique.
+
+d'un côté l'industrie de la tech utilise des récits techno-prophetiques : c'est à dire que le progrès technologique est inéluctable, qu'on entre dans l'ère des superintelligences et du transhumanisme, qu'on a tout intérêt à prendre le train en marche si on ne veut pas être mis sur la touche par exemple par la Chine. l'industrie du numérique utilise ces récits pour tenter d'éviter la mise en place de réglementations, parce qu'elle préfère que ses pratiques échappent à tout controle.
+
+De l'autre côté Les industries culturelles utilisent des récits techno-sceptiques : les nouvelles technologies, en particulier les IA pillent la culture, vont affamer les artistes, etc ... parce que les industries culturelles veulent évidemment protéger leurs copyrights, elles ont tout intérêt à faire peur au public et aux artistes pour que des réglementations strictes soient mises en place.
 -->
 
 --- 
 
-<!-- header: Ça n'est pas l'outil, mais le contexte  -->
+<!-- header: l'outil convivial -->
 
-> Un marteau peut être utilisé [pour torturer quelqu’un] mais le [même] marteau peut être aussi utilisé pour construire une maison **Noam Chomsky Interview Antosofia, 2003**
+> L’outil juste répond à trois exigences : il est générateur d’efficience sans dégrader l’autonomie personnelle, il ne suscite ni esclaves ni maîtres, il élargit le rayon d’action personnel **La Convivialité - Ivan Illich, 1973**
 
-<!-- footer: Inverser les mécanismes de contrôle -->
+<!-- footer: □□▣ Inverser les mécanismes de contrôle -->
 <!-- 
-Le numérique est un espace disputé par des acteurs industriels puissants qui exercent un lobbying et une propagande énorme pour faire avancer leurs programmes économiques.
+Ces récits ont une part de vrai :
+- sous le régime du marché libre mondialisé, si une technologie est possible, une entreprise la développera : forme d'inévitabilité du progrès technologique.
+- ces technologies aujourd'hui sont invariablement mises au profit d'une forme d'exploitation
 
-L'IA et les enjeux autour de la donnée et des copyrights sont un nouvel exemple.
-
-Il faut savoir déconstruire ces discours en comprenant quelle est leur fonction.
-
-Simultanément vrai :
-- sceptique : ces technologies sont invariablement mises au profit d'une forme d'exploitation des populations
-- prophétique : sous le régime du marché libre mondialisé, si une technologie est possible, une entreprise la développera : forme d'inévitabilité du progrès technologique
-
-Comment avancer ? En se rendant compte que ces technologies sont aussi porteuses d'un réel potentiel émancipateur pour l'humanité, et tenter de libérer ce potentiel pour le plus grand nombre.
+Alors puisque le développement de ces nouveaux outils est inéluctable, je pense que plutôt que de les subir, il est important pour la population de se les approprier, et de les transformerr pour en faire des outils justes / connviviaux. C'est à dire selon le philosophe Ivan Illich [LIRE]
 -->
-
----
-
-<!-- header: L'outil convivial  -->
-
-> L’outil juste répond à trois exigences : il est générateur d’efficience sans dégrader l’autonomie personnelle, il ne suscite ni esclaves ni maîtres, il élargit le rayon d’action personnel **La Convivialité - Ivan Illitch, 1973**
 
 ---
 
 <!-- header: Prothèses mentales -->
 
 ```
-        +    -     +        +    -    +        +       -      +       
-         Hypermedia          Q&A Sites          IA Génératives        
-        +    -     +        +    -    +        +       -      +       
+
+       +    -     +           +  -  +            +       -      +       
+        Hypermedia             Wikis              IA Génératives        
+       +    -     +           +  -  +            +       -      +       
                                                                         
   ARCHIVE <-------------------------------------------------> GÉNÉRATIF 
 
-                +    -    +        +         -         +
-                 Wikipedia          Moteur de recherche                     
-                +    -    +        +         -         +
+            +         -          +     +        -      +
+             Moteurs de recherche       Réseaux sociaux 
+            +         -          +     +        -      +
+
 ```
 
 <!-- 
-Plutôt que comme des intelligences artificielles, on peut voir les IA génératives comme des formes de prothèses mentales, c'est à dire des technologies qui augmentent nos capacités intellectuelles, et qui sont des outils qui obéissent à la volonté des individus qui les utilisent, au lieu de les exploiter pour leurs données.
+En l'occurrence, si on revient aux IA génératives, il est faux de les concevoir comme des "intelligences" c'est à dire des entités autonomes, qui possèdent une forme d'intentionalité. 
 
-De cette manière, on peut inscrire les IA Générative dans une lignée d'outils 
+En réalité on peut les inscrire dans la lignée d'autres outils numériques, sortes de prothèses mentales qui augmentent nos capacités intellectuelles, et qui sont donc bien des outils à la fois générateurs d'efficience et augmentant l'autonomie personnelle.
 -->
 
 ---
@@ -304,42 +368,52 @@ De cette manière, on peut inscrire les IA Générative dans une lignée d'outil
 
 Exemple : `randomColor`
 
+<!-- 
+Je vais vous donner un exemple de la manière dont ces outils peuvent augmenter nos capacités. 
+
+Je suis un artiste, je ne sais pas programmer et je veux faire un simple écran qui affiche des couleurs aléatoires, par exemple pour une installation.
+
+- pré-hypermedia : je vais dans une bibliothèque physique pour trouver des livres de programmation ou des revues.
+- moteur de recherche : je peux trouver directement depuis un ordinateur des ressources qui enseignent la programmmation
+- réseaux sociaux : je peux trouver directement les morceaux de code qui me permettent de faire ce que je cherche à faire, mais je dois encore les assembler moi-même.
+- IA génératives : je peux directement generer le code entier et fonctionnel qui fait à peu près ce que je veux. Je n'ai plus qu'à ajuster.
+-->
+
 --- 
-
-<!-- header: Récits techno-utopiques -->
-
-démocratisation, décentralisation, liberté, horizontalité
-
----
 
 <!-- header: Renforcer les communs -->
 
 ![](./assets/mastodon.svg) ![](./assets/cc.svg) ![](./assets/zero.svg) ![](./assets/mozilla.svg)
 
+<!-- 
+Pour résumer l'enjeu aujourd'hui c'est donc de créer des outils numériques qui permettent d'améliorer autonomie et efficience personnelle sans générer ni esclave ni maitre.
+
+Nos prothèses mentales (réseaux sociaux, moteurs de recherche, IA génératives, ...), génèrent de l'efficience, de l'autonomie, mais elles génèrent aussi de l'aliénation, car elles sont controlées par des industries rentières et extractivistes.
+
+-> si j'utilise l'infrastructure d'une entreprise privée, je suis chez elle, elle peut surveiller tout ce que je fais et m'imposer ses conditions d'utilisation, son prix, etc ... alors je prisonnier
+-> si quelqu'un possède le copyright du code ou du modèle que j'utilise, ou des données utilisées pour l'entrainer, il peut me retirer mon droit d'utiliser l'outil comme je l'entends ... alors pareil, je suis prisonnier
+
+Pour libérer le potentiel de ces prothèse mentales, il faut donc du code et des archives de données qui soient des communs : c'est à dire des ressources qui n'appartiennent à personne et qui soient gérées collectivement.
+
+Ce sont des projets que différents acteurs de la culture libre sont déjà en train de réaliser.
+-->
+
 <style scoped>
     img {
-    height: 3em;
+        height: 3em;
+        filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%);
     }
 </style>
 
-<!-- 
-Enjeu aujourd'hui c'est d'avoir des outils numériques qui permettent d'améliorer l'efficience et l'autonomie personnelle sans générer ni esclave ni maitre, il faut donc des outils qui soient des communs.
-
-Dans le cas des IA et toutes les prothèses mentales, ça veut dire du code libre et des archives de données libres.
-
-Le mouvement du libre existe depuis des années, et aujourd'hui ses combats sont devenus cruciaux.
--->
-
---- 
-
-- Arguments éthiques
-- Arguments économiques
-
 ---
 
-- Où vous stockez / partagez votre travail
-- Sous quelle license vous le publiez
-- Utiliser les outils libres et les promouvoir
+**Utiliser des outils libres**
+assainir ses propres habitudes
+voir : *Exodus Privacy, Dégooglisons Internet, Mastodon*
+
+**Promouvoir le mouvement du libre**
+publier son travail sous license libre
+voir *Creative Commons*
 
 <!-- header: En tant qu'artistes -->
 <!-- 

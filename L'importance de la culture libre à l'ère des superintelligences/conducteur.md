@@ -111,6 +111,12 @@ Ne pas se tromper : les industries culturelles ne fonctionnent pas sur un modèl
 
 - exemples : UMG qui acquiert les copyrights d'artistes anciens parce que c'est ce qui fait le plus de thunes (TODO : chiffres). Disney qui acquiert Star Wars et Marvel.
 
+296By 2020, France’s Hadopi had been in existence in various forms for a decade. Working from Hadopi’s annual report for that year, Next INpact calculated that in total the agency had imposed €87,000 in fines.297 The cost of running Hadopi  was picked up entirely by French taxpayers and came to €82 million. In other words, a system that had failed to stop people downloading unauthorised copies of copyright material, cost nearly a thousand times more to run than it generated in fines
+
+Upload filters : 
+- pas de recours pour les utilisateurs
+- pas de respect du fair use
+
 
 "Le piratage c'est du vol"
 ----------------------------
