@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="297mm"
+   height="210mm"
+   id="svg806"
+   sodipodi:docname="ai_impacts_scenarios.svg"
+   inkscape:version="1.3.1 (9b9bdc1480, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs806">
+    <rect
+       x="532.47296"
+       y="753.14184"
+       width="180.27882"
+       height="47.058878"
+       id="rect13" />
+    <rect
+       x="166.1824"
+       y="59.56147"
+       width="22.802368"
+       height="38.426613"
+       id="rect807" />
+    <rect
+       x="165.70908"
+       y="46.564423"
+       width="899.14417"
+       height="52.150764"
+       id="rect806" />
+    <rect
+       x="532.47296"
+       y="753.14185"
+       width="180.27882"
+       height="47.05888"
+       id="rect13-5" />
+    <rect
+       x="532.47296"
+       y="753.14185"
+       width="200.51552"
+       height="47.406638"
+       id="rect13-2" />
+    <rect
+       x="532.47296"
+       y="753.14185"
+       width="180.27882"
+       height="47.05888"
+       id="rect13-5-7" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview806"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.71786972"
+     inkscape:cx="484.76763"
+     inkscape:cy="398.40098"
+     inkscape:window-width="1864"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g18"
+     inkscape:document-units="mm"
+     showguides="false">
+    <inkscape:grid
+       id="grid18"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="false" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="legende">
+    <g
+       id="g18"
+       transform="matrix(1.019694,0,0,1.019694,-27.954184,7.5088333)">
+      <path
+         d="m 609.02034,23.17954 c 82.65587,0 165.31173,0 250.47232,0 0,18.164748 0,36.329496 0,55.044689 -82.65587,0 -165.31173,0 -250.47232,0 0,-18.164747 0,-36.329495 0,-55.044689 z"
+         fill="#d70033"
+         id="path7"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 609.02034,86.087765 c 65.90622,0 131.81243,0 199.71582,0 0,18.164745 0,36.329495 0,55.044685 -65.90623,0 -131.81244,0 -199.71582,0 0,-18.16475 0,-36.3295 0,-55.044685 z"
+         fill="#d70033"
+         id="path8"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 764.60006,276.41004 c 65.54209,0 131.08419,0 198.61238,0 0,18.16475 0,36.3295 0,55.04469 -65.54206,0 -131.08416,0 -198.61238,0 0,-18.16475 0,-36.32949 0,-55.04469 z"
+         fill="#f3672a"
+         id="path9"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 824.18378,589.64053 c 61.53675,0 123.07346,0 186.47502,0 0,18.59725 0,37.19449 0,56.35528 -61.53681,0 -123.07352,0 -186.47502,0 0,-18.59724 0,-37.19448 0,-56.35528 z"
+         fill="#e3d710"
+         id="path10"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 781.1511,652.54876 c 61.53674,0 123.07346,0 186.47495,0 0,18.16474 0,36.32949 0,55.04469 -61.53674,0 -123.07345,0 -186.47495,0 0,-18.16475 0,-36.3295 0,-55.04469 z"
+         fill="#e3d710"
+         id="path11"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 720.46397,339.31826 c 61.53675,0 123.07349,0 186.47495,0 0,18.16474 0,36.3295 0,55.04469 -61.53671,0 -123.07345,0 -186.47495,0 0,-18.16476 0,-36.32949 0,-55.04469 z"
+         fill="#f3672a"
+         id="path12"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 828.5974,465.13469 c 60.80849,0 121.61696,0 184.2683,0 0,18.16475 0,36.3295 0,55.04469 -60.80866,0 -121.61712,0 -184.2683,0 0,-18.16474 0,-36.32949 0,-55.04469 z"
+         fill="#e3d710"
+         id="path13"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 816.45997,402.22648 c 60.08026,0 120.16047,0 182.06145,0 0,18.16474 0,36.32949 0,55.04468 -60.08037,0 -120.16058,0 -182.06145,0 0,-18.16475 0,-36.32948 0,-55.04468 z"
+         fill="#e3d710"
+         id="path14"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 772.32388,213.50182 c 60.08025,0 120.1605,0 182.06134,0 0,18.16475 0,36.32951 0,55.04469 -60.08022,0 -120.16048,0 -182.06134,0 0,-18.16475 0,-36.32948 0,-55.04469 z"
+         fill="#f3672a"
+         id="path15"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 609.02034,148.99598 c 60.08025,0 120.16051,0 182.06137,0 0,18.16474 0,36.3295 0,55.04469 -60.08025,0 -120.1605,0 -182.06137,0 0,-18.16476 0,-36.3295 0,-55.04469 z"
+         fill="#d70033"
+         id="path16"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 834.11441,528.04291 c 59.35201,0 118.70398,0 179.85469,0 0,18.16474 0,36.3295 0,55.04468 -59.35217,0 -118.70414,0 -179.85469,0 0,-18.16474 0,-36.32948 0,-55.04468 z"
+         fill="#e3d710"
+         id="path19"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 809.83956,86.087765 c 59.352,0 118.70398,0 179.85465,0 0,18.164745 0,36.329495 0,55.044685 -59.35212,0 -118.7041,0 -179.85465,0 0,-18.16475 0,-36.3295 0,-55.044685 z"
+         fill="#f3672a"
+         id="path20"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 792.18512,148.99598 c 56.07491,0 112.14977,0 169.92392,0 0,18.16474 0,36.3295 0,55.04469 -56.0749,0 -112.14978,0 -169.92392,0 0,-18.16476 0,-36.3295 0,-55.04469 z"
+         fill="#f3672a"
+         id="path21"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 860.59606,23.17954 c 54.61838,0 109.23679,0 165.51044,0 0,18.164748 0,36.329496 0,55.044689 -54.61854,0 -109.23696,0 -165.51044,0 0,-18.164747 0,-36.329495 0,-55.044689 z"
+         fill="#f3672a"
+         id="path22"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 608.84168,213.20109 c 53.52604,0 107.05209,0 162.20013,0 0,18.16474 0,36.32949 0,55.04468 -53.52604,0 -107.05209,0 -162.20013,0 0,-18.16474 0,-36.32949 0,-55.04468 z"
+         fill="#d70033"
+         id="path23"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 671.91428,589.64053 c 49.88481,0 99.76963,0 151.16611,0 0,18.59725 0,37.19449 0,56.35528 -49.88482,0 -99.76964,0 -151.16611,0 0,-18.59724 0,-37.19448 0,-56.35528 z"
+         fill="#f3672a"
+         id="path24"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 609.02034,276.41004 c 50.97718,0 101.95438,0 154.47632,0 0,18.16475 0,36.3295 0,55.04469 -50.97719,0 -101.95437,0 -154.47632,0 0,-18.16475 0,-36.32949 0,-55.04469 z"
+         fill="#d70033"
+         id="path25"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 679.63808,528.04291 c 50.61307,0 101.22614,0 153.37292,0 0,18.16474 0,36.3295 0,55.04468 -50.61306,0 -101.22612,0 -153.37292,0 0,-18.16474 0,-36.32948 0,-55.04468 z"
+         fill="#f3672a"
+         id="path26"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 908.04232,339.31826 c 49.5207,0 99.04148,0 150.06288,0 0,18.16474 0,36.3295 0,55.04469 -49.5208,0 -99.04155,0 -150.06288,0 0,-18.16476 0,-36.32949 0,-55.04469 z"
+         fill="#e3d710"
+         id="path27"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 682.9483,465.13469 c 47.70008,0 95.40016,0 144.54569,0 0,18.16475 0,36.3295 0,55.04469 -47.70008,0 -95.40016,0 -144.54569,0 0,-18.16474 0,-36.32949 0,-55.04469 z"
+         fill="#f3672a"
+         id="path28"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 968.72945,652.54876 c 41.51005,0 83.02015,0 125.78795,0 0,18.16474 0,36.32949 0,55.04469 -41.5099,0 -83.02,0 -125.78795,0 0,-18.16475 0,-36.3295 0,-55.04469 z"
+         fill="#3feb7c"
+         id="path29"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 660.88025,652.54876 c 39.32526,0 78.65052,0 119.16744,0 0,18.16474 0,36.32949 0,55.04469 -39.32525,0 -78.65051,0 -119.16744,0 0,-18.16475 0,-36.3295 0,-55.04469 z"
+         fill="#f3672a"
+         id="path30"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 698.39593,402.22648 c 38.59701,0 77.19402,0 116.96064,0 0,18.16474 0,36.32949 0,55.04468 -38.59701,0 -77.19402,0 -116.96064,0 0,-18.16475 0,-36.32948 0,-55.04468 z"
+         fill="#f3672a"
+         id="path31"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 609.02034,339.31826 c 36.41228,0 72.82455,0 110.34023,0 0,18.16474 0,36.3295 0,55.04469 -36.41227,0 -72.82454,0 -110.34023,0 0,-18.16476 0,-36.32949 0,-55.04469 z"
+         fill="#d70033"
+         id="path32"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 964.31584,276.41004 c 36.41236,0 72.82466,0 110.34036,0 0,18.16475 0,36.3295 0,55.04469 -36.4123,0 -72.8246,0 -110.34036,0 0,-18.16475 0,-36.32949 0,-55.04469 z"
+         fill="#e3d710"
+         id="path33"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 955.48862,213.50182 c 36.41239,0 72.82468,0 110.34038,0 0,18.16475 0,36.32951 0,55.04469 -36.4123,0 -72.82459,0 -110.34038,0 0,-18.16475 0,-36.32948 0,-55.04469 z"
+         fill="#e3d710"
+         id="path34"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 963.21244,148.99598 c 31.67878,0 63.35746,0 95.99616,0 0,18.16474 0,36.3295 0,55.04469 -31.6788,0 -63.35741,0 -95.99616,0 0,-18.16476 0,-36.3295 0,-55.04469 z"
+         fill="#e3d710"
+         id="path35"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 999.62482,402.22648 c 31.31458,0 62.62918,0 94.89258,0 0,18.16474 0,36.32949 0,55.04468 -31.3145,0 -62.6291,0 -94.89258,0 0,-18.16475 0,-36.32948 0,-55.04468 z"
+         fill="#3feb7c"
+         id="path36"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 609.02034,402.22648 c 29.12982,0 58.25964,0 88.27219,0 0,18.16474 0,36.32949 0,55.04468 -29.12983,0 -58.25964,0 -88.27219,0 0,-18.16475 0,-36.32948 0,-55.04468 z"
+         fill="#d70033"
+         id="path37"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 990.79761,86.087765 c 28.40159,0 56.80319,0 86.06539,0 0,18.164745 0,36.329495 0,55.044685 -28.4015,0 -56.8032,0 -86.06539,0 0,-18.16475 0,-36.3295 0,-55.044685 z"
+         fill="#e3d710"
+         id="path38"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 1011.7623,589.64053 c 27.3092,0 54.6184,0 82.7551,0 0,18.59725 0,37.19449 0,56.35528 -27.3091,0 -54.6184,0 -82.7551,0 0,-18.59724 0,-37.19448 0,-56.35528 z"
+         fill="#3feb7c"
+         id="path39"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 1013.9691,465.13469 c 26.5809,0 53.1619,0 80.5483,0 0,18.16475 0,36.3295 0,55.04469 -26.5809,0 -53.1619,0 -80.5483,0 0,-18.16474 0,-36.32949 0,-55.04469 z"
+         fill="#3feb7c"
+         id="path40"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 1015.0725,528.04291 c 26.2168,0 52.4336,0 79.4449,0 0,18.16474 0,36.3295 0,55.04468 -26.2168,0 -52.4336,0 -79.4449,0 0,-18.16474 0,-36.32948 0,-55.04468 z"
+         fill="#3feb7c"
+         id="path41"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 609.02034,465.13469 c 24.0321,0 48.06421,0 72.82455,0 0,18.16475 0,36.3295 0,55.04469 -24.0321,0 -48.0642,0 -72.82455,0 0,-18.16474 0,-36.32949 0,-55.04469 z"
+         fill="#d70033"
+         id="path43"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 609.02034,528.04291 c 22.93974,0 45.87947,0 69.51435,0 0,18.16474 0,36.3295 0,55.04468 -22.93974,0 -45.87947,0 -69.51435,0 0,-18.16474 0,-36.32948 0,-55.04468 z"
+         fill="#d70033"
+         id="path44"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 609.02034,589.64053 c 20.39088,0 40.78175,0 61.79053,0 0,18.59725 0,37.19449 0,56.35528 -20.39087,0 -40.78175,0 -61.79053,0 0,-18.59724 0,-37.19448 0,-56.35528 z"
+         fill="#d70033"
+         id="path45"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 1027.2099,23.17954 c 19.6626,0 39.3252,0 59.5838,0 0,18.164748 0,36.329496 0,55.044689 -19.6627,0 -39.3253,0 -59.5838,0 0,-18.164747 0,-36.329495 0,-55.044689 z"
+         fill="#e3d710"
+         id="path46"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 609.02034,652.54876 c 16.74965,0 33.4993,0 50.7565,0 0,18.16474 0,36.32949 0,55.04469 -16.74964,0 -33.49928,0 -50.7565,0 0,-18.16475 0,-36.3295 0,-55.04469 z"
+         fill="#d70033"
+         id="path47"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 1059.2086,339.31826 c 11.6519,0 23.3038,0 35.3088,0 0,18.16474 0,36.3295 0,55.04469 -11.6519,0 -23.3038,0 -35.3088,0 0,-18.16476 0,-36.32949 0,-55.04469 z"
+         fill="#3feb7c"
+         id="path57"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 1060.312,148.99598 c 11.2878,0 22.5756,0 34.2054,0 0,18.16474 0,36.3295 0,55.04469 -11.2877,0 -22.5755,0 -34.2054,0 0,-18.16476 0,-36.3295 0,-55.04469 z"
+         fill="#3feb7c"
+         id="path62"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 1066.9324,213.50182 c 9.1031,0 18.2061,0 27.585,0 0,18.16475 0,36.32951 0,55.04469 -9.103,0 -18.2061,0 -27.585,0 0,-18.16475 0,-36.32948 0,-55.04469 z"
+         fill="#3feb7c"
+         id="path63"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 1075.7596,276.41004 c 6.1901,0 12.3802,0 18.7578,0 0,18.16475 0,36.3295 0,55.04469 -6.1901,0 -12.3802,0 -18.7578,0 0,-18.16475 0,-36.32949 0,-55.04469 z"
+         fill="#3feb7c"
+         id="path64"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 1077.9664,86.087765 c 5.4619,0 10.9237,0 16.551,0 0,18.164745 0,36.329495 0,55.044685 -5.4618,0 -10.9237,0 -16.551,0 0,-18.16475 0,-36.3295 0,-55.044685 z"
+         fill="#3feb7c"
+         id="path65"
+         style="stroke:none;stroke-width:1.20254" />
+      <path
+         d="m 1087.897,23.17954 c 2.1848,0 4.3695,0 6.6204,0 0,18.164748 0,36.329496 0,55.044689 -2.1847,0 -4.3694,0 -6.6204,0 0,-18.164747 0,-36.329495 0,-55.044689 z"
+         fill="#3feb7c"
+         id="path67"
+         style="stroke:none;stroke-width:1.20254" />
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;white-space:pre;shape-inside:url(#rect806);shape-padding:1.63277;display:inline;fill:#ffffff;stroke-width:3.26929"
+         id="text1"
+         transform="translate(-466.11987,-23.243594)"
+         xml:space="preserve"><tspan
+           x="682.48161"
+           y="65.274068"
+           id="tspan1">L'IA facilite la diffusion de fausses informations
+</tspan><tspan
+           x="847.70118"
+           y="90.274068"
+           id="tspan2">par exemple les deepfakes</tspan></text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;white-space:pre;shape-inside:url(#rect806);shape-padding:1.63277;display:inline;fill:#ffffff;stroke-width:3.26929"
+         id="text2"
+         transform="translate(-466.97209,40.632834)"
+         xml:space="preserve"><tspan
+           x="822.5212"
+           y="65.274068"
+           id="tspan3">Les systèmes d'IA manipulent
+</tspan><tspan
+           x="642.04166"
+           y="90.274068"
+           id="tspan4">les tendances de l'opinion publique à grande échelle</tspan></text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;white-space:pre;shape-inside:url(#rect806);shape-padding:1.63277;display:inline;fill:#ffffff;stroke-width:3.26929"
+         id="text3"
+         transform="translate(-467.20607,106.04346)"
+         xml:space="preserve"><tspan
+           x="780.66142"
+           y="65.274068"
+           id="tspan5">Les dirigeants autoritaires utilisent
+</tspan><tspan
+           x="794.82135"
+           y="90.274068"
+           id="tspan6">l'IA pour contrôler leur population</tspan></text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;white-space:pre;shape-inside:url(#rect806);shape-padding:1.63277;display:inline;fill:#ffffff;stroke-width:3.26929"
+         id="text5"
+         transform="translate(-465.78948,166.63371)"
+         xml:space="preserve"><tspan
+           x="609.06181"
+           y="65.274068"
+           id="tspan7">Les systèmes d'IA aggravent les inégalités économiques
+</tspan><tspan
+           x="550.50182"
+           y="90.274068"
+           id="tspan8">en bénéficiant de manière disproportionnée à certains individus</tspan></text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;white-space:pre;shape-inside:url(#rect806);shape-padding:1.63277;display:inline;fill:#ffffff;stroke-width:3.26929"
+         id="text6"
+         transform="translate(-465.69511,231.17149)"
+         xml:space="preserve"><tspan
+           x="761.90139"
+           y="65.274068"
+           id="tspan9">L'IA permet à des groupes dangereux
+</tspan><tspan
+           x="744.76142"
+           y="90.274068"
+           id="tspan10">de créer des outils puissants (e.g. virus)</tspan></text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;white-space:pre;shape-inside:url(#rect806);shape-padding:1.63277;display:inline;fill:#ffffff;stroke-width:3.26929"
+         id="text7"
+         transform="translate(-465.3173,293.33019)"
+         xml:space="preserve"><tspan
+           x="717.10151"
+           y="65.274068"
+           id="tspan11">Les biais dans les systèmes d'IA aggravent
+</tspan><tspan
+           x="656.84165"
+           y="90.274068"
+           id="tspan12">les situations injustes (e.g. disciminations raciales)</tspan></text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;word-spacing:0px;white-space:pre;shape-inside:url(#rect806);shape-padding:1.63277;display:inline;fill:#ffffff;stroke-width:3.26929"
+         id="text8"
+         transform="translate(-465.17834,355.18376)"
+         xml:space="preserve"><tspan
+           x="642.40161"
+           y="65.274068"
+           id="tspan13">Un système d'IA puissant provoque une catastrophe
+</tspan><tspan
+           x="595.76183"
+           y="90.274068"
+           id="tspan14">(par exemple, il développe et utilise des armes puissantes</tspan></text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;white-space:pre;shape-inside:url(#rect806);shape-padding:1.63277;display:inline;fill:#ffffff;stroke-width:3.26929"
+         id="text9"
+         transform="translate(-466.73483,418.2655)"
+         xml:space="preserve"><tspan
+           x="640.44162"
+           y="65.274068"
+           id="tspan15">Les gens interagissent moins avec d'autres humains
+</tspan><tspan
+           x="675.42163"
+           y="90.274068"
+           id="tspan16">parce qu'ils interagissent avec les systèmes d'IA</tspan></text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;white-space:pre;shape-inside:url(#rect806);shape-padding:1.63277;display:inline;fill:#ffffff;stroke-width:3.26929"
+         id="text10"
+         transform="translate(-467.45323,481.32062)"
+         xml:space="preserve"><tspan
+           x="744.52159"
+           y="65.274068"
+           id="tspan17">L'automatisation quasi totale du travail
+</tspan><tspan
+           x="736.06143"
+           y="90.274068"
+           id="tspan18">laisse les gens sans pouvoir économique</tspan></text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;white-space:pre;shape-inside:url(#rect806);shape-padding:1.63277;display:inline;fill:#ffffff;stroke-width:3.26929"
+         id="text11"
+         transform="translate(-467.48608,545.31315)"
+         xml:space="preserve"><tspan
+           x="745.88145"
+           y="65.274068"
+           id="tspan19">Les systèmes d'IA aux objectifs erronés
+</tspan><tspan
+           x="566.32178"
+           y="90.274068"
+           id="tspan20">deviennent très puissants et réduisent la liberté des humains</tspan></text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;white-space:pre;shape-inside:url(#rect806);shape-padding:1.63277;display:inline;fill:#ffffff;stroke-width:3.26929"
+         id="text12"
+         transform="translate(-467.69452,606.86823)"
+         xml:space="preserve"><tspan
+           x="711.94171"
+           y="65.274068"
+           id="tspan21">L'automatisation quasi totale du travail fait
+</tspan><tspan
+           x="642.84175"
+           y="90.274068"
+           id="tspan22">que les gens ont du mal à trouver un sens à leur vie</tspan></text>
+    </g>
+    <g
+       id="g13"
+       transform="matrix(1.2461646,0,0,1.2461646,106.48275,679.22696)">
+      <g
+         id="g14"
+         transform="translate(585.72694,22.400091)">
+        <path
+           d="m 26.288952,32.43574 c 4.95,0 9.9,0 15,0 0,4.95 0,9.9 0,15 -4.95,0 -9.9,0 -15,0 0,-4.95 0,-9.9 0,-15 z"
+           fill="#3ecd71"
+           id="path71" />
+        <text
+           xml:space="preserve"
+           id="text13"
+           style="font-size:17.3333px;font-family:Rajdhani;-inkscape-font-specification:Rajdhani;text-align:end;word-spacing:0px;white-space:pre;shape-inside:url(#rect13);display:inline;fill:#3ecd71;fill-opacity:1;stroke-width:3.26929"
+           transform="translate(-488.05767,-721.74569)"
+           x="-156.13803"
+           y="0"><tspan
+             x="532.47266"
+             y="767.94244"
+             id="tspan24"><tspan
+               style="text-align:start"
+               id="tspan23">Pas une préoccupation</tspan></tspan></text>
+      </g>
+      <g
+         id="g16"
+         transform="translate(156.96453,-17.882214)">
+        <path
+           d="m 26.288952,72.435744 c 4.95,0 9.9,0 15,0 0,4.95 0,9.9 0,15 -4.95,0 -9.9,0 -15,0 0,-4.95 0,-9.9 0,-15 z"
+           fill="#d6602d"
+           id="path69" />
+        <text
+           xml:space="preserve"
+           id="text13-2"
+           style="font-size:17.3333px;font-family:Rajdhani;-inkscape-font-specification:Rajdhani;text-align:end;word-spacing:0px;white-space:pre;shape-inside:url(#rect13-2);display:inline;fill:#d6602d;fill-opacity:1;stroke-width:3.26929"
+           transform="translate(-489.87576,-682.42724)"
+           x="-156.13803"
+           y="0"><tspan
+             x="532.47266"
+             y="767.94244"
+             id="tspan26"><tspan
+               style="text-align:start"
+               id="tspan25">Préoccupation importante</tspan></tspan></text>
+      </g>
+      <g
+         id="g15"
+         transform="translate(385.5659,2.5111209)">
+        <path
+           d="m 26.288952,52.43574 c 4.95,0 9.9,0 15,0 0,4.95 0,9.9 0,15 -4.95,0 -9.9,0 -15,0 0,-4.95 0,-9.9 0,-15 z"
+           fill="#c7bd16"
+           id="path70" />
+        <text
+           xml:space="preserve"
+           id="text13-9"
+           style="font-size:17.3333px;font-family:Rajdhani;-inkscape-font-specification:Rajdhani;text-align:end;word-spacing:0px;white-space:pre;shape-inside:url(#rect13-5);display:inline;fill:#c7bd16;fill-opacity:1;stroke-width:3.26929"
+           transform="translate(-488.68935,-702.46949)"
+           x="-156.13803"
+           y="0"><tspan
+             x="532.47266"
+             y="767.94244"
+             id="tspan28"><tspan
+               style="text-align:start"
+               id="tspan27">Légère préoccupation</tspan></tspan></text>
+      </g>
+      <g
+         id="g17"
+         transform="translate(-54.14125,-37.790181)">
+        <path
+           d="m 27.893876,92.435744 c 4.95,0 9.9,0 15,0 0,4.95 0,9.899996 0,14.999996 -4.95,0 -9.9,0 -15,0 0,-4.95 0,-9.899996 0,-14.999996 z"
+           fill="#c00a35"
+           id="path68" />
+        <text
+           xml:space="preserve"
+           id="text13-9-3"
+           style="font-size:17.3333px;font-family:Rajdhani;-inkscape-font-specification:Rajdhani;text-align:end;word-spacing:0px;white-space:pre;shape-inside:url(#rect13-5-7);display:inline;fill:#c00a35;fill-opacity:1;stroke-width:3.26929"
+           transform="translate(-485.91249,-662.19033)"
+           x="-156.13803"
+           y="0"><tspan
+             x="532.47266"
+             y="767.94244"
+             id="tspan30"><tspan
+               style="text-align:start"
+               id="tspan29">Préoccupation extrême</tspan></tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

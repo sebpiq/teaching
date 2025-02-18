@@ -1,0 +1,660 @@
+---
+class: invert
+theme: sebpiq
+html: true
+---
+
+<style scoped>
+    h1 {
+        font-size: 175%;
+    }
+
+    p {
+        text-align: center;
+    }
+</style>
+
+<h1>Intelligence Artificielle</h1>
+
+Perspectives technologiques et politiques
+
+---
+
+1. **SOMMAIRE TODO**
+
+---
+
+<!-- header: Qui suis-je ? -->
+
+-   Programmation d'applications web
+-   Arts numériques, nouveaux médias
+-   Expert IA pour le ministère de la transition écologique
+
+---
+
+<!-- header: . -->
+
+# I. Introduction
+
+<!-- footer: I. Introduction -->
+
+---
+
+<!-- header: L'IA est partout -->
+
+Mot-clé [**Gaza**](https://www.lemonde.fr/recherche/?search_keywords=%22Gaza%22&start_at=19%2F12%2F1944&end_at=07%2F02%2F2025&search_sort=dateCreated_desc) dans Le Monde
+
+Mot-clé [**Intelligence Artificielle**](https://www.lemonde.fr/recherche/?search_keywords=Intelligence%20Artificielle&start_at=19/12/1944&end_at=07/02/2025&search_sort=dateCreated_desc) dans Le Monde
+
+---
+
+<div class="single-image">
+    <img 
+        style="filter: grayscale(0.1) invert(1) brightness(1.2) hue-rotate(180deg);"
+        src="./assets/stocks_ai.png" 
+    />
+</div>
+
+---
+
+<!-- header: . -->
+
+# II. Histoire de l'IA
+
+<!-- footer: II. Histoire de l'IA -->
+
+---
+
+<!-- header: Frise de l'IA -->
+
+<div class="single-image">
+    <img src="./assets/chronologie-ia.jpg" />
+</div>
+
+<!--
+
+Différentes technologies sans grand lien de parenté,
+
+Sans mentionner la préhistoire de l'IA que certains font remonter jusqu'à l'antiquité.
+-->
+
+---
+
+<!-- header: Années 1950 : les débuts de l'IA -->
+
+<div class="single-image">
+    <img src="./assets/dartmouth.png" />
+</div>
+
+---
+
+<div class="image-container">
+    <div class="image-crop">
+        <img src="./assets/computers50s_1953.ibm701.jpg" />
+    </div>
+</div>
+
+<div class="image-container">
+    <div class="image-crop">
+        <img src="./assets/computers50s_1955.deuce.jpg" />
+    </div>
+</div>
+
+<div class="image-container">
+    <div class="image-crop">
+        <img src="./assets/computers50s_IBM_NORC.jpg" />
+    </div>
+</div>
+
+<style scoped>
+    section {
+        display: flex;
+        flex-direction: row;
+        padding: 0 0;
+    }
+    img {
+        height: 100%;
+        display: block;
+    }
+    .image-container {
+        position: relative;
+        width: 40%;
+        margin: 0;
+        padding: 0;
+    }
+    .image-crop {
+        overflow: hidden;
+        height: 100%;
+    }
+    .image-container:nth-child(2) img {
+        position: relative;
+        right: 80%;
+    }
+    .image-container:nth-child(4) img {
+        position: relative;
+        right: 50%;
+    }
+</style>
+
+---
+
+<!-- header: Années 1990 : système experts -->
+
+<div class="single-image">
+    <img src="./assets/kasparov_deepblue.jpg" />
+</div>
+
+<!--
+DART, operation Desert Shield phase logistique qui amorce la première guerre du Golf. D’après Victor Reis, alors directeur de la DARPA5, les économies réalisées grâce à DART permettent de rembourser trente années d’investissement dans la recherche en IA en quelques mois seulement
+-->
+
+---
+
+<!-- header: Années 2010 : Machine learning & deep learning -->
+
+<img src="./assets/carto_ia_deep_learning.svg" />
+
+<!--
+Adresser problèmes qui sont difficiles à décrire en terme de règles. Qu'est ce qu'une chaise ?
+
+L'histoire de l'apprentissage automatique remonte à des décennies d'efforts pour étudier les processus cognitifs humains.
+-->
+
+---
+
+Réseaux neuronaux
+
+<div class="single-image">
+    <img 
+        style="filter: invert(1);"
+        src="./assets/neural_network.svg" 
+    />
+</div>
+
+<!--
+
+-->
+
+---
+
+<!-- header: Années 2020 : Intelligences artificielles génératives -->
+
+<img src="./assets/midjourney.jpg" />
+
+<style scoped>
+    section {
+        display: flex;
+        flex-direction: row;
+        padding: 0 0;
+    }
+    img {
+        height: 100%;
+        display: block;
+    }
+</style>
+
+<!--
+LLMs, basés sur deep learning, i.e. réseaux neuronaux avec de très nombreux neurones.
+
+LLMs are like really complicated autocomplete
+-->
+
+---
+
+-   Combien ont utilisé <a href='https://chat.openai.com/'>chatgpt</a> ?
+-   Combien ont utilisé <a href='https://discord.com/channels/@me/1105877181252509778'>midjourney</a> ?
+
+---
+
+<!-- header: Pourquoi ce boom maintenant ? -->
+
+-   Arrivée à maturité des technologies
+-   Entrée dans la conscience du grand public
+
+<!--
+Neural networks inventés en 1943
+
+Innovations d'architecture et augmentation de la puissance de calcul ont permis d'augmenter drastiquement la taille de ces réseaux.
+
+https://theconversation.com/what-is-a-neural-network-a-computer-scientist-explains-151897
+
+Apprentissage profond : En 2012, Ng et Dean ont créé un réseau qui a appris à reconnaître des concepts de haut niveau, comme les chats, uniquement en regardant des images non étiquetées.[92] Le pré-entraînement non supervisé et l'augmentation de la puissance de calcul des GPU et de l'informatique distribuée ont permis l'utilisation de réseaux plus grands, en particulier dans les problèmes de reconnaissance d'images et visuelle, ce qui a été appelé « apprentissage profond ».
+
+Mise à disposition d'un large public sous forme d'application gratuite (dall-e, chatgpt).
+-->
+
+---
+
+<!-- header: . -->
+
+# III. Comment fonctionne l'apprentissage automatique ?
+
+<!-- footer: III. Comment fonctionne l'apprentissage automatique -->
+
+---
+
+<!-- header: Comment ça marche ? -->
+
+<img src="./assets/neural_network.png" />
+
+---
+
+Données d'entrainement.
+
+<img src="./assets/training_data.svg" />
+
+<!--
+regression housing price
+
+droite y = wx + b
+
+
+Réseau de neurones, même problème
+
+- w et b pour chaque neurone
+- un neurone pour chaque pixel
+
+
+
+Explication neural net
+
+Transformer architecture
+
+Machine probabiliste
+
+Moyenne des constructions mentales de tous les humains connectés à Internet.
+
+Index infini
+-->
+
+---
+
+<img src="./assets/neural_network_trained.svg" />
+
+---
+
+<img src="./assets/neural_network_dog.png" />
+
+<!--
+Réseau de neurones
++ Donnée d'entraînement
++ algorithme d'entraînement
+
+= Weights + biases
+
+Imaginez un système d équations géant avec chaque neurone contenant une fonction à plusieurs inconnues.
+
+Algorithme d'entraînement permet d'approcher une solution pour ces inconnues qui fait que le réseau de neurones donne la bonne solution pour toutes les données d'entraînement
+
+Weights and biases.
+
+Nombre de weights pour des modèles type chatgpt
+-->
+
+---
+
+<!-- header: . -->
+
+# IV. L'IA aujourd'hui
+
+<!-- footer: IV. L'IA aujourd'hui -->
+
+---
+
+<!-- header: Applications -->
+
+<div class="image-container">
+    <div class="image-crop">
+        <img src="./assets/the-electrician.jpg" />
+    </div>
+    <div class="caption">
+    <em>The Electrician</em> - Boris Eladgsen vainqueur des Sony World Photography Award 2023
+    </div>
+</div>
+
+<div class="image-container">
+    <div class="image-crop">
+        <img src="./assets/theatre-d-opera-spatial.jpg" />
+    </div>
+    <div class="caption">
+    <em>Theatre d'Opera Spatial</em> - Jason Allen, vainqueur de la Colorado state fair 2022
+    </div>
+</div>
+
+<style scoped>
+    section {
+        display: flex;
+        flex-direction: column;
+        padding: 0 7em;
+    }
+    img {
+        width: 100%;
+        display: block;
+        filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%);
+    }
+    .image-container {
+        position: relative;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .image-crop {
+        overflow: hidden;
+        height: 100%;
+    }
+    .caption {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(100%, -50%);
+        font-size: 50%;
+        width: 13vw;
+        text-align: left;
+        padding-left: 1em;
+    }
+    .image-container:first-child img {
+        position: relative;
+        bottom: 2.5em;
+    }
+    .image-container:last-child img {
+        position: relative;
+        bottom: 0.2em;
+    }
+</style>
+
+---
+
+> L’art est mort, mec. C’est fini. L’IA a gagné. Les humains ont perdu **Jason Allen, New York Times, 2022**
+
+---
+
+<div class="single-image">
+    <img 
+        style="filter: grayscale(0.1);width: 100%;"
+        src="./assets/autonomous_cars.png" 
+    />
+</div>
+
+---
+
+<img 
+    style="filter: grayscale(0.1);width: 50%;"
+    src="./assets/mammographie.jpg" 
+/>
+
+<img 
+    style="filter: grayscale(0.1);width: 50%;"
+    src="./assets/skin_cancer_ai.png" 
+/>
+
+<!--
+Soin préventif (détection des cancers),
+
+https://www.nature.com/articles/s41746-023-00831-w
+The costs of detecting one additional (pre)malignant skin lesion with the app compared to the current standard of care were €2567. Based on these results, AI in mHealth appears to have a positive impact on detecting more cutaneous (pre)malignancies, but this should be balanced against the for now stronger increase in care consumption for benign skin tumors and nevi.
+-->
+
+---
+
+<div class="single-image">
+    <img 
+        style="filter: grayscale(0.1) invert(1) brightness(1.2) hue-rotate(110deg);width: 90%;"
+        src="./assets/hype_cycle_for_ai_2024.jpg" 
+    />
+</div>
+
+<!--
+IA Engineering : les grandes enteprises veulent faire de l'IA mais se rendent compte qu'elles n'ont pas l'infrastructure pour.
+AITrism : secure IA
+-->
+
+---
+
+<!-- header: Loi d'Amara -->
+
+> On a tendance à surestimer l'effet d'une technologie sur le court terme et à sous-estimer son effet sur le long terme. **Roy Amara**
+
+---
+
+<!-- header: Implications -->
+
+Quelles teintes, quels sujets pour une recherche web avec le terme :
+
+**Intelligence Artificielle**
+
+---
+
+<img src="./assets/ia_search_results.png" />
+
+---
+
+<!-- header: . -->
+
+# V. L'IA dans le futur
+
+<!-- footer: V. L'IA dans le futur -->
+
+---
+
+<!-- header: Futur lointain -->
+
+Superintelligence
+
+General intelligence
+
+Singularité
+
+Alien mind
+
+Fonctionalisme
+
+High-Level Machine Intelligence (HLMI)
+
+<img src="./assets/weak_vs_strong.jpg" />
+
+<!--
+SUperintelligence : agent hypothetique qui possederait une intelligence de loin supérieure à celle des humains les plus doués
+
+HLMI : when unaided machines can accomplish every task better and more cheaply than human workers. Think feasibility, not adoption
+-->
+
+---
+
+<!-- header: Implications -->
+
+IA problème d'image de marque, anthropomorphisation
+
+Sam Altman sur l'intelligence générale
+
+it’s a new phase in human history.
+
+Autres qui profitent de l'image de l'IA pour faire du buzz
+
+---
+
+<!-- header: Étude AI impacts -->
+
+Enquête de 2023 auprès de 2 778 chercheurs en IA.
+
+<div class="captions" style="font-size: 50%;">2023 Expert Survey on Progress in AI, AI Impacts.</div>
+
+<!--
+Enquête de 2023 auprès des experts sur les progrès en IA est une enquête menée auprès de 2 778 chercheurs en IA,
+
+auteurs ayant publié en 2022 lors d'une sélection de conférences de premier plan sur l'apprentissage automatique.
+
+50 % de chance d'une HLMI d'ici 2047
+50 % de chance d'une FAOL d'ici 2116
+-->
+
+---
+
+<!-- header: Impacts High-Level Machine Intelligence (HLMI) -->
+
+> 50 % de chance d'une HLMI d'ici 2047 **2023 Expert Survey on Progress in AI, AI Impacts**
+
+---
+
+<div class="single-image">
+    <img src="./assets/impacts_HLMI.png" />
+    <div class="captions" style="font-size: 50%;">source: 2023 Expert Survey on Progress in AI, AI Impacts.</div>
+</div>
+
+---
+
+<!-- header: Le problème de l'alignement -->
+
+>
+> 1. La fonction d'utilité peut ne pas être parfaitement alignée avec les valeurs de l'humanité, qui sont (au mieux) très difficiles à définir.
+> 2. Tout système intelligent suffisamment capable préférera assurer sa propre existence continue et acquérir des ressources physiques et informatiques – non pour lui-même, mais pour réussir dans la tâche qui lui est assignée.
+> 
+> Un système qui optimise une fonction de n variables, où l'objectif dépend d'un sous-ensemble de taille k<n, fixera souvent les variables non contraintes restantes à des valeurs extrêmes ; si l'une de ces variables non contraintes est en réalité quelque chose qui nous tient à cœur, la solution trouvée peut être hautement indésirable. C'est essentiellement l'ancienne histoire du génie dans la lampe, ou de l'apprenti sorcier, ou du roi Midas : vous obtenez exactement ce que vous demandez, pas ce que vous voulez. **Of Myths And Moonshine, Stuart Russell, 2014**
+
+<style scoped>
+    blockquote {
+        font-size: 65%;
+    }
+</style>
+
+<!--
+https://www.edge.org/conversation/the-myth-of-ai#26015
+
+
+Problème dans la vie professionnelle : exemple, quotas d'arrestations pour endiguer le crime
+
+
+CompStat—or COMPSTAT, short for Compare Stats—is a police management system created by the New York City Police Department in 1994
+
+A 2021 study found that CompStat led to an increase in minor arrests but no impact on serious crime and led police to engage in data manipulation.[11] In Floyd v. City of New York (2013), Judge Scheindlin ruled that CompStat led to pressure to conduct more stop-and-frisk searches without review of their constitutionality and "resulted in the disproportionate and discriminatory stopping of blacks and Hispanics"
+
+-->
+
+---
+
+> Première loi : Un robot ne peut porter atteinte à un être humain ni, restant passif, laisser cet être humain exposé au danger. **Cercle Vicieux, Isaac Asimov, 1942**
+
+<p style="font-size:80%;margin-top:2em">
+Dans Conflit Évitable, Isaac Asimov, 1950, les machines ont décidé que la seule manière de suivre la première loi était de prendre contrôle de l'humanité.
+</p>
+
+<!--
+Conflit évitable (titre original : The Evitable Conflict) est une nouvelle d'Isaac Asimov parue pour la première fois dans Astounding Science Fiction en 1950.
+(ou film I, Robot)
+-->
+
+---
+
+<!-- header: Explosion d'intelligence -->
+
+Probabilité que l'argument soit correct :
+
+9 % ont dit « Très probable (81-100 %) »
+20 % ont dit « Probable (61-80 %) »
+24 % ont dit « Chance égale (41-60 %) »
+24 % ont dit « Peu probable (21-40 %) »
+23 % ont dit « Très peu probable (0-20 %) »
+
+<!-- 
+
+---
+
+More is different : citation
+
+Fonctionalisme 
+-->
+
+---
+
+<!-- header: . -->
+
+# VI. Rupture ou continuité ?
+
+<!-- footer: VI. Rupture ou continuité ? -->
+
+---
+
+<!-- header: Implications -->
+
+<div style="font-size: 50%;">À quel point sont préoccupants les 11 scenarios suivants ?</div>
+<div class="single-image">
+    <img 
+        src="./assets/ai_impacts_scenarios.svg" 
+        style="filter: grayscale(0.7) hue-rotate(220deg); width: 80%;"
+    />
+</div>
+
+<style scoped>
+
+    header {
+        display: none;
+    }
+</style>
+
+---
+
+<!-- header: Manipulation de l'opinion publique -->
+
+<div class="single-image">
+    <img 
+        src="./assets/cambridge_analytica.jpg" 
+        style="filter: grayscale(0.8); width: 80%;"
+    />
+</div>
+
+---
+
+<!-- header: Inégalités sociales et économiques -->
+
+<div class="single-image">
+    <img 
+        style="filter: grayscale(0.1); width: 50%;"
+        src="./assets/face_depixelizer_obama.jpg"
+    />
+    <div class="captions" style="font-size: 50%;">Depixeliseur, transforme Barack Obama en homme blanc.</div>
+</div>
+
+<!-- https://www.theverge.com/21298762/face-depixelizer-ai-machine-learning-tool-pulse-stylegan-obama-bias -->
+
+---
+
+> L'augmentation de la force productive du travail [...] est la tendance nécessaire du capital [...]. La transformation des moyens de production en machines est la concrétisation de cette tendance. **The fragment on machines, Karl Marx, 1858**
+
+---
+
+<!-- header: Désastre environnemental -->
+
+Système d'IA généative nécessite **33 fois plus d'énergie** pour réaliser une tâche donnée qu'avec un logiciel classique.
+
+<div class="captions">Source: World Economic Forum, 2024</div>
+
+<!--
+source : https://www.weforum.org/stories/2024/07/generative-ai-energy-emissions/
+-->
+
+---
+
+<div class="single-image">
+    <img 
+        style="filter: grayscale(0.1) invert(1) brightness(1.2) hue-rotate(230deg);width: 80%;margin-top: 1em;"
+        src="./assets/ia_energy_consumption.png"
+    />
+    <div class="captions" style="font-size: 50%;">Source: World Economic Forum, 2024</div>
+</div>
+
+<!--
+source : https://www.weforum.org/stories/2024/07/generative-ai-energy-emissions/
+-->
+
+---
+
+> C'est une confusion des idées que de supposer que l'utilisation économe d'un carburant est équivalent à une consommation diminuée. **Paradoxe de Jevons (effet rebond), The Coal Question, William Stanley Jevons, 1865**
+
+---
+
+<!-- header: Déterminisme technologique -->
+
+> "ce qui peut être fait techniquement le sera nécessairement". C'est ainsi que le progrès applique de nouvelles techniques et crée de nouvelles industries sans chercher à savoir si elles sont ou non souhaitables. **Loi de Gabor, Dennis Gabor, Interview, 1971**
+
+---
+
+> Il est vrai qu'un marteau peut être utilisé par un tortionnaire, mais le marteau peut aussi être utilisé pour construire des maisons. **Noam Chomsky, interview, 2003**

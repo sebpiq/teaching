@@ -13,7 +13,7 @@ html: true
 <h1>L'importance <br/> de la culture libre <br/> à l'ère des superintelligences</h1>
 
 <!-- 
-TODO : raccrocher au theme des archives
+Dans le cadre du thème "cliquer l'archive", je vais vous parler de [TITRE], notamment à travers les enjeux qui lient ces nouvelles technologies à la question des archives de données et des copyrights.
 -->
 
 ---
@@ -143,7 +143,8 @@ Cependant le nombre de domaines impactés par l'IA a explosé (culture, médecin
 <!-- header: applications d'IA -->
 
 ```
-
+                    
+                                                                
                               +-------------+                             
             Requête ____\____ |  PROGRAMME  | ____\____ Réponse
                         /     +------+------+     /                   
@@ -152,6 +153,7 @@ Cependant le nombre de domaines impactés par l'IA a explosé (culture, médecin
                               +------+-----+                             
                               |   MODÈLE   |                             
                               +------------+    
+
 
 ```
 
@@ -167,20 +169,17 @@ Données importance stratégique énorme aujourd'hui puisque les IAs en requièr
 
 <!-- header: Big Tech - Modèle économique -->
 
-Bienvenue dans 
-"l'âge du capitalisme de surveillance"
+> L'âge du capitalisme de surveillance **Shoshana Zuboff**
 
 <!-- footer: □▣□ contour des enjeux politiques > Big Tech -->
 <!-- 
-TODO: transition plus explicite
-
 L'importance de la valeur des données pour l'IA est la prolongation d'un tournant qui a eu lieu autour du début des années 2000 où l'industrie du numérique (et notamment Google) a découvert que les données des utilisateurs pouvaient être utilisées pour faire des profits énormes (notamment à travers la publicité ciblée).
 
 Cette découverte a des ramifications très profondes sur tout le développement de l'économie du numérique jusqu'à aujourd'hui. L'autrice Shoshana Zuboff a nommé ce développement "le capitalisme de surveillance".
 
-De manière assez naive j'ai cru jusqu'à récemment que le modèle économique de services gratuits (de grosses applis comme gmail, aux petites applis utilitaires pour mobiles) était la pub + éventuellement une version payante avec plus de functinalités.
+De manière assez naive j'ai cru jusqu'à récemment que le modèle économique de services gratuits (de grosses applis comme gmail, aux petites applis utilitaires pour mobiles) était d'offrir une version premium, ou de faire payer les clients business en leur offrant plus de functionalités.
 
-TODO: développer l'exemple de google docs + gmail
+En fait si on prend l'exemple de google docs, gmail et tous les autres produits gratuits Google, il existent dans le seul but de fournir à Google les gigantesques archives de données dont elle a besoin pour mettre au point ses services publicitaires.
 -->
 
 ---
@@ -193,7 +192,9 @@ Instagram Facebook Linkedin Gmail Uber eats  YouTube Waze Ovia Deliveroo Radio F
 <!-- 
 En fait le modèle économique dominant de l'industrie du numérique est l'extraction de la donnée des utilisateurs, afin de la revendre ou de la monétiser directement.
 
-D'après certains études, plus de 50% des applis mobiles collectent et partagent vos données, et ce dans toutes les catégories : sport tracker, suivi de règles, voyage, rencontre, jeux, ... Fait intéressant puisque c'est une appli très utilisée : Instagram est numéro 1 en terme de quantité de données extraites.
+D'après certains études, plus de 50% des applis mobiles collectent et partagent vos données, et ce dans toutes les catégories : sport tracker, suivi de règles, voyage, rencontre, jeux, ... 
+
+Fait intéressant puisque c'est une appli très utilisée : Instagram est numéro 1 en terme de quantité de données extraites.
 
 Les données extraites par ces applis comprennent les données générées par l'utilisation directe de l'appli, mais aussi les données générées par le téléphone et qui n'ont rien à voir avec l'appli (e.g. geolocalisation, fichiers, etc ... ). Si vous vous êtes déjà demandé pourquoi certaines applis demandent tant de permissions dont elles n'ont pas besoin, c'est la raison.
 
@@ -348,7 +349,7 @@ Alors puisque le développement de ces nouveaux outils est inéluctable, je pens
         Hypermedia             Wikis              IA Génératives        
        +    -     +           +  -  +            +       -      +       
                                                                         
-  ARCHIVE <-------------------------------------------------> GÉNÉRATIF 
+  ARCHIVE <- - - - - - - - - - - - - - - - - - - - - - - - -> GÉNÉRATIF 
 
             +         -          +     +        -      +
              Moteurs de recherche       Réseaux sociaux 

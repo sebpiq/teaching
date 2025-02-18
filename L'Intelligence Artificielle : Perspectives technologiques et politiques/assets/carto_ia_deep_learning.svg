@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="291.79764mm"
+   height="245.68449mm"
+   viewBox="0 0 291.79764 245.68449"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="carto_IA_deepLearning.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="409.02436"
+     inkscape:cy="428.50136"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1680"
+     inkscape:window-height="986"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-176.89284,63.589272)">
+    <path
+       style="opacity:1;fill:#000042;fill-opacity:0.13807529;stroke:none;stroke-width:0.52916664;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4567"
+       sodipodi:type="arc"
+       sodipodi:cx="322.79166"
+       sodipodi:cy="59.252975"
+       sodipodi:rx="145.89882"
+       sodipodi:ry="122.84225"
+       sodipodi:start="5.5060775"
+       sodipodi:end="5.5060251"
+       sodipodi:open="true"
+       d="m 426.80943,-26.886512 a 145.89882,122.84225 0 0 1 -1.70919,173.718072 145.89882,122.84225 0 0 1 -206.32368,-1.4368 145.89882,122.84225 0 0 1 1.70378,-173.718114 145.89882,122.84225 0 0 1 206.32373,1.432253" />
+    <path
+       style="opacity:1;fill:#000042;fill-opacity:0.13807529;stroke:none;stroke-width:0.66063857;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4569"
+       sodipodi:type="arc"
+       sodipodi:cx="329.09247"
+       sodipodi:cy="72.984261"
+       sodipodi:rx="127.88076"
+       sodipodi:ry="100.03955"
+       sodipodi:start="5.5060775"
+       sodipodi:end="5.5060251"
+       sodipodi:open="true"
+       d="M 420.26436,2.8344886 A 127.88076,100.03955 0 0 1 418.76626,144.306 127.88076,100.03955 0 0 1 237.92292,143.1359 127.88076,100.03955 0 0 1 239.41629,1.6643618 127.88076,100.03955 0 0 1 420.25966,2.8307514" />
+    <path
+       style="opacity:1;fill:#000042;fill-opacity:0.13807529;stroke:none;stroke-width:0.50067306;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4571"
+       sodipodi:type="arc"
+       sodipodi:cx="337.9935"
+       sodipodi:cy="109.90179"
+       sodipodi:rx="56.862156"
+       sodipodi:ry="46.49107"
+       sodipodi:start="5.5060775"
+       sodipodi:end="5.5060251"
+       sodipodi:open="true"
+       d="m 378.53307,77.301301 a 56.862156,46.49107 0 0 1 -0.66614,65.745619 56.862156,46.49107 0 0 1 -80.41195,-0.54378 56.862156,46.49107 0 0 1 0.66402,-65.745628 56.862156,46.49107 0 0 1 80.41198,0.542052" />
+    <path
+       style="opacity:1;fill:#000042;fill-opacity:0.13807529;stroke:none;stroke-width:0.62366068;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4573"
+       sodipodi:type="arc"
+       sodipodi:cx="337.9935"
+       sodipodi:cy="125.09643"
+       sodipodi:rx="40.092476"
+       sodipodi:ry="24.946428"
+       sodipodi:start="5.5060775"
+       sodipodi:end="5.5060251"
+       sodipodi:open="true"
+       d="m 366.57721,107.60348 a 40.092476,24.946428 0 0 1 -0.46967,35.27814 40.092476,24.946428 0 0 1 -56.69702,-0.29178 40.092476,24.946428 0 0 1 0.4682,-35.27815 40.092476,24.946428 0 0 1 56.69702,0.29086" />
+    <text
+       id="text4579"
+       y="-45.597614"
+       x="322.4588"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="-45.597614"
+         x="322.4588"
+         id="tspan4575"
+         sodipodi:role="line">Intelligence artificielle</tspan><tspan
+         id="tspan4577"
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="-32.368446"
+         x="322.4588"
+         sodipodi:role="line">(IA)</tspan></text>
+    <text
+       id="text4583"
+       y="-0.8452341"
+       x="329.36649"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="-0.8452341"
+         x="329.36649"
+         id="tspan4581"
+         sodipodi:role="line">Apprentissage automatique</tspan><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="12.383932"
+         x="329.36649"
+         sodipodi:role="line"
+         id="tspan4503">(machine learning)</tspan></text>
+    <text
+       id="text4587"
+       y="94.404762"
+       x="286.11673"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         y="94.404762"
+         x="286.11673"
+         id="tspan4585"
+         sodipodi:role="line">Réseaux de neurones</tspan></text>
+    <text
+       id="text4591"
+       y="128.09682"
+       x="303.89285"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         y="128.09682"
+         x="303.89285"
+         id="tspan4589"
+         sodipodi:role="line">Deep learning</tspan></text>
+    <text
+       id="text4595"
+       y="102.72024"
+       x="240.39285"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Light';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.46666622px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Light';stroke-width:0.26458332"
+         y="102.72024"
+         x="240.39285"
+         id="tspan4593"
+         sodipodi:role="line">SVM</tspan></text>
+    <text
+       id="text4599"
+       y="72.482155"
+       x="393.8512"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Light';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.46666622px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Light';stroke-width:0.26458332"
+         y="72.482155"
+         x="393.8512"
+         id="tspan4597"
+         sodipodi:role="line">Regression</tspan></text>
+    <text
+       id="text4603"
+       y="35.138111"
+       x="381.70178"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Light';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.46666622px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Light';text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="35.138111"
+         x="382.88412"
+         id="tspan4601"
+         sodipodi:role="line">Classification </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.46666622px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Light';text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         y="45.721443"
+         x="381.70178"
+         sodipodi:role="line"
+         id="tspan4505">automatique</tspan></text>
+    <text
+       id="text4607"
+       y="39.220234"
+       x="241.90477"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Light';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.46666622px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Light';stroke-width:0.26458332"
+         y="39.220234"
+         x="241.90477"
+         id="tspan4605"
+         sodipodi:role="line">Forêts aléatoires</tspan></text>
+  </g>
+</svg>
