@@ -233,31 +233,58 @@ Mise à disposition d'un large public sous forme d'application gratuite (dall-e,
 
 ---
 
-<!-- header: Comment ça marche ? -->
+<!-- header: Entrainement d'une d'IA -->
 
-<img src="./assets/neural_network.png" />
+<div class="single-image">
+    <img src="./assets/house_prices.png" />
+</div>
 
 ---
 
-Données d'entrainement.
+<!-- header: Entrainement d'une d'IA -->
+
+<div class="single-image">
+    <img src="./assets/house_prices_model.svg" />
+</div>
+
+---
+
+<!-- header: Inférence par IA -->
+
+<div class="single-image">
+    <img src="./assets/house_prices_inference.svg" />
+</div>
+
+---
+
+<!-- header: Entrainement d'un réseaux de neurones -->
+
+<div class="single-image">
+    <img src="./assets/neural_network_bias_weights.svg" />
+</div>
+
+
+---
+
+<!-- header: Entrainement d'un réseaux de neurones -->
 
 <img src="./assets/training_data.svg" />
 
 <!--
-regression housing price
+Imaginez un système d équations géant avec chaque neurone contenant une fonction à plusieurs inconnues.
 
-droite y = wx + b
+Algorithme d'entraînement permet d'approcher une solution pour ces inconnues qui fait que le réseau de neurones donne la bonne solution pour toutes les données d'entraînement
+-->
 
+---
 
-Réseau de neurones, même problème
+<!-- header: Et ChatGPT ? -->
 
-- w et b pour chaque neurone
-- un neurone pour chaque pixel
+- Chainage de plusieurs algorithmes d'apprentissage machine
+- Nombre de paramètres estimé : 
+    **un million de millions (10e12)**
 
-
-
-Explication neural net
-
+<!--
 Transformer architecture
 
 Machine probabiliste
@@ -265,30 +292,8 @@ Machine probabiliste
 Moyenne des constructions mentales de tous les humains connectés à Internet.
 
 Index infini
--->
-
----
-
-<img src="./assets/neural_network_trained.svg" />
-
----
-
-<img src="./assets/neural_network_dog.png" />
-
-<!--
-Réseau de neurones
-+ Donnée d'entraînement
-+ algorithme d'entraînement
-
-= Weights + biases
-
-Imaginez un système d équations géant avec chaque neurone contenant une fonction à plusieurs inconnues.
-
-Algorithme d'entraînement permet d'approcher une solution pour ces inconnues qui fait que le réseau de neurones donne la bonne solution pour toutes les données d'entraînement
 
 Weights and biases.
-
-Nombre de weights pour des modèles type chatgpt
 -->
 
 ---
@@ -301,7 +306,7 @@ Nombre de weights pour des modèles type chatgpt
 
 ---
 
-<!-- header: Applications -->
+<!-- header: IA générative et art -->
 
 <div class="image-container">
     <div class="image-crop">
@@ -348,7 +353,7 @@ Nombre de weights pour des modèles type chatgpt
         right: 0;
         transform: translate(100%, -50%);
         font-size: 50%;
-        width: 13vw;
+        width: 25vw;
         text-align: left;
         padding-left: 1em;
     }
@@ -368,6 +373,8 @@ Nombre de weights pour des modèles type chatgpt
 
 ---
 
+<!-- header: Voitures autonomes -->
+
 <div class="single-image">
     <img 
         style="filter: grayscale(0.1);width: 100%;"
@@ -376,6 +383,8 @@ Nombre de weights pour des modèles type chatgpt
 </div>
 
 ---
+
+<!-- header: Santé -->
 
 <img 
     style="filter: grayscale(0.1);width: 50%;"
@@ -395,6 +404,8 @@ The costs of detecting one additional (pre)malignant skin lesion with the app co
 -->
 
 ---
+
+<!-- header: - -->
 
 <div class="single-image">
     <img 
@@ -416,15 +427,28 @@ AITrism : secure IA
 
 ---
 
-<!-- header: Implications -->
+<!-- header: Comment le public voit l'IA -->
 
-Quelles teintes, quels sujets pour une recherche web avec le terme :
-
-**Intelligence Artificielle**
+Quelles teintes, quels sujets pour une recherche web avec le terme **Intelligence Artificielle** ?
 
 ---
 
-<img src="./assets/ia_search_results.png" />
+<div class="single-image">
+    <img 
+        src="./assets/ia_search_results.png" 
+        style="width: 100%;"
+    />
+</div>
+
+<!--
+
+IA problème d'image de marque, anthropomorphisation
+
+Sam Altman sur l'intelligence générale : it’s a new phase in human history.
+
+Surfe sur la vague de la fascination du public pour l'IA
+
+-->
 
 ---
 
@@ -436,39 +460,37 @@ Quelles teintes, quels sujets pour une recherche web avec le terme :
 
 ---
 
+<!-- header: IA faible VS IA forte -->
+
+<div class="single-image">
+    <img 
+        src="./assets/weak_vs_strong.jpg" 
+        style="width: 85%;"
+    />
+</div>
+
+---
+
 <!-- header: Futur lointain -->
 
-Superintelligence
+**→ Intelligence artificielle générale**
+**→ High-Level Machine Intelligence (HLMI)**
+**→ Superintelligence**
+**→ Singularité**
+**→ Explosion d'intelligence**
+**→ Alien mind**
 
-General intelligence
-
-Singularité
-
-Alien mind
-
-Fonctionalisme
-
-High-Level Machine Intelligence (HLMI)
-
-<img src="./assets/weak_vs_strong.jpg" />
+<style scoped>
+    p {
+        font-size: 80%;
+    }
+</style>
 
 <!--
 SUperintelligence : agent hypothetique qui possederait une intelligence de loin supérieure à celle des humains les plus doués
 
 HLMI : when unaided machines can accomplish every task better and more cheaply than human workers. Think feasibility, not adoption
 -->
-
----
-
-<!-- header: Implications -->
-
-IA problème d'image de marque, anthropomorphisation
-
-Sam Altman sur l'intelligence générale
-
-it’s a new phase in human history.
-
-Autres qui profitent de l'image de l'IA pour faire du buzz
 
 ---
 
@@ -489,16 +511,39 @@ auteurs ayant publié en 2022 lors d'une sélection de conférences de premier p
 
 ---
 
-<!-- header: Impacts High-Level Machine Intelligence (HLMI) -->
+<!-- header: Plausibilité de High-Level Machine Intelligence (HLMI) -->
 
 > 50 % de chance d'une HLMI d'ici 2047 **2023 Expert Survey on Progress in AI, AI Impacts**
 
 ---
 
+<!-- header: Impacts de HLMI -->
+
 <div class="single-image">
-    <img src="./assets/impacts_HLMI.png" />
-    <div class="captions" style="font-size: 50%;">source: 2023 Expert Survey on Progress in AI, AI Impacts.</div>
+    <img 
+        src="./assets/impacts_HLMI.png"
+    />
+    <div class="captions" style="font-size: 40%;">source: 2023 Expert Survey on Progress in AI, AI Impacts.</div>
 </div>
+
+---
+
+<!-- header: Explosion d'intelligence -->
+
+Probabilité que l'argument soit correct :
+
+→ 9 % ont dit « Très probable (81-100 %) »
+→ 20 % ont dit « Probable (61-80 %) »
+→ 24 % ont dit « Chance égale (41-60 %) »
+→ 24 % ont dit « Peu probable (21-40 %) »
+→ 23 % ont dit « Très peu probable (0-20 %) »
+
+<!-- 
+
+More is different : citation
+
+Fonctionalisme 
+-->
 
 ---
 
@@ -544,27 +589,6 @@ Conflit évitable (titre original : The Evitable Conflict) est une nouvelle d'Is
 
 ---
 
-<!-- header: Explosion d'intelligence -->
-
-Probabilité que l'argument soit correct :
-
-9 % ont dit « Très probable (81-100 %) »
-20 % ont dit « Probable (61-80 %) »
-24 % ont dit « Chance égale (41-60 %) »
-24 % ont dit « Peu probable (21-40 %) »
-23 % ont dit « Très peu probable (0-20 %) »
-
-<!-- 
-
----
-
-More is different : citation
-
-Fonctionalisme 
--->
-
----
-
 <!-- header: . -->
 
 # VI. Rupture ou continuité ?
@@ -573,55 +597,7 @@ Fonctionalisme
 
 ---
 
-<!-- header: Implications -->
-
-<div style="font-size: 50%;">À quel point sont préoccupants les 11 scenarios suivants ?</div>
-<div class="single-image">
-    <img 
-        src="./assets/ai_impacts_scenarios.svg" 
-        style="filter: grayscale(0.7) hue-rotate(220deg); width: 80%;"
-    />
-</div>
-
-<style scoped>
-
-    header {
-        display: none;
-    }
-</style>
-
----
-
-<!-- header: Manipulation de l'opinion publique -->
-
-<div class="single-image">
-    <img 
-        src="./assets/cambridge_analytica.jpg" 
-        style="filter: grayscale(0.8); width: 80%;"
-    />
-</div>
-
----
-
-<!-- header: Inégalités sociales et économiques -->
-
-<div class="single-image">
-    <img 
-        style="filter: grayscale(0.1); width: 50%;"
-        src="./assets/face_depixelizer_obama.jpg"
-    />
-    <div class="captions" style="font-size: 50%;">Depixeliseur, transforme Barack Obama en homme blanc.</div>
-</div>
-
-<!-- https://www.theverge.com/21298762/face-depixelizer-ai-machine-learning-tool-pulse-stylegan-obama-bias -->
-
----
-
-> L'augmentation de la force productive du travail [...] est la tendance nécessaire du capital [...]. La transformation des moyens de production en machines est la concrétisation de cette tendance. **The fragment on machines, Karl Marx, 1858**
-
----
-
-<!-- header: Désastre environnemental -->
+<!-- header: Crise environnementale -->
 
 Système d'IA généative nécessite **33 fois plus d'énergie** pour réaliser une tâche donnée qu'avec un logiciel classique.
 
@@ -651,6 +627,66 @@ source : https://www.weforum.org/stories/2024/07/generative-ai-energy-emissions/
 
 ---
 
+<!-- header: Implications -->
+
+<div style="font-size: 50%;">À quel point sont préoccupants les 11 scenarios suivants ?</div>
+<div class="single-image">
+    <img 
+        src="./assets/ai_impacts_scenarios.svg" 
+        style="filter: grayscale(0.7) hue-rotate(220deg); width: 80%;"
+    />
+</div>
+
+<style scoped>
+
+    header {
+        display: none;
+    }
+</style>
+
+---
+
+<!-- header: Fake news & manipulations -->
+
+<div class="column-images">
+    <img 
+        src="./assets/cambridge_analytica.jpg" 
+        style="filter: grayscale(0.8); width: 80%;"
+    />
+    <img
+        src="./assets/click_farm.jpg" 
+        style="filter: grayscale(0.8); width: 80%;"
+    />  
+</div>
+
+<!--
+https://nymag.com/intelligencer/2018/12/how-much-of-the-internet-is-fake.html
+
+Fake news d'abord créée par un climat politique malsain, et polarisé à l'extrême.
+
+Symptome d'un mal plus profond.
+-->
+
+---
+
+<!-- header: Inégalités sociales & économiques -->
+
+<div class="single-image">
+    <img 
+        style="filter: grayscale(0.1); width: 50%;"
+        src="./assets/face_depixelizer_obama.jpg"
+    />
+    <div class="captions" style="font-size: 50%;">Depixeliseur, transforme Barack Obama en homme blanc.</div>
+</div>
+
+<!-- https://www.theverge.com/21298762/face-depixelizer-ai-machine-learning-tool-pulse-stylegan-obama-bias -->
+
+---
+
+> L'augmentation de la force productive du travail [...] est la tendance nécessaire du capital [...]. La transformation des moyens de production en machines est la concrétisation de cette tendance. **The fragment on machines, Karl Marx, 1858**
+
+---
+
 <!-- header: Déterminisme technologique -->
 
 > "ce qui peut être fait techniquement le sera nécessairement". C'est ainsi que le progrès applique de nouvelles techniques et crée de nouvelles industries sans chercher à savoir si elles sont ou non souhaitables. **Loi de Gabor, Dennis Gabor, Interview, 1971**
@@ -658,3 +694,9 @@ source : https://www.weforum.org/stories/2024/07/generative-ai-energy-emissions/
 ---
 
 > Il est vrai qu'un marteau peut être utilisé par un tortionnaire, mais le marteau peut aussi être utilisé pour construire des maisons. **Noam Chomsky, interview, 2003**
+
+---
+
+<!-- header: - -->
+
+**Nous aurons l'IA que nous méritons ?**
