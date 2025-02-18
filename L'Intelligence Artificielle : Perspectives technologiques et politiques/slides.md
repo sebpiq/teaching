@@ -162,14 +162,19 @@ L'histoire de l'apprentissage automatique remonte à des décennies d'efforts po
 
 ---
 
-Réseaux neuronaux
 
-<div class="single-image">
+<div class="single-image" style="width:50%;">
     <img 
         style="filter: invert(1);"
         src="./assets/neural_network.svg" 
     />
 </div>
+
+<style scoped>
+    header {
+        color: white;
+    }
+</style>
 
 <!--
 
@@ -179,7 +184,10 @@ Réseaux neuronaux
 
 <!-- header: Années 2020 : Intelligences artificielles génératives -->
 
-<img src="./assets/midjourney.jpg" />
+<img 
+    src="./assets/midjourney.jpg" 
+    style="filter: grayscale(0.5);"
+/>
 
 <style scoped>
     section {
@@ -191,6 +199,10 @@ Réseaux neuronaux
         height: 100%;
         display: block;
     }
+    header {
+        color: black;
+        text-shadow: -4px -4px 0 #fff, 4px -4px 0 #fff, -4px 4px 0 #fff, 4px 4px 0 #fff;
+    }
 </style>
 
 <!--
@@ -201,8 +213,8 @@ LLMs are like really complicated autocomplete
 
 ---
 
--   Combien ont utilisé <a href='https://chat.openai.com/'>chatgpt</a> ?
--   Combien ont utilisé <a href='https://discord.com/channels/@me/1105877181252509778'>midjourney</a> ?
+-   Combien ont utilisé **[chatgpt](https://chat.openai.com/)** ?
+-   Combien ont utilisé **[midjourney](https://discord.com/channels/@me/1105877181252509778)** ?
 
 ---
 
@@ -236,7 +248,10 @@ Mise à disposition d'un large public sous forme d'application gratuite (dall-e,
 <!-- header: Entrainement d'une d'IA -->
 
 <div class="single-image">
-    <img src="./assets/house_prices.png" />
+    <img 
+        src="./assets/house_prices.png" 
+        style="filter: grayscale(0.1) invert(1) brightness(1.2) hue-rotate(178deg);"
+    />
 </div>
 
 ---
@@ -244,7 +259,10 @@ Mise à disposition d'un large public sous forme d'application gratuite (dall-e,
 <!-- header: Entrainement d'une d'IA -->
 
 <div class="single-image">
-    <img src="./assets/house_prices_model.svg" />
+    <img 
+        src="./assets/house_prices_model.svg" 
+        style="filter: grayscale(0.1) invert(1) brightness(1.2) hue-rotate(178deg);"
+    />
 </div>
 
 ---
@@ -252,23 +270,34 @@ Mise à disposition d'un large public sous forme d'application gratuite (dall-e,
 <!-- header: Inférence par IA -->
 
 <div class="single-image">
-    <img src="./assets/house_prices_inference.svg" />
+    <img 
+        src="./assets/house_prices_inference.svg" 
+        style="filter: grayscale(0.1) invert(1) brightness(1.2) hue-rotate(178deg);"
+    />
 </div>
 
 ---
 
-<!-- header: Entrainement d'un réseaux de neurones -->
+<!-- header: Réseaux de neurones -->
 
-<div class="single-image">
-    <img src="./assets/neural_network_bias_weights.svg" />
+<div class="single-image" style="width:70%">
+    <img 
+        src="./assets/neural_network_bias_weights.svg" 
+        style="filter: grayscale(0.1) invert(1) brightness(1.2) hue-rotate(253deg);"
+    />
 </div>
 
 
 ---
 
-<!-- header: Entrainement d'un réseaux de neurones -->
+<!-- header: Réseaux de neurones -->
 
-<img src="./assets/training_data.svg" />
+<div class="single-image" style="width:120%">
+    <img 
+        src="./assets/training_data.svg" 
+        style="filter: grayscale(0.7);"
+    />
+</div>
 
 <!--
 Imaginez un système d équations géant avec chaque neurone contenant une fonction à plusieurs inconnues.
@@ -365,6 +394,10 @@ Weights and biases.
         position: relative;
         bottom: 0.2em;
     }
+    header {
+        color: #111;
+        font-size: 130%;
+    }
 </style>
 
 ---
@@ -373,28 +406,36 @@ Weights and biases.
 
 ---
 
-<!-- header: Voitures autonomes -->
+<!-- header: Transports -->
 
-<div class="single-image">
+<div class="single-image" style="width:75%;">
     <img 
-        style="filter: grayscale(0.1);width: 100%;"
+        style="filter: grayscale(1);"
         src="./assets/autonomous_cars.png" 
     />
 </div>
+
+<style scoped>
+
+    header {
+        background-color: var(--color-background);
+    }
+</style>
 
 ---
 
 <!-- header: Santé -->
 
-<img 
-    style="filter: grayscale(0.1);width: 50%;"
-    src="./assets/mammographie.jpg" 
-/>
-
-<img 
-    style="filter: grayscale(0.1);width: 50%;"
-    src="./assets/skin_cancer_ai.png" 
-/>
+<div class="column-images">
+    <img 
+        style="filter: grayscale(0.1);"
+        src="./assets/mammographie.jpg" 
+    />
+    <img 
+        style="filter: grayscale(0.1);"
+        src="./assets/skin_cancer_ai.png" 
+    />
+</div>
 
 <!--
 Soin préventif (détection des cancers),
@@ -407,9 +448,9 @@ The costs of detecting one additional (pre)malignant skin lesion with the app co
 
 <!-- header: - -->
 
-<div class="single-image">
+<div class="single-image" style="width:100%;">
     <img 
-        style="filter: grayscale(0.1) invert(1) brightness(1.2) hue-rotate(110deg);width: 90%;"
+        style="filter: grayscale(0.1) invert(1) brightness(1.2) hue-rotate(253deg);"
         src="./assets/hype_cycle_for_ai_2024.jpg" 
     />
 </div>
@@ -433,10 +474,9 @@ Quelles teintes, quels sujets pour une recherche web avec le terme **Intelligenc
 
 ---
 
-<div class="single-image">
+<div class="single-image" style="width:95%;">
     <img 
         src="./assets/ia_search_results.png" 
-        style="width: 100%;"
     />
 </div>
 
@@ -462,10 +502,10 @@ Surfe sur la vague de la fascination du public pour l'IA
 
 <!-- header: IA faible VS IA forte -->
 
-<div class="single-image">
+<div class="single-image" style="padding:1em;background-color:black;">
     <img 
         src="./assets/weak_vs_strong.jpg" 
-        style="width: 85%;"
+        style="filter: grayscale(0.1) invert(1) brightness(1.2) hue-rotate(308deg);"
     />
 </div>
 
