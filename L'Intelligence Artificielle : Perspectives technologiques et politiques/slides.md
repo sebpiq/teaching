@@ -20,15 +20,51 @@ Perspectives technologiques et politiques
 
 ---
 
-1. **SOMMAIRE TODO**
+<!-- header: . -->
+
+I. Introduction
+
+II. Histoire de l'IA
+
+III. Comment fonctionne l'apprentissage automatique
+
+IV. L'IA aujourd'hui
+
+V. L'IA dans le futur
+
+VI. Rupture ou continuité ?
+
+<style scoped>
+    p {
+        font-size: 85%;
+        font-family: Silkscreen;
+    }
+</style>
 
 ---
 
-<!-- header: Qui suis-je ? -->
+<!-- header: Qui je suis -->
 
--   Programmation d'applications web
--   Arts numériques, nouveaux médias
--   Expert IA pour le ministère de la transition écologique
+Ingénieur en informatique
+
+Arts numériques, nouveaux médias
+
+Innovation, R&D
+
+<style scoped>
+    p {
+        font-size: 85%;
+        font-family: Silkscreen;
+    }
+</style>
+
+---
+
+<!-- header: . -->
+
+Je parle ici en mon nom.
+
+Les opinions exprimées durant cette présentation sont les miennes, et non celles de mon employeur.
 
 ---
 
@@ -50,10 +86,14 @@ Mot-clé [**Intelligence Artificielle**](https://www.lemonde.fr/recherche/?searc
 
 <div class="single-image">
     <img 
-        style="filter: grayscale(0.1) invert(1) brightness(1.2) hue-rotate(180deg);"
+        style="filter: grayscale(0.1) invert(1) brightness(1.2) hue-rotate(242deg);"
         src="./assets/stocks_ai.png" 
     />
 </div>
+
+<!--
+Explosion du prix des actions. Reflète des attentes énormes sur les retombées économiques de l'IA.
+-->
 
 ---
 
@@ -86,6 +126,25 @@ Sans mentionner la préhistoire de l'IA que certains font remonter jusqu'à l'an
     <img src="./assets/dartmouth.png" />
 </div>
 
+<!--
+Dartmouth College, New Hampshire, United States.
+
+Premier utilisation du terme Intelligence Artificielle.
+
+All-star de l'informatique, mathématiques et autres disciplines : Claude Shannon, John McCarthy, Nathaniel Rochester et Marvin Minsky
+
+Pose l'objet de la discipline.
+-->
+
+<style scoped>
+    header {
+        font-size: 130%;
+    }
+    .single-image {
+        padding-top: 1em;
+    }
+</style>
+
 ---
 
 <div class="image-container">
@@ -105,6 +164,10 @@ Sans mentionner la préhistoire de l'IA que certains font remonter jusqu'à l'an
         <img src="./assets/computers50s_IBM_NORC.jpg" />
     </div>
 </div>
+
+<!--
+Conditions de travail très différentes d'aujourd'hui. Débuts de l'informatique, beaucoup des concepts imaginés par les checheurs en IA étaient pratiquement inutiles au vu de la puissance de calcul et des interfaces des ordinateurs de l'époque.
+-->
 
 <style scoped>
     section {
@@ -134,25 +197,40 @@ Sans mentionner la préhistoire de l'IA que certains font remonter jusqu'à l'an
         position: relative;
         right: 50%;
     }
+    header {
+        font-size: 130%;
+        background-color: #333;
+    }
 </style>
 
 ---
 
-<!-- header: Années 1990 : système experts -->
+<!-- header: Années 1990 : systèmes experts -->
 
 <div class="single-image">
     <img src="./assets/kasparov_deepblue.jpg" />
 </div>
 
 <!--
+Kasparov VS deep blue. Les règles des échecs sont inscrites dans le programme de manière fixe. Le programme est donné un objectif et calcul le plus vite possible pour trouver la solution optimale pour atteindre cet objectif.
+
 DART, operation Desert Shield phase logistique qui amorce la première guerre du Golf. D’après Victor Reis, alors directeur de la DARPA5, les économies réalisées grâce à DART permettent de rembourser trente années d’investissement dans la recherche en IA en quelques mois seulement
 -->
 
+<style scoped>
+    header {
+        font-size: 130%;
+        background-color: #333;
+    }
+</style>
+
 ---
 
-<!-- header: Années 2010 : Machine learning & deep learning -->
+<!-- header: Années 2010 : Apprentissage automatique -->
 
-<img src="./assets/carto_ia_deep_learning.svg" />
+<div class="single-image">
+    <img src="./assets/carto_ia_deep_learning.svg" />
+</div>
 
 <!--
 Adresser problèmes qui sont difficiles à décrire en terme de règles. Qu'est ce qu'une chaise ?
@@ -160,19 +238,37 @@ Adresser problèmes qui sont difficiles à décrire en terme de règles. Qu'est 
 L'histoire de l'apprentissage automatique remonte à des décennies d'efforts pour étudier les processus cognitifs humains.
 -->
 
+<style scoped>
+    header {
+        font-size: 100%;
+    }
+    .single-image {
+        width: 60%;
+        margin-top: 2em;
+    }
+    .single-image img {
+        filter: invert(1) hue-rotate(253deg);
+    }
+</style>
+
 ---
 
-
-<div class="single-image" style="width:50%;">
+<div class="single-image">
     <img 
-        style="filter: invert(1);"
         src="./assets/neural_network.svg" 
     />
 </div>
 
 <style scoped>
     header {
-        color: white;
+        font-size: 100%;
+    }
+    .single-image {
+        width: 45%;
+        margin-top: 2em;
+    }
+    .single-image img {
+        filter: invert(1) hue-rotate(25deg);
     }
 </style>
 
@@ -184,10 +280,12 @@ L'histoire de l'apprentissage automatique remonte à des décennies d'efforts po
 
 <!-- header: Années 2020 : Intelligences artificielles génératives -->
 
-<img 
-    src="./assets/midjourney.jpg" 
-    style="filter: grayscale(0.5);"
-/>
+<div class="single-image">
+    <img 
+        src="./assets/midjourney.jpg" 
+        style="filter: grayscale(0.5);"
+    />
+</div>
 
 <style scoped>
     section {
@@ -220,7 +318,8 @@ LLMs are like really complicated autocomplete
 
 <!-- header: Pourquoi ce boom maintenant ? -->
 
--   Arrivée à maturité des technologies
+-   Puissance de calcul des ordinateurs + utilisation des GPU
+-   Arrivée à maturité des technologies et algorithmes
 -   Entrée dans la conscience du grand public
 
 <!--
@@ -239,7 +338,7 @@ Mise à disposition d'un large public sous forme d'application gratuite (dall-e,
 
 <!-- header: . -->
 
-# III. Comment fonctionne l'apprentissage automatique ?
+# III. Comment fonctionne l'apprentissage automatique
 
 <!-- footer: III. Comment fonctionne l'apprentissage automatique -->
 
@@ -280,22 +379,21 @@ Mise à disposition d'un large public sous forme d'application gratuite (dall-e,
 
 <!-- header: Réseaux de neurones -->
 
-<div class="single-image" style="width:70%">
+<div class="single-image" style="width:120%">
     <img 
-        src="./assets/neural_network_bias_weights.svg" 
-        style="filter: grayscale(0.1) invert(1) brightness(1.2) hue-rotate(253deg);"
+        src="./assets/training_data.svg" 
+        style="filter: grayscale(0.7);"
     />
 </div>
-
 
 ---
 
 <!-- header: Réseaux de neurones -->
 
-<div class="single-image" style="width:120%">
+<div class="single-image" style="width:70%">
     <img 
-        src="./assets/training_data.svg" 
-        style="filter: grayscale(0.7);"
+        src="./assets/neural_network_bias_weights.svg" 
+        style="filter: grayscale(0.1) invert(1) brightness(1.2) hue-rotate(253deg);"
     />
 </div>
 
@@ -309,12 +407,14 @@ Algorithme d'entraînement permet d'approcher une solution pour ces inconnues qu
 
 <!-- header: Et ChatGPT ? -->
 
-- Chainage de plusieurs algorithmes d'apprentissage machine
-- Nombre de paramètres estimé : 
+-   Chainage de plusieurs algorithmes d'apprentissage machine
+-   Nombre de paramètres estimé :
     **un million de millions (10e12)**
 
 <!--
 Transformer architecture
+
+Boite noire
 
 Machine probabiliste
 
@@ -402,10 +502,6 @@ Weights and biases.
 
 ---
 
-> L’art est mort, mec. C’est fini. L’IA a gagné. Les humains ont perdu **Jason Allen, New York Times, 2022**
-
----
-
 <!-- header: Transports -->
 
 <div class="single-image" style="width:75%;">
@@ -482,7 +578,7 @@ Quelles teintes, quels sujets pour une recherche web avec le terme **Intelligenc
 
 <!--
 
-IA problème d'image de marque, anthropomorphisation
+Intelligence artficielle : le terme en lui même génère un imaginaire cyborg.
 
 Sam Altman sur l'intelligence générale : it’s a new phase in human history.
 
@@ -578,21 +674,20 @@ Probabilité que l'argument soit correct :
 → 24 % ont dit « Peu probable (21-40 %) »
 → 23 % ont dit « Très peu probable (0-20 %) »
 
-<!-- 
+<!--
 
 More is different : citation
 
-Fonctionalisme 
+Fonctionalisme
 -->
 
 ---
 
 <!-- header: Le problème de l'alignement -->
 
->
 > 1. La fonction d'utilité peut ne pas être parfaitement alignée avec les valeurs de l'humanité, qui sont (au mieux) très difficiles à définir.
-> 2. Tout système intelligent suffisamment capable préférera assurer sa propre existence continue et acquérir des ressources physiques et informatiques – non pour lui-même, mais pour réussir dans la tâche qui lui est assignée.
-> 
+> 2. Tout système intelligent suffisamment capable préférera assurer sa propre existence continue [...] – non pour lui-même, mais pour réussir dans la tâche qui lui est assignée.
+>
 > Un système qui optimise une fonction de n variables, où l'objectif dépend d'un sous-ensemble de taille k<n, fixera souvent les variables non contraintes restantes à des valeurs extrêmes ; si l'une de ces variables non contraintes est en réalité quelque chose qui nous tient à cœur, la solution trouvée peut être hautement indésirable. C'est essentiellement l'ancienne histoire du génie dans la lampe, ou de l'apprenti sorcier, ou du roi Midas : vous obtenez exactement ce que vous demandez, pas ce que vous voulez. **Of Myths And Moonshine, Stuart Russell, 2014**
 
 <style scoped>
@@ -639,12 +734,14 @@ Conflit évitable (titre original : The Evitable Conflict) est une nouvelle d'Is
 
 <!-- header: Crise environnementale -->
 
-Système d'IA généative nécessite **33 fois plus d'énergie** pour réaliser une tâche donnée qu'avec un logiciel classique.
+Système d'IA générative nécessite **33 fois plus d'énergie** pour réaliser une tâche donnée qu'avec un logiciel classique.
 
 <div class="captions">Source: World Economic Forum, 2024</div>
 
 <!--
 source : https://www.weforum.org/stories/2024/07/generative-ai-energy-emissions/
+
+l'IA présenté comme une solution miracle au changement climatique.
 -->
 
 ---
@@ -713,13 +810,25 @@ Symptome d'un mal plus profond.
 
 <div class="single-image">
     <img 
-        style="filter: grayscale(0.1); width: 50%;"
+        style="filter: grayscale(0.6);"
         src="./assets/face_depixelizer_obama.jpg"
     />
-    <div class="captions" style="font-size: 50%;">Depixeliseur, transforme Barack Obama en homme blanc.</div>
+    <div class="captions">Depixeliseur, transforme Barack Obama en homme blanc.</div>
 </div>
 
 <!-- https://www.theverge.com/21298762/face-depixelizer-ai-machine-learning-tool-pulse-stylegan-obama-bias -->
+
+<style scoped>
+    header {
+        font-size: 100%;
+    }
+    .single-image {
+        width: 60%;
+    }
+    .captions {
+        padding-top: 1em;
+    }
+</style>
 
 ---
 

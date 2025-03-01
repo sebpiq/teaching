@@ -38,6 +38,10 @@ h3 {
     font-size: 105%
 }
 
+a {
+    color: var(--sebpiq-color1);
+}
+
 header {
     font-size: 140%;
     font-family: 'Silkscreen';
