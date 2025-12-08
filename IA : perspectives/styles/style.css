@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('./Silkscreen-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('./Rajdhani-Regular.ttf');
+}
+
+* {
+    --sebpiq-color1: #f20089;
+    --sebpiq-color2: #bc00dd;
+    --sebpiq-color3: #6a00f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Rajdhani';
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+section {
+    font-family: 'Rajdhani';
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    overflow: hidden;
+}
+
+.tall-slide {
+    height: auto;
+    min-height: 100vh;
+    justify-content: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slide-image {
+    max-width: 100%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.slide-video {
+    max-width: 100%;
+    max-height: 85vh;
+    width: 100%;
+    height: auto;
+}
+
+.slide-pdf {
+    width: 100%;
+    height: 85vh;
+}
+
+.image-with-year {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.image-with-year img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.year-label {
+    align-self: flex-start;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-family: 'Silkscreen';
+    font-size: 1.8rem;
+}
+
+.source {
+    margin-top: 1rem;
+    font-size: 1.35rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.source a {
+    color: var(--sebpiq-color1);
+    text-decoration: none;
+}
+
+.source a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    font-family: 'Silkscreen';
+}
+
+h1 {
+    font-size: 120%
+}
+
+h2 {
+    font-size: 100%
+}
+
+h3 {
+    font-size: 105%
+}
+
+a {
+    color: var(--sebpiq-color1);
+}
+
+header {
+    font-size: 140%;
+    font-family: 'Silkscreen';
+}
+
+footer {
+    font-family: 'Silkscreen';
+}
+
+strong { 
+    font-family: 'Silkscreen';
+}
+
+blockquote p {
+    text-align: left;
+}
+
+blockquote strong {
+    display: block;
+    margin-top: 2em;
+}
+
+.captions, blockquote strong {
+    font-size: 60%;
+    font-family: 'Silkscreen';
+    text-align: right;
+}
+
+p {
+    text-align: left;
+}
+
+.single-image {
+    position: relative;
+    width: 80%;
+    align-self: center;
+}
+
+.single-image .captions {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(50%);
+}
+
+.single-image img {
+    width: 100%;
+    height: auto;
+}
+
+.column-images {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.column-images img {
+    height: 100%;
+    width: auto;
+    min-width: 0;
+}
