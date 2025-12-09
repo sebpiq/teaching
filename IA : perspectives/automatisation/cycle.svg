@@ -136,6 +136,18 @@
        width="401.14148"
        height="241.8429"
        id="rect17-2-4-0" />
+    <rect
+       x="1656.891"
+       y="355.04807"
+       width="401.14148"
+       height="241.8429"
+       id="rect17-6-7" />
+    <rect
+       x="1656.891"
+       y="355.04807"
+       width="401.14148"
+       height="241.8429"
+       id="rect17-2-4-2" />
   </defs>
   <sodipodi:namedview
      id="namedview1"
@@ -146,9 +158,9 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.25752082"
-     inkscape:cx="1248.4427"
-     inkscape:cy="1054.2837"
+     inkscape:zoom="0.28609315"
+     inkscape:cx="1322.9957"
+     inkscape:cy="1445.3335"
      inkscape:window-width="1864"
      inkscape:window-height="1016"
      inkscape:window-x="0"
@@ -182,9 +194,9 @@
        transform="translate(683.09339,343.17803)"><tspan
          x="1231.0957"
          y="882.80469"
-         id="tspan2"><tspan
+         id="tspan24"><tspan
            style="font-family:Silkscreen;-inkscape-font-specification:Silkscreen;fill:#0000ff"
-           id="tspan1">PROdUCTION</tspan></tspan></text>
+           id="tspan23">PROdUCTION</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text12-3"
@@ -192,9 +204,9 @@
        transform="translate(-1005.086,340.0132)"><tspan
          x="1231.0957"
          y="882.80469"
-         id="tspan4"><tspan
+         id="tspan26"><tspan
            style="font-family:Silkscreen;-inkscape-font-specification:Silkscreen;fill:#0000ff"
-           id="tspan3">VENTE</tspan></tspan></text>
+           id="tspan25">VENTE</tspan></tspan></text>
     <g
        id="g15"
        transform="translate(318.9467,221.88076)"
@@ -206,9 +218,9 @@
          transform="translate(703.10712,-853.53727)"><tspan
            x="77.152344"
            y="1049.3506"
-           id="tspan6"><tspan
+           id="tspan28"><tspan
              style="font-family:Silkscreen;-inkscape-font-specification:Silkscreen"
-             id="tspan5">A</tspan></tspan></text>
+             id="tspan27">A</tspan></tspan></text>
       <text
          xml:space="preserve"
          id="text15"
@@ -216,15 +228,15 @@
          transform="translate(195.39138,-33.86784)"><tspan
            x="768.53906"
            y="140.13545"
-           id="tspan7">Quantité
+           id="tspan29">Quantité
 </tspan><tspan
            x="768.53906"
            y="223.46882"
-           id="tspan8">d'argent</tspan></text>
+           id="tspan30">d'argent</tspan></text>
     </g>
     <g
        id="g15-9"
-       transform="translate(-554.41368,474.49847)"
+       transform="translate(-686.81059,515.68862)"
        style="fill:#ffff00">
       <text
          xml:space="preserve"
@@ -233,16 +245,16 @@
          transform="translate(12.38018,-78.788771)"><tspan
            x="768.53906"
            y="152.53125"
-           id="tspan9">Plus
+           id="tspan31">Plus
 </tspan><tspan
            x="768.53906"
            y="252.53125"
-           id="tspan10">value</tspan></text>
+           id="tspan32">value</tspan></text>
     </g>
     <g
        id="g16"
        style="fill:#ffff00"
-       transform="translate(168.9467,221.88076)">
+       transform="translate(168.9467,181.88076)">
       <text
          xml:space="preserve"
          id="text9-2"
@@ -250,9 +262,9 @@
          transform="translate(841.08905,909.23274)"><tspan
            x="77.152344"
            y="1049.3506"
-           id="tspan12"><tspan
+           id="tspan34"><tspan
              style="font-family:Silkscreen;-inkscape-font-specification:Silkscreen"
-             id="tspan11">M</tspan></tspan></text>
+             id="tspan33">M</tspan></tspan></text>
       <text
          xml:space="preserve"
          id="text15-9"
@@ -260,11 +272,11 @@
          transform="translate(360.44423,1730.2118)"><tspan
            x="768.53906"
            y="140.13545"
-           id="tspan13">Quantité
+           id="tspan35">Quantité
 </tspan><tspan
            x="768.53906"
            y="223.46882"
-           id="tspan14">de marchandise</tspan></text>
+           id="tspan36">de marchandise</tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -273,9 +285,9 @@
        transform="rotate(45,1198.6169,489.97707)"><tspan
          x="1656.8906"
          y="479.00684"
-         id="tspan16">&gt;<tspan
+         id="tspan38">&gt;<tspan
    style="fill:#0000ff"
-   id="tspan15">&gt;</tspan></tspan></text>
+   id="tspan37">&gt;</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text17-6"
@@ -283,9 +295,9 @@
        transform="rotate(-135,1475.1061,1173.9867)"><tspan
          x="1656.8906"
          y="479.00684"
-         id="tspan18">&gt;<tspan
+         id="tspan40">&gt;<tspan
    style="fill:#0000ff"
-   id="tspan17">&gt;</tspan></tspan></text>
+   id="tspan39">&gt;</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text17-4"
@@ -293,9 +305,9 @@
        transform="rotate(135,1464.8464,946.41938)"><tspan
          x="1656.8906"
          y="479.00684"
-         id="tspan20"><tspan
+         id="tspan42"><tspan
    style="fill:#0000ff"
-   id="tspan19">&gt;</tspan>&gt;</tspan></text>
+   id="tspan41">&gt;</tspan>&gt;</tspan></text>
     <text
        xml:space="preserve"
        id="text17-4-1"
@@ -303,18 +315,18 @@
        transform="rotate(-45,1739.8199,1766.97)"><tspan
          x="1656.8906"
          y="479.00684"
-         id="tspan22"><tspan
+         id="tspan44"><tspan
    style="fill:#0000ff"
-   id="tspan21">&gt;</tspan>&gt;</tspan></text>
+   id="tspan43">&gt;</tspan>&gt;</tspan></text>
     <text
        xml:space="preserve"
-       id="text17-4-1-5"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.333px;font-family:Silkscreen;-inkscape-font-specification:Silkscreen;text-align:start;letter-spacing:-7.17px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect17-2-4-0);display:inline;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:20;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       transform="rotate(-90,1221.7145,1345.4833)"><tspan
+       id="text17-4-1-9"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.333px;font-family:Silkscreen;-inkscape-font-specification:Silkscreen;text-align:start;letter-spacing:-7.17px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect17-2-4-2);display:inline;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:20;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       transform="rotate(-135,1088.2014,941.01143)"><tspan
          x="1656.8906"
          y="479.00684"
-         id="tspan24"><tspan
+         id="tspan46"><tspan
    style="fill:#0000ff"
-   id="tspan23">&gt;</tspan>&gt;</tspan></text>
+   id="tspan45">&gt;</tspan>&gt;</tspan></text>
   </g>
 </svg>

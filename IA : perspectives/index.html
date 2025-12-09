@@ -13,10 +13,27 @@
         Exercice : Comment peut-on reconnaître un carré ?
         Demander au public de proposer des règles pour identifier un carré.
         -->
+        <img src="./apprentissage_machine/square.png" alt="Square" class="slide-image">
     </section>
-    
+
     <section class="slide">
-        <h2>Expérience de la chaise [10mn]</h2>
+        <h2>Procédure de reconnaissance d'un carré</h2>
+        <ol>
+            <li>Compter le nombre de côtés → doit être égal à 4</li>
+            <li>Mesurer la longueur de chaque côté → tous les côtés doivent être égaux</li>
+            <li>Mesurer chaque angle → tous les angles doivent être de 90°</li>
+            <li>Si toutes les conditions sont remplies → c'est un carré ✓</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Reconnaître une chaise</h2>
+        <!--
+        Exercice : Comment peut-on reconnaître une chaise ?
+        Demander au public de proposer des règles pour identifier une chaise.
+        -->
+        <img src="./apprentissage_machine/chair.jpg" alt="Chair" class="slide-image">
+
         <!--
         [5mn] Diviser le public en groupes de 4-5, leur donner 5 minutes pour produire une description exhaustive des règles qui permettent de décrire une chaise. 
 
@@ -29,41 +46,93 @@
         [2mn] Demander à un groupe ou deux de partager leur description d'une chaise.
 
         [3mn] Demander au public de trouver un contre-exemple.
-
-        Petite liste de contre-exemples en prévision : Chaise électrique, tabouret, chaise pliante, chaise longue, chaise gonflable, Pouf et bean bags, Chaises monobloc, Chaises géantes / miniatures, chaise de massage, chaise de gaming, Fauteuils de dentiste / coiffeur, Sièges éjectables, Trônes, chaise à bascule, Chaises instables ("wobble chairs"), Chaises-sac à dos (Pliables et transportables en randonnée), Siège bébé, …
         -->
     </section>
     
     <section class="slide">
-        <h2>Le paradoxe de Polanyi</h2>
+        <h2>Exemples de "chaises"</h2>
+        <ul>
+            <li>Chaise de bureau</li>
+            <li>Chaise de gaming</li>
+            <li>Chaise monobloc</li>
+            <li>Chaise longue</li>
+            <li>Chaise de jardin</li>
+            <li>Chaise pliante</li>
+            <li>Chaise à bascule</li>
+            <li>Chaise-sac à dos</li>
+            <li>Chaise gonflable</li>
+            <li>Chaise de massage</li>
+            <li>Chaise roulante</li>
+            <li>Chaise à porteurs</li>
+            <li>Chaise électrique</li>
+            <li>Chaise en glace</li>
+            <li>Chaise suspendue</li>
+            <li>Tabouret</li>
+            <li>Pouf et bean bags</li>
+            <li>Fauteuil de dentiste / coiffeur</li>
+            <li>Siège éjectable</li>
+            <li>Trône</li>
+            <li>Siège bébé</li>
+        </ul>
+
         <!--
-        De manière contre-intuitive, de nombreuses tâches qui nous semblent difficiles (comme réaliser un calcul comptable) sont plus faciles à automatiser que certaines tâches qui nous semblent évidentes (comme marcher ou parler).
+        Difficile d'écrire un programme lorsqu'on n'est pas capable de décrire précisemment le problème.
 
-        Le "paradoxe de Polanyi" formule cette observation de la manière suivante : "we know more than we can tell". C'est-à-dire que de nombreuses actions que nous réalisons quotidiennement utilisent un savoir tacite, incarné (comme marcher, parler ou reconnaître quelqu'un), et nous serions bien en peine de les décrire avec précision. Or, pour automatiser une tâche, il faut justement être capable de la décrire.
+        L'approche est qu'on va écrire un programme qui va être capable de construire un modèle statistique de ce qui est une chaise et ce qui n'en est pas.
 
-        De nombreux emplois correspondant à des niveaux d'éducation moyens (production industrielle, assurance, comptabilité, etc.) comprennent justement des tâches procédurales qui sont donc faciles à automatiser, car bien décrites. Alors que les métiers manuels (faire la cuisine, couper les cheveux, etc.) et relationnels (métier du care, etc.), ou les métiers correspondant à des niveaux d'éducation très élevés comme les métiers créatifs ou managériaux résistent à l'automatisation.
+        Ceci est l'approche qui est à la base de l'intelligence artificielle moderne.
         -->
     </section>
 
     <section class="slide">
-        <h2>Système expert VS modèle probabiliste</h2>
-        <!--
-        Procédure VS inférence
+        <h2>Comparaison : Carré vs Chaise</h2>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Reconnaitre un Carré</th>
+                    <th>Reconnaitre une Chaise</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Petit nombre de critères</li>
+                            <li>Procédure facile à décrire</li>
+                            <li>Paradigme de programmation traditionnel (simple algorithme de décision)</li>
+                            <li>Pour un.e humain.e : procédure difficile à mettre en œuvre (sortir sa règle, son équerre, etc.)</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Nombre potentiellement infini de critères</li>
+                            <li>Procédure impossible à décrire</li>
+                            <li>Nécessite un nouveau paradigme de programmation (apprentissage automatique)</li>
+                            <li>Pour un.e humain.e : Procédure facile à mettre en œuvre (reconnaissance visuelle instantanée)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-        Est-ce qu'avec le machine learning on dépasse le paradoxe de Polanyi ?
+    <section class="slide">
+        <h2>Apprentissage automatique</h2>
+        <!--
+        Au lieu de décrire la procédure pour reconnaître une chaise, on va entraîner un modèle statistique à partir d'exemples.
+        
+        Le programme va analyser de nombreux exemples de chaises et de non-chaises pour apprendre à distinguer les caractéristiques qui définissent une chaise, sans qu'on ait besoin de les décrire explicitement.
+        
+        C'est le principe de l'apprentissage automatique (machine learning) qui est à la base de l'intelligence artificielle moderne.
         -->
+        <img src="./apprentissage_machine/chair_array.jpg" alt="Array of chairs" class="slide-image">
     </section>
 
     <!---------------------------------------------------------------------->
 
     <section class="slide">
-        <h1>Racines culturelles</h1>
-        <h2>L'idéologie Californienne</h2>
-        <p class="source">Richard Barbrook et Andy Cameron, 1996</p>
-    </section>
-    
-    <section class="slide">
-        <h2>Rapide histoire culturelle de l'industrie du numérique</h2>
+        <h1>Racines culturelles <br>et politiques</h1>
+        <p>Ou "L'idéologie Californienne" (<span class="source">Richard Barbrook et Andy Cameron, 1996</span>)</p>
         <!--
         Mouvement incroyable depuis la pensée radicale des années 60 vers les milliardaires de la tech d'aujourd'hui.
         -->
@@ -93,7 +162,7 @@
         <video controls class="slide-video">
             <source src="./racines_culturelles/Richard-Brautigan-poem-All-Watched-Over_subs.mp4" type="video/mp4">
         </video>
-        <p class="source">Richard Brautigan - "All Watched Over by Machines of Loving Grace"</p>
+        <p class="source">Richard Brautigan - "All Watched Over by Machines of Loving Grace", 1967 <br> Vidéo par Adam Curtis - "All Watched Over by Machines of Loving Grace", 2011</p>
     </section>
     
     <section class="slide">
@@ -105,13 +174,7 @@
 
         Technologies au sens large : la musique rock (amplifiée électriquement, stroboscopes), le LSD (drogue de synthèse), technologies de communication (radio, calculatrices, etc.).
         Informatique : augmenter le champ de conscience de l'individu au même titre que le Lsd.
-
-        -> Whole Earth Catalogue
         -->
-    </section>
-    
-    <section class="slide">
-        <h2>Whole Earth Catalog</h2>
         <embed src="./racines_culturelles/wholeearthcatalo00unse.pdf" type="application/pdf" class="slide-pdf">
         <p class="source">Whole Earth Catalog, 1st issue Fall 1968 - <a href="https://wholeearth.info/p/whole-earth-catalog-fall-1968" target="_blank">wholeearth.info</a></p>
     </section>
@@ -128,10 +191,20 @@
 
         Au moment où les machines sont envisagées comme un outil d'émancipation, grandit aussi l'idée que la technologie pourrait permettre à l'humain de dépasser ses limites : super-intelligence, immortalité, conquête de l'espace, rien ne semble hors de portée.
 
-        Robert Ettinger, père de la cryogénisation.
+        Robert Ettinger, père de la cryogénisation. Premier patient cryogénisé en 1967 James Bedford.
 
         FM-2030 futurologue, juge le clivage politique gauche-droite et les systèmes capitalistes et communistes entièrement dépassés, face aux avancées technoscientifiques. En 1973 de son ouvrage phare, Up-Wingers a futurist manifesto. Up-wingers (ceux qui regardent vers le ciel et le futur) VS Down-wingers (les autres).
         -->
+
+        <div class="split-screen">
+            <div>
+                <embed src="./racines_culturelles/Licklider_1960_Man-Computer_Symbiosis.pdf" type="application/pdf">
+            </div>
+            <div>
+                <img src="./racines_culturelles/cryo_james_bedford.webp" alt="James Bedford cryogenics">
+                <p class="source">Première cryogénisation humaine, James Bedford 1967</p>
+            </div>
+        </div>
     </section>
     
     <section class="slide">
@@ -152,9 +225,11 @@
 
         -> Meet the extropians
         -->
+        <embed src="./racines_culturelles/Extropy-01.pdf" type="application/pdf" class="slide-pdf">
+        <p class="source">Extropy Magazine, Issue #1, 1988</p>
     </section>
     
-    <section class="slide">
+    <section class="slide tall-slide">
         <h2>Le cyberespace</h2>
         <!--
         Au cours des années 70, les communes ont échoué. Fort développement de la Silicon Valley. C'est le début de l'ordinateur personnel et des premiers réseaux, certains des anciens communards déplacent leurs aspirations vers les communautés en réseau naissantes.
@@ -172,22 +247,15 @@
 
         Ces idées façonnent la vision publique et professionnelle de la Silicon Valley et plus largement du numérique.
         -->
-    </section>
-    
-    <section class="slide">
-        <h2>Cyberpunk</h2>
         <video controls class="slide-video">
             <source src="./racines_culturelles/William-Gibson-Cyberpunk-BBC-Late-Show_sub.mp4" type="video/mp4">
         </video>
-        <p class="source">William Gibson - Cyberpunk - BBC Late Show</p>
-    </section>
-    
-    <section class="slide">
-        <h2>A Declaration of the Independence of Cyberspace</h2>
+        <p class="source"> William Gibson lit "the Neuromancer", BBC Late Show, 1991</p>
+
         <video controls class="slide-video">
             <source src="./racines_culturelles/John-Perry-Barlow-A-Declaration-of-the_subs.mp4" type="video/mp4">
         </video>
-        <p class="source">John Perry Barlow - "A Declaration of the Independence of Cyberspace"</p>
+        <p class="source">John Perry Barlow récite "A Declaration of the Independence of Cyberspace", "Hackers: Outlaws and Angels", 2002</p>
     </section>
     
     <section class="slide">
@@ -195,25 +263,21 @@
         <!--
         Explosion de l'Internet au cours des années 90.
 
-        John Perry Barlow rédigé la déclaration d'indépendance du cyberespace en 1996 depuis Davos en Suisse.
+        John Perry Barlow rédigé la déclaration d'indépendance du cyberespace en 1996 depuis Davos en Suisse. La même année Sergey Brin et Larry Page inventent le PageRank (Google sera fondé en 1998).
 
-        Google "Dont be evil"
-        Facebook "Move fast and break things"
+        La trajectoire de Steve Jobs emblématique de cette mutation de la contre-culture vers le capitalisme numérique.
+        Adolescent, il était lecteur du whole earth catalog.
+        En 1974 il part étudier le bouddhisme zen en Inde.
+        Puis au cours des années 80-90 il est un acteur -clé de la révolution informatique personnelle.
 
-        Steve Jobs lecteur du whole earth catalog
-
-        Musk neuralink, SpaceX
+        Idéologies Californienne : synthèse entre la contre-culture des années 60 et le capitalisme de la Silicon Valley.
         -->
-    </section>
-    
-    <section class="slide">
-        <h2>Think Different</h2>
         <video controls class="slide-video">
             <source src="./racines_culturelles/Apple_Think_Different_Jobs_Narrated_sub.mp4" type="video/mp4">
         </video>
-        <p class="source">Apple - "Think Different" - Narrated by Steve Jobs</p>
+        <p class="source">Apple "Think Different" narration Steve Jobs, 1997</p>
     </section>
-    
+        
     <!---------------------------------------------------------------------->
 
     <section class="slide">
@@ -221,7 +285,7 @@
     </section>
     
     <section class="slide">
-        <h2>Le cycle de production capitaliste</h2>
+        <h2>Le cycle du capital</h2>
         <!--
         Le capitalisme est un système dynamique dont la loi constitutive est l'accumulation de capital.
 
@@ -235,30 +299,48 @@
         A'' ---[production]--–> marchandise ---[vente]--–> A'''
         etc.
 
-        Dans la dynamique d'accumulation propre au capitalisme, le cycle de production vise l'extraction d'un surplus (la plus-value), dont une partie est réinvestie dans le cycle suivant.
+        Ici, on représente un cycle statique idéaltypique, ou à chaque recommencement du cycle, la quantité de capital investie est la même (A). La plus-value extraite à chaque cycle est consommée plutôt que réinvestie.
         -->
         <img src="./automatisation/cycle.svg" alt="Cycle d'automatisation" class="slide-image">
-    </section>
-    
-    <section class="slide">
-        <h2>Compétitivité</h2>
     </section>
 
     <section class="slide">
         <h2>L'accumulation</h2>
         <!--
-        Lorsque cet investissement prend la forme de machines ou de systèmes techniques destinés à substituer du travail vivant, on parle d'automatisation.
-        Celle-ci réduit la dépendance aux coûts salariaux et renforce la productivité du travail. Elle permet ainsi à chaque cycle d'augmenter la plus-value par rapport au cycle précédent.
+        Mais en réalité, il est plus rationnel à chaque cycle de réinvestir une partie de a plus-value engrangée afin d'optimiser le cycle suivant.
+
+        Lorsque je pars de A, puis que j'arrive à gagner A' ; au lieu de mettre dans ma poche tout la différence A' - A, je peux faire un pari sur le futur, et décider de la réinvestir pour gagner encore plus au prochain cycle, par exemple je peux investir pour augmenter le volume de marchandises produites, mais je peux aussi investir pour réduire mes coûts de production.
         -->
         <img src="./automatisation/accumulation.svg" alt="Accumulation" class="slide-image">
     </section>
     
     <section class="slide">
-        <h2>Innovation et viralité</h2>
-        <!--
-        L'automatisation a un caractère systémique : dès qu'une firme adopte une technologie économisant du travail, la pression concurrentielle pousse les autres acteurs du secteur à imiter l'innovation pour préserver leur compétitivité relative.
+        <h2>L'automatisation</h2>
+        <!-- Lorsque cet investissement prend la forme de machines ou de systèmes techniques destinés à substituer ou augmenter du travail vivant, on parle d'automatisation.
+        
+        Celle-ci réduit la dépendance aux coûts salariaux et renforce la productivité du travail. Elle permet ainsi à chaque cycle d'augmenter la plus-value par rapport au cycle précédent. -->
+        <img src="./automatisation/automatisation.svg" alt="Automatisation" class="slide-image">
+    </section>
 
-        Loi de Gabor : "Toute innovation technologique qui offre un avantage concurrentiel à une entreprise sera rapidement imitée par ses concurrents, éliminant ainsi cet avantage."
+    <section class="slide">
+        <h2>Compétitivité, innovation et viralité</h2>
+
+        <blockquote>
+            <p>C'est sa propre vitesse qui fait progresser la technique et ceci pour deux raisons : la première est qu'il faut entretenir les industries traditionnelles. La seconde n'est autre que la loi fondamentale de la société technicienne : "ce qui peut être fait techniquement le sera nécessairement". C'est ainsi que le progrès applique de nouvelles techniques et crée de nouvelles industries sans chercher à savoir si elles sont ou non souhaitables.</p>
+            <strong>Dennis Gabor, 1971</strong>
+        </blockquote>
+
+        <blockquote>
+            <p>Parce que tout ce qui est technique, sans distinction de bien et de mal, s'utilise forcément quand on l'a en main. Telle est la loi majeure de notre époque.</p>
+            <strong>Jacques Ellul, La Technique ou l'Enjeu du siècle, 1954</strong>
+        </blockquote>
+
+        <!--
+        Cette dynamique de compétitivité a un caractère systémique. Lorsqu'un acteur innove, les autres acteurs qui se battent pour le même marché doivent suivre, au risque de perdre du terrain et éventuellement de disparaitre.
+
+        Ainsi dès qu'une firme adopte une technologie permettant de réduire les coûts de production (par exemple en automatisant), la pression concurrentielle pousse les autres acteurs du secteur à imiter cette firme pour préserver leur compétitivité relative.
+
+        En conséquence, si une innovation technique apparait possible, peu importe ses effets ou sa désirabilité à long terme, il suffit qu'un acteur la déploie avec succès pour entrainer tout le monde.
         -->
     </section>
     
@@ -329,6 +411,7 @@
         <!--
         Schumpeter a très tôt théorisé la « destruction créatrice », selon laquelle l'innovation détruit des emplois et des activités existantes mais en génère simultanément de nouveaux. Cette dynamique s'est vérifiée sur le long terme au fil des révolutions industrielles (passage de sociétés agricoles à sociétés industrielles, puis de service).
         -->
+        <img src="./automatisation/shiva_dancing.png" alt="Shiva Nataraja dancing" class="slide-image">
     </section>
     
     <section class="slide">
@@ -351,8 +434,45 @@
 
         De nombreux emplois correspondant à des niveaux d'éducation moyens (production industrielle, assurance, comptabilité, etc.) comprennent justement des tâches procédurales qui sont donc faciles à automatiser, car bien décrites. Alors que les métiers manuels (faire la cuisine, couper les cheveux, etc.) et relationnels (métier du care, etc.), ou les métiers correspondant à des niveaux d'éducation très élevés comme les métiers créatifs ou managériaux résistent à l'automatisation.
         -->
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Reconnaitre un Carré</th>
+                    <th>Reconnaitre une Chaise</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Procédure facile à décrire</li>
+                            <li>Paradigme de programmation traditionnel</li>
+                            <li><strong>Pour un.e humain.e : procédure difficile à mettre en œuvre</strong></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Procédure impossible à décrire</li>
+                            <li>Nécessite un nouveau paradigme de programmation</li>
+                            <li><strong>Pour un.e humain.e : procédure facile à mettre en œuvre</strong></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </section>
+
     
+    <section class="slide">
+        <h2>Système expert VS modèle probabiliste</h2>
+        <!--
+        Procédure VS inférence
+
+        Est-ce qu'avec le machine learning on dépasse le paradoxe de Polanyi ?
+        -->
+    </section>
+
     <section class="slide">
         <h1>Prospective</h1>
     </section>
