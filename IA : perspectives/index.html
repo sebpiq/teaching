@@ -5,279 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IA : Perspectives</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        .pdf-container {
+            position: relative;
+            width: 100%;
+            height: 85vh;
+        }
+        .pdf-container embed {
+            width: 100%;
+            height: 100%;
+        }
+        .fullscreen-btn {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 16px;
+            cursor: pointer;
+            font-family: 'Silkscreen';
+            font-size: 1rem;
+            z-index: 10;
+            transition: background 0.3s;
+        }
+        .fullscreen-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .pdf-container:fullscreen {
+            background: black;
+            padding: 20px;
+        }
+        .pdf-container:-webkit-full-screen {
+            background: black;
+            padding: 20px;
+        }
+        .pdf-container:-moz-full-screen {
+            background: black;
+            padding: 20px;
+        }
+        .pdf-container:fullscreen embed,
+        .pdf-container:-webkit-full-screen embed,
+        .pdf-container:-moz-full-screen embed {
+            width: 100%;
+            height: 100%;
+        }
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem 2rem;
+            max-width: 90%;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        .tag-cloud span {
+            font-family: 'Silkscreen';
+            font-size: 1.4rem;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <section class="slide">
-        <h2>Reconnaître un carré</h2>
-        <!--
-        Exercice : Comment peut-on reconnaître un carré ?
-        Demander au public de proposer des règles pour identifier un carré.
-        -->
-        <img src="./apprentissage_machine/square.png" alt="Square" class="slide-image">
-    </section>
 
     <section class="slide">
-        <h2>Procédure de reconnaissance d'un carré</h2>
-        <ol>
-            <li>Compter le nombre de côtés → doit être égal à 4</li>
-            <li>Mesurer la longueur de chaque côté → tous les côtés doivent être égaux</li>
-            <li>Mesurer chaque angle → tous les angles doivent être de 90°</li>
-            <li>Si toutes les conditions sont remplies → c'est un carré ✓</li>
-        </ol>
-    </section>
-
-    <section class="slide">
-        <h2>Reconnaître une chaise</h2>
+        <h1>Introduction</h1>
         <!--
-        Exercice : Comment peut-on reconnaître une chaise ?
-        Demander au public de proposer des règles pour identifier une chaise.
-        -->
-        <img src="./apprentissage_machine/chair.jpg" alt="Chair" class="slide-image">
-
-        <!--
-        [5mn] Diviser le public en groupes de 4-5, leur donner 5 minutes pour produire une description exhaustive des règles qui permettent de décrire une chaise. 
-
-        Exemple : 
-        C'est un objet en bois
-        Il a 4 pieds
-        Il a un dossier
-        Etc.
-
-        [2mn] Demander à un groupe ou deux de partager leur description d'une chaise.
-
-        [3mn] Demander au public de trouver un contre-exemple.
-        -->
-    </section>
-    
-    <section class="slide">
-        <h2>Exemples de "chaises"</h2>
-        <ul>
-            <li>Chaise de bureau</li>
-            <li>Chaise de gaming</li>
-            <li>Chaise monobloc</li>
-            <li>Chaise longue</li>
-            <li>Chaise de jardin</li>
-            <li>Chaise pliante</li>
-            <li>Chaise à bascule</li>
-            <li>Chaise-sac à dos</li>
-            <li>Chaise gonflable</li>
-            <li>Chaise de massage</li>
-            <li>Chaise roulante</li>
-            <li>Chaise à porteurs</li>
-            <li>Chaise électrique</li>
-            <li>Chaise en glace</li>
-            <li>Chaise suspendue</li>
-            <li>Tabouret</li>
-            <li>Pouf et bean bags</li>
-            <li>Fauteuil de dentiste / coiffeur</li>
-            <li>Siège éjectable</li>
-            <li>Trône</li>
-            <li>Siège bébé</li>
-        </ul>
-
-        <!--
-        Difficile d'écrire un programme lorsqu'on n'est pas capable de décrire précisemment le problème.
-
-        L'approche est qu'on va écrire un programme qui va être capable de construire un modèle statistique de ce qui est une chaise et ce qui n'en est pas.
-
-        Ceci est l'approche qui est à la base de l'intelligence artificielle moderne.
+        Introduction performance -> Automatisation de mon job, mais en fait c'est quoi l'automatisation ?
         -->
     </section>
 
-    <section class="slide">
-        <h2>Comparaison : Carré vs Chaise</h2>
-        <table class="comparison-table">
-            <thead>
-                <tr>
-                    <th>Reconnaitre un Carré</th>
-                    <th>Reconnaitre une Chaise</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Petit nombre de critères</li>
-                            <li>Procédure facile à décrire</li>
-                            <li>Paradigme de programmation traditionnel (simple algorithme de décision)</li>
-                            <li>Pour un.e humain.e : procédure difficile à mettre en œuvre (sortir sa règle, son équerre, etc.)</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Nombre potentiellement infini de critères</li>
-                            <li>Procédure impossible à décrire</li>
-                            <li>Nécessite un nouveau paradigme de programmation (apprentissage automatique)</li>
-                            <li>Pour un.e humain.e : Procédure facile à mettre en œuvre (reconnaissance visuelle instantanée)</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section class="slide">
-        <h2>Apprentissage automatique</h2>
-        <!--
-        Au lieu de décrire la procédure pour reconnaître une chaise, on va entraîner un modèle statistique à partir d'exemples.
-        
-        Le programme va analyser de nombreux exemples de chaises et de non-chaises pour apprendre à distinguer les caractéristiques qui définissent une chaise, sans qu'on ait besoin de les décrire explicitement.
-        
-        C'est le principe de l'apprentissage automatique (machine learning) qui est à la base de l'intelligence artificielle moderne.
-        -->
-        <img src="./apprentissage_machine/chair_array.jpg" alt="Array of chairs" class="slide-image">
-    </section>
-
-    <!---------------------------------------------------------------------->
-
-    <section class="slide">
-        <h1>Racines culturelles <br>et politiques</h1>
-        <p>Ou "L'idéologie Californienne" (<span class="source">Richard Barbrook et Andy Cameron, 1996</span>)</p>
-        <!--
-        Mouvement incroyable depuis la pensée radicale des années 60 vers les milliardaires de la tech d'aujourd'hui.
-        -->
-    </section>
-    
-    <section class="slide">
-        <h2>Contre-culture des années 60</h2>
-        <!--
-        Climat d'angoisse nucléaire et bureaucratie technologique. Une génération cherche des alternatives à un monde militarisé et hiérarchique.
-
-        Mouvement très hétérogène aux influences multiples. Moment de grande fertilité scientifique, artistique, sociale, etc. Notamment inspiré par la pensée de systèmes/réseaux issue de la cybernétique, et une culture de la collaboration transdisciplinaire.
-
-        "New Left" : Héritiers des luttes pour les droits civiques. Action politique, mobilisation, anti-guerre.
-
-        "New Communalists" : Rupture avec la politique traditionnelle jugée inefficace. Se positionnent en opposition à la New Left, qui selon eux ne fait que rejouer des manières d'être conflictuelles qui sont celles de l'ancien monde.
-
-        Accent sur la conscience, l'intimité, les expériences transformatrices. Se changer soi-même pour changer la société.
-
-        Influences : Beat, zen, art expérimental, psychédélisme (LSD).
-
-        Pour réaliser ces idéaux, expérimenter avec de nouvelles manières de s'accomplir en société : vague massive de communes rurales et urbaines (1965–1972), jusqu'à plusieurs dizaine de milliers de communes créées, estimations qu'au début des années 70, 750 000 personnes vivaient dans une commune aux US.
-        -->
-
-        <!--
-        Poème par Richard Brautigan écrit 1967 alors qu'il était poète résidant au California Institute of Technology. Vidéo par Adam Curtis extrait du documentaire "All Watched Over by Machines of Loving Grace".
-        -->
-        <video controls class="slide-video">
-            <source src="./racines_culturelles/Richard-Brautigan-poem-All-Watched-Over_subs.mp4" type="video/mp4">
-        </video>
-        <p class="source">Richard Brautigan - "All Watched Over by Machines of Loving Grace", 1967 <br> Vidéo par Adam Curtis - "All Watched Over by Machines of Loving Grace", 2011</p>
-    </section>
-    
-    <section class="slide">
-        <h2>Le techno-utopisme des communes</h2>
-        <!--
-        Fascination pour Wiener, Fuller, McLuhan.
-
-        Rejet des grands systèmes technologiques mais pas de la créativité technique. Dans beaucoup de ces communes, la technologie est envisagée comme émancipatrice (outil pour tendre vers une harmonie globale, d'expérimentation, d'éveil). Elle permet de réaliser l'utopie cybernétique de connexion à son environnement (les autres comme la nature), monde comme système d'information interconnecté. 
-
-        Technologies au sens large : la musique rock (amplifiée électriquement, stroboscopes), le LSD (drogue de synthèse), technologies de communication (radio, calculatrices, etc.).
-        Informatique : augmenter le champ de conscience de l'individu au même titre que le Lsd.
-        -->
-        <embed src="./racines_culturelles/wholeearthcatalo00unse.pdf" type="application/pdf" class="slide-pdf">
-        <p class="source">Whole Earth Catalog, 1st issue Fall 1968 - <a href="https://wholeearth.info/p/whole-earth-catalog-fall-1968" target="_blank">wholeearth.info</a></p>
-    </section>
-    
-    <section class="slide">
-        <h2>Naissance du transhumanisme</h2>
-        <!--
-        Terme inventé par Julian Huxley, biologiste britannique frère d'Aldous Huxley, ancien membre de la "British Eugenics Society". Huxley ne croyait pas à l'application du concept de race à l'espèce humaine, mais croyait à une base génétique aux classes sociales.
-
-        Naissance dans les années 60-70, contexte technophile de la contre-culture américaine.
-        influence de la cybernétique : il n'existe aucune différence ontologique entre l'humain, le vivant et la machine. Tous les trois forment un continuum dans leur effort commun pour lutter contre l'entropie.
-
-        -> Licklider 
-
-        Au moment où les machines sont envisagées comme un outil d'émancipation, grandit aussi l'idée que la technologie pourrait permettre à l'humain de dépasser ses limites : super-intelligence, immortalité, conquête de l'espace, rien ne semble hors de portée.
-
-        Robert Ettinger, père de la cryogénisation. Premier patient cryogénisé en 1967 James Bedford.
-
-        FM-2030 futurologue, juge le clivage politique gauche-droite et les systèmes capitalistes et communistes entièrement dépassés, face aux avancées technoscientifiques. En 1973 de son ouvrage phare, Up-Wingers a futurist manifesto. Up-wingers (ceux qui regardent vers le ciel et le futur) VS Down-wingers (les autres).
-        -->
-
-        <div class="split-screen">
-            <div>
-                <embed src="./racines_culturelles/Licklider_1960_Man-Computer_Symbiosis.pdf" type="application/pdf">
-            </div>
-            <div>
-                <img src="./racines_culturelles/cryo_james_bedford.webp" alt="James Bedford cryogenics">
-                <p class="source">Première cryogénisation humaine, James Bedford 1967</p>
-            </div>
-        </div>
-    </section>
-    
-    <section class="slide">
-        <h2>Extropianisme</h2>
-        <!--
-        Formalisation du transhumanisme en tant que mouvement : philosophe américain d'origine anglaise Max O'Connor (Max More), fonde avec Tom Bell en 1988 le mouvement Extropy avec le lancement du magazine Extropy, puis de l'Extropy Institute, première association transhumaniste officielle, espace d'échanges et de discussions, Fédère nombre de figures techno-optimistes californiennes. Extropy en référence à l'Entropy concept très présent dans les textes de Wiener.
-
-        Obsessions des transhumanistes : intelligence artificielle, exploration spatiale, immortalité. 
-
-        Max More président de Alcor Life Extension Foundation, fondée en 1972, qui cryogénise des "patients" dans l'espoir de pouvoir les ressusciter quand la technologie le permettra.
-
-        Utopie techno-scientifique d'une monde où chacun pourrait remodeler sa propre nature. idée que chaque individu, en véritable self-made-man, peut sculpter librement, par la seule force de sa volonté, sa propre identité, considérée comme entièrement plastique et malléable, et viser un perfectionnement constant. Importance de la prothèse, soutenu par le concept de "liberté morphologique", droit de modifier son propre corps.
-
-        Changement de noms, pratique courante parmis les transhumanistes :
-        Tom Bell -> T. O. Morrow
-        Max O'Connor -> Max More
-        Fereidoun M. Esfandiary -> FM-2030
-
-        -> Meet the extropians
-        -->
-        <embed src="./racines_culturelles/Extropy-01.pdf" type="application/pdf" class="slide-pdf">
-        <p class="source">Extropy Magazine, Issue #1, 1988</p>
-    </section>
-    
-    <section class="slide tall-slide">
-        <h2>Le cyberespace</h2>
-        <!--
-        Au cours des années 70, les communes ont échoué. Fort développement de la Silicon Valley. C'est le début de l'ordinateur personnel et des premiers réseaux, certains des anciens communards déplacent leurs aspirations vers les communautés en réseau naissantes.
-
-        Années 80 naissance du concept de cyberespace, un nouvel espace non régulé, à la fois promesse de libertés individuelles radicales (liberté d'être, de s'exprimer, de se définir) et nouvel espace de vie en communautés délocalisées. Tout cela permis par une forme d'usage prothétique et fusionnel de l'ordinateur. Cyberespace (Gibson dans Neuromancer, 1984) : "A consensual hallucination experienced daily by billions of legitimate operators, in every nation, by children being taught mathematical concepts... A graphic representation of data abstracted from the banks of every computer in the human system. Unthinkable complexity. Lines of light ranged in the nonspace of the mind, clusters and constellations of data. Like city lights, receding."
-
-        Les courants transhumanistes et anciens communards se rencontrent sur de nombreux points :
-
-        - Utilisation des technologies comme prothèses
-        - Entrepreneuriat et attitude DIY (mouvement des hackers, plus tard biohackers)
-        - Transdisciplinarité
-        - Libertarisme
-        - Élitisme
-        - Individualisme héroïque
-
-        Ces idées façonnent la vision publique et professionnelle de la Silicon Valley et plus largement du numérique.
-        -->
-        <video controls class="slide-video">
-            <source src="./racines_culturelles/William-Gibson-Cyberpunk-BBC-Late-Show_sub.mp4" type="video/mp4">
-        </video>
-        <p class="source"> William Gibson lit "the Neuromancer", BBC Late Show, 1991</p>
-
-        <video controls class="slide-video">
-            <source src="./racines_culturelles/John-Perry-Barlow-A-Declaration-of-the_subs.mp4" type="video/mp4">
-        </video>
-        <p class="source">John Perry Barlow récite "A Declaration of the Independence of Cyberspace", "Hackers: Outlaws and Angels", 2002</p>
-    </section>
-    
-    <section class="slide">
-        <h2>Les milliardaires</h2>
-        <!--
-        Explosion de l'Internet au cours des années 90.
-
-        John Perry Barlow rédigé la déclaration d'indépendance du cyberespace en 1996 depuis Davos en Suisse. La même année Sergey Brin et Larry Page inventent le PageRank (Google sera fondé en 1998).
-
-        La trajectoire de Steve Jobs emblématique de cette mutation de la contre-culture vers le capitalisme numérique.
-        Adolescent, il était lecteur du whole earth catalog.
-        En 1974 il part étudier le bouddhisme zen en Inde.
-        Puis au cours des années 80-90 il est un acteur -clé de la révolution informatique personnelle.
-
-        Idéologies Californienne : synthèse entre la contre-culture des années 60 et le capitalisme de la Silicon Valley.
-        -->
-        <video controls class="slide-video">
-            <source src="./racines_culturelles/Apple_Think_Different_Jobs_Narrated_sub.mp4" type="video/mp4">
-        </video>
-        <p class="source">Apple "Think Different" narration Steve Jobs, 1997</p>
-    </section>
-        
     <!---------------------------------------------------------------------->
 
     <section class="slide">
@@ -411,7 +209,7 @@
         <!--
         Schumpeter a très tôt théorisé la « destruction créatrice », selon laquelle l'innovation détruit des emplois et des activités existantes mais en génère simultanément de nouveaux. Cette dynamique s'est vérifiée sur le long terme au fil des révolutions industrielles (passage de sociétés agricoles à sociétés industrielles, puis de service).
         -->
-        <img src="./automatisation/shiva_dancing.png" alt="Shiva Nataraja dancing" class="slide-image">
+        <img src="./automatisation/Population_active_et_emploi_par_grand_secteur_de_1806_à_1990.svg" alt="Population active par secteur 1806-1990" class="slide-image" style="filter: invert(1); max-height: 80vh; width: auto; max-width: 90%;">
     </section>
     
     <section class="slide">
@@ -423,6 +221,8 @@
 
         Plus récemment, la croissance des emplois hautement qualifiés s'est ralentie.
         -->
+        <img src="./automatisation/polarisation_emploi.png" alt="Polarisation de l'emploi" class="slide-image" style="filter: invert(1); height: 120%; width: auto; max-width: 100%; object-fit: contain;">
+        <p class="source">Source: "Why Are There Still So Many Jobs? The History and Future of Workplace Automation", David H. Autor, 2015</p>
     </section>
     
     <section class="slide">
@@ -435,6 +235,93 @@
         De nombreux emplois correspondant à des niveaux d'éducation moyens (production industrielle, assurance, comptabilité, etc.) comprennent justement des tâches procédurales qui sont donc faciles à automatiser, car bien décrites. Alors que les métiers manuels (faire la cuisine, couper les cheveux, etc.) et relationnels (métier du care, etc.), ou les métiers correspondant à des niveaux d'éducation très élevés comme les métiers créatifs ou managériaux résistent à l'automatisation.
         -->
 
+        <blockquote>
+            <p>« We can know more than we can tell »</p>
+            <p>(« Nous en savons plus que ce que nous pouvons exprimer »)</p>
+            <p style="text-align: right;">— Michael Polanyi, 1966</p>
+        </blockquote>
+    </section>
+
+    <!---------------------------------------------------------------------->
+
+    <section class="slide">
+        <h2>Reconnaître un carré</h2>
+        <!--
+        Exercice : Comment peut-on reconnaître un carré ?
+        Demander au public de proposer des règles pour identifier un carré.
+        -->
+        <img src="./apprentissage_machine/square.png" alt="Square" class="slide-image">
+    </section>
+
+    <section class="slide">
+        <h2>Instructions pour <br>reconnaître un carré</h2>
+        <ol>
+            <li>Compter le nombre de côtés → doit être égal à 4</li>
+            <li>Mesurer la longueur de chaque côté → tous les côtés doivent être égaux</li>
+            <li>Mesurer chaque angle → tous les angles doivent être de 90°</li>
+            <li>Si toutes les conditions sont remplies → c'est un carré ✓</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Reconnaître une chaise</h2>
+        <!--
+        Exercice : Comment peut-on reconnaître une chaise ?
+        Demander au public de proposer des règles pour identifier une chaise.
+        -->
+        <img src="./apprentissage_machine/chair.jpg" alt="Chair" class="slide-image">
+
+        <!--
+        [5mn] Diviser le public en groupes de 4-5, leur donner 5 minutes pour produire une description exhaustive des règles qui permettent de décrire une chaise. 
+
+        Exemple : 
+        C'est un objet en bois
+        Il a 4 pieds
+        Il a un dossier
+        Etc.
+
+        [2mn] Demander à un groupe ou deux de partager leur description d'une chaise.
+
+        [3mn] Demander au public de trouver un contre-exemple.
+        -->
+    </section>
+    
+    <section class="slide">
+        <div class="tag-cloud">
+            <span>Chaise de bureau</span>
+            <span>Chaise de gaming</span>
+            <span>Chaise monobloc</span>
+            <span>Chaise longue</span>
+            <span>Chaise de jardin</span>
+            <span>Chaise pliante</span>
+            <span>Chaise à bascule</span>
+            <span>Chaise-sac à dos</span>
+            <span>Chaise gonflable</span>
+            <span>Chaise de massage</span>
+            <span>Chaise roulante</span>
+            <span>Chaise à porteurs</span>
+            <span>Chaise électrique</span>
+            <span>Chaise en glace</span>
+            <span>Chaise suspendue</span>
+            <span>Tabouret</span>
+            <span>Pouf et bean bags</span>
+            <span>Fauteuil de dentiste / coiffeur</span>
+            <span>Siège éjectable</span>
+            <span>Trône</span>
+            <span>Siège bébé</span>
+        </div>
+
+        <!--
+        Difficile d'écrire un programme lorsqu'on n'est pas capable de décrire précisemment le problème.
+
+        L'approche est qu'on va écrire un programme qui va être capable de construire un modèle statistique de ce qui est une chaise et ce qui n'en est pas.
+
+        Ceci est l'approche qui est à la base de l'intelligence artificielle moderne.
+        -->
+    </section>
+
+    <section class="slide">
+        <h2>Exemple du <br>paradoxe de Polanyi</h2>
         <table class="comparison-table">
             <thead>
                 <tr>
@@ -447,58 +334,265 @@
                     <td>
                         <ul>
                             <li>Procédure facile à décrire</li>
-                            <li>Paradigme de programmation traditionnel</li>
-                            <li><strong>Pour un.e humain.e : procédure difficile à mettre en œuvre</strong></li>
+                            <li>Pour un.e humain.e : procédure difficile à mettre en œuvre (sortir sa règle, son équerre, etc.)</li>
                         </ul>
+                        <br>
+                        <b>→ Paradigme de programmation traditionnel (simple algorithme de décision)</b>
                     </td>
                     <td>
                         <ul>
-                            <li>Procédure impossible à décrire</li>
-                            <li>Nécessite un nouveau paradigme de programmation</li>
-                            <li><strong>Pour un.e humain.e : procédure facile à mettre en œuvre</strong></li>
+                            <li>Procédure très difficile à décrire</li>
+                            <li>Pour un.e humain.e : Procédure facile à mettre en œuvre (reconnaissance visuelle instantanée)</li>
                         </ul>
+                        <br>
+                        <b>→ Nécessite un nouveau paradigme de programmation (apprentissage automatique)</b>
                     </td>
                 </tr>
             </tbody>
         </table>
     </section>
 
-    
     <section class="slide">
-        <h2>Système expert VS modèle probabiliste</h2>
+        <h2>Apprentissage automatique</h2>
         <!--
-        Procédure VS inférence
+        Au lieu de décrire la procédure pour reconnaître une chaise, on va entraîner un modèle statistique à partir d'exemples.
+        
+        Le programme va analyser de nombreux exemples de chaises et de non-chaises pour apprendre à distinguer les caractéristiques qui définissent une chaise, sans qu'on ait besoin de les décrire explicitement.
+        
+        C'est le principe de l'apprentissage automatique (machine learning) qui est à la base de l'intelligence artificielle moderne.
 
         Est-ce qu'avec le machine learning on dépasse le paradoxe de Polanyi ?
         -->
+        <img src="./apprentissage_machine/chair_array.jpg" alt="Array of chairs" class="slide-image">
     </section>
 
+
+
+    <section class="slide" id="ia-images-slide">
+        <h2>l'image de l'IA</h2>
+        <!--
+        Voici techniquement ce qu'est l'IA : c'est un simple algorithme qui remplit son objectif en opérant une déduction statistique à partir de beaucoup de données, plutôt qu'en suivant des règles explicites programmées par un humain.
+
+        Pourtant ça n'est pas du tout comme ça que la société voit l'IA.
+
+        concept en partie culturellement construit, important de comprendre le contexte d'emergence de ces technologies. Pour comprendre pourquoi on les anthropomorphise, important de comprendre avec quelles idéologies elles ont été conçues
+        -->
+        
+        <button id="show-ia-images-btn" onclick="showIAImages()" style="
+            padding: 2rem 4rem;
+            font-size: 2rem;
+            font-family: 'Silkscreen';
+            background: var(--sebpiq-color1);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        " onmouseover="this.style.background='var(--sebpiq-color2)'" onmouseout="this.style.background='var(--sebpiq-color1)'">
+            DuckDuckGo : Intelligence Artificielle
+        </button>
+    </section>
+    
+    <!---------------------------------------------------------------------->
+
     <section class="slide">
-        <h1>Prospective</h1>
+        <h1>Racines culturelles <br>et politiques</h1>
+        <p>Ou "L'idéologie Californienne" (<span class="source">Richard Barbrook et Andy Cameron, 1996</span>)</p>
+        <!--
+        Mouvement incroyable depuis la pensée radicale des années 60 vers les milliardaires de la tech d'aujourd'hui.
+        -->
     </section>
     
     <section class="slide">
-        <h2>Comment le public voit l'IA</h2>
+        <h2>Contre-culture des années 60</h2>
         <!--
-        Anthropomorphisme (recherche Google)
-        Gartner Hype cycle
-        IA partout (IA for church, etc.)
+        Climat d'angoisse nucléaire et bureaucratie technologique. Une génération cherche des alternatives à un monde militarisé et hiérarchique.
+
+        Mouvement très hétérogène aux influences multiples. Moment de grande fertilité scientifique, artistique, sociale, etc. Notamment inspiré par la pensée de systèmes/réseaux issue de la cybernétique, et une culture de la collaboration transdisciplinaire.
+
+        "New Left" : Héritiers des luttes pour les droits civiques. Action politique, mobilisation, anti-guerre.
+
+        "New Communalists" : Rupture avec la politique traditionnelle jugée inefficace. Se positionnent en opposition à la New Left, qui selon eux ne fait que rejouer des manières d'être conflictuelles qui sont celles de l'ancien monde.
+
+        Accent sur la conscience, l'intimité, les expériences transformatrices. Se changer soi-même pour changer la société.
+
+        Influences : Beat, zen, art expérimental, psychédélisme (LSD).
+
+        Pour réaliser ces idéaux, expérimenter avec de nouvelles manières de s'accomplir en société : vague massive de communes rurales et urbaines (1965–1972), jusqu'à plusieurs dizaine de milliers de communes créées, estimations qu'au début des années 70, 750 000 personnes vivaient dans une commune aux US.
         -->
+
+        <!--
+        Poème par Richard Brautigan écrit 1967 alors qu'il était poète résidant au California Institute of Technology. Vidéo par Adam Curtis extrait du documentaire "All Watched Over by Machines of Loving Grace".
+        -->
+        <video controls class="slide-video">
+            <source src="./racines_culturelles/Richard-Brautigan-poem-All-Watched-Over_subs.mp4" type="video/mp4">
+        </video>
+        <p class="source">Richard Brautigan - "All Watched Over by Machines of Loving Grace", 1967 <br> Vidéo par Adam Curtis - "All Watched Over by Machines of Loving Grace", 2011</p>
+    </section>
+    
+    <section class="slide">
+        <h2>Le techno-utopisme des communes</h2>
+        <!--
+        Fascination pour Wiener, Fuller, McLuhan.
+
+        Rejet des grands systèmes technologiques mais pas de la créativité technique. Dans beaucoup de ces communes, la technologie est envisagée comme émancipatrice (outil pour tendre vers une harmonie globale, d'expérimentation, d'éveil). Elle permet de réaliser l'utopie cybernétique de connexion à son environnement (les autres comme la nature), monde comme système d'information interconnecté. 
+
+        Technologies au sens large : la musique rock (amplifiée électriquement, stroboscopes), le LSD (drogue de synthèse), technologies de communication (radio, calculatrices, etc.).
+        Informatique : augmenter le champ de conscience de l'individu au même titre que le Lsd.
+        -->
+        <div class="pdf-container">
+            <button class="fullscreen-btn" onclick="toggleFullscreen(this.parentElement)">⛶</button>
+            <embed src="./racines_culturelles/wholeearthcatalo00unse.pdf" type="application/pdf" class="slide-pdf">
+        </div>
+        <p class="source">Whole Earth Catalog, 1st issue Fall 1968 - <a href="https://wholeearth.info/p/whole-earth-catalog-fall-1968" target="_blank">wholeearth.info</a></p>
+    </section>
+    
+    <section class="slide">
+        <h2>Naissance du transhumanisme</h2>
+        <!--
+        Terme inventé par Julian Huxley, biologiste britannique frère d'Aldous Huxley, ancien membre de la "British Eugenics Society". Huxley ne croyait pas à l'application du concept de race à l'espèce humaine, mais croyait à une base génétique aux classes sociales.
+
+        Naissance dans les années 60-70, contexte technophile de la contre-culture américaine.
+        influence de la cybernétique : il n'existe aucune différence ontologique entre l'humain, le vivant et la machine. Tous les trois forment un continuum dans leur effort commun pour lutter contre l'entropie.
+
+        -> Licklider 
+
+        Au moment où les machines sont envisagées comme un outil d'émancipation, grandit aussi l'idée que la technologie pourrait permettre à l'humain de dépasser ses limites : super-intelligence, immortalité, conquête de l'espace, rien ne semble hors de portée.
+
+        Robert Ettinger, père de la cryogénisation. Premier patient cryogénisé en 1967 James Bedford.
+
+        FM-2030 futurologue, juge le clivage politique gauche-droite et les systèmes capitalistes et communistes entièrement dépassés, face aux avancées technoscientifiques. En 1973 de son ouvrage phare, Up-Wingers a futurist manifesto. Up-wingers (ceux qui regardent vers le ciel et le futur) VS Down-wingers (les autres).
+        -->
+
+        <div class="split-screen">
+            <div class="pdf-container">
+                <button class="fullscreen-btn" onclick="toggleFullscreen(this.parentElement)">⛶</button>
+                <embed src="./racines_culturelles/Licklider_1960_Man-Computer_Symbiosis.pdf" type="application/pdf">
+            </div>
+            <div>
+                <img src="./racines_culturelles/cryo_james_bedford.webp" alt="James Bedford cryogenics">
+                <p class="source">Première cryogénisation humaine, James Bedford 1967</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="slide">
+        <h2>Extropianisme</h2>
+        <!--
+        Formalisation du transhumanisme en tant que mouvement : philosophe américain d'origine anglaise Max O'Connor (Max More), fonde avec Tom Bell en 1988 le mouvement Extropy avec le lancement du magazine Extropy, puis de l'Extropy Institute, première association transhumaniste officielle, espace d'échanges et de discussions, Fédère nombre de figures techno-optimistes californiennes. Extropy en référence à l'Entropy concept très présent dans les textes de Wiener.
+
+        Obsessions des transhumanistes : intelligence artificielle, exploration spatiale, immortalité. 
+
+        Max More président de Alcor Life Extension Foundation, fondée en 1972, qui cryogénise des "patients" dans l'espoir de pouvoir les ressusciter quand la technologie le permettra.
+
+        Utopie techno-scientifique d'une monde où chacun pourrait remodeler sa propre nature. idée que chaque individu, en véritable self-made-man, peut sculpter librement, par la seule force de sa volonté, sa propre identité, considérée comme entièrement plastique et malléable, et viser un perfectionnement constant. Importance de la prothèse, soutenu par le concept de "liberté morphologique", droit de modifier son propre corps.
+
+        Changement de noms, pratique courante parmis les transhumanistes :
+        Tom Bell -> T. O. Morrow
+        Max O'Connor -> Max More
+        Fereidoun M. Esfandiary -> FM-2030
+
+        -> Meet the extropians
+        -->
+        
+        <div class="split-screen">
+            <div class="pdf-container">
+                <button class="fullscreen-btn" onclick="toggleFullscreen(this.parentElement)">⛶</button>
+                <embed src="./racines_culturelles/Extropy-01.pdf" type="application/pdf">
+            </div>
+            <div>
+                <blockquote style="text-align: left; font-size: 0.9em;">
+                    <p>« Romana Machado – alias "Mistress Romana" – ingénieure en informatique, auteure et capitaliste au sang chaud, s'est présentée déguisée en "l'État" : bustier et mini jupe en vinyle noir, harnais et chaînes, faits sur mesure pour elle par Leather Masters à San Jose, Californie, pour qui elle fait du mannequinat. Elle portait une fine cravache et une laisse, au bout de laquelle son compagnon extraverti Geoff Dale, déguisé en "contribuable", rampait dans une sujétion simulée. Le couple incarnait le symbolisme extropien, l'État étant considéré comme l'une des principales forces répressives de la Voie Lactée. »</p>
+                </blockquote>
+                <p class="source">Meet the Extropians, Wired Magazine 1994<br>Traduction : <a href="https://transhumanistes.com/histoire-du-transhumanisme-les-debuts-des-extropiens-1988/" target="_blank">transhumanistes.com</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="slide tall-slide">
+        <h2>Le cyberespace</h2>
+        <!--
+        Au cours des années 70, les communes ont échoué. Fort développement de la Silicon Valley. C'est le début de l'ordinateur personnel et des premiers réseaux, certains des anciens communards déplacent leurs aspirations vers les communautés en réseau naissantes.
+
+        Années 80 naissance du concept de cyberespace, un nouvel espace non régulé, à la fois promesse de libertés individuelles radicales (liberté d'être, de s'exprimer, de se définir) et nouvel espace de vie en communautés délocalisées. Tout cela permis par une forme d'usage prothétique et fusionnel de l'ordinateur. Cyberespace (Gibson dans Neuromancer, 1984) : "A consensual hallucination experienced daily by billions of legitimate operators, in every nation, by children being taught mathematical concepts... A graphic representation of data abstracted from the banks of every computer in the human system. Unthinkable complexity. Lines of light ranged in the nonspace of the mind, clusters and constellations of data. Like city lights, receding."
+
+        Les courants transhumanistes et anciens communards se rencontrent sur de nombreux points :
+
+        - Utilisation des technologies comme prothèses
+        - Entrepreneuriat et attitude DIY (mouvement des hackers, plus tard biohackers)
+        - Transdisciplinarité
+        - Libertarisme
+        - Élitisme
+        - Individualisme héroïque
+
+        Ces idées façonnent la vision publique et professionnelle de la Silicon Valley et plus largement du numérique.
+        -->
+        <video controls class="slide-video">
+            <source src="./racines_culturelles/William-Gibson-Cyberpunk-BBC-Late-Show_sub.mp4" type="video/mp4">
+        </video>
+        <p class="source"> William Gibson lit "the Neuromancer", BBC Late Show, 1991</p>
+
+        <video controls class="slide-video">
+            <source src="./racines_culturelles/John-Perry-Barlow-A-Declaration-of-the_subs.mp4" type="video/mp4">
+        </video>
+        <p class="source">John Perry Barlow récite "A Declaration of the Independence of Cyberspace", "Hackers: Outlaws and Angels", 2002</p>
+    </section>
+    
+    <section class="slide">
+        <h2>Les milliardaires</h2>
+        <!--
+        Explosion de l'Internet au cours des années 90.
+
+        John Perry Barlow rédigé la déclaration d'indépendance du cyberespace en 1996 depuis Davos en Suisse. La même année Sergey Brin et Larry Page inventent le PageRank (Google sera fondé en 1998).
+
+        La trajectoire de Steve Jobs emblématique de cette mutation de la contre-culture vers le capitalisme numérique.
+        Adolescent, il était lecteur du whole earth catalog.
+        En 1974 il part étudier le bouddhisme zen en Inde.
+        Puis au cours des années 80-90 il est un acteur -clé de la révolution informatique personnelle.
+
+        Idéologies Californienne : synthèse entre la contre-culture des années 60 et le capitalisme de la Silicon Valley.
+        -->
+        <video controls class="slide-video">
+            <source src="./racines_culturelles/Apple_Think_Different_Jobs_Narrated_sub.mp4" type="video/mp4">
+        </video>
+        <p class="source">Apple "Think Different" narration Steve Jobs, 1997</p>
+    </section>
+        
+    <!---------------------------------------------------------------------->
+
+    <section class="slide">
+        <h1>Prospective</h1>
+        <!--
+        Image de l'IA aujourd'hui héritière des visions des pionniers de la Silicon Valley. Anthropomorphisée ("intelligence"), bienveillante, etc.
+
+        Garder à l'esprit que les entrepreneurs de la Silicon Valley ne sont pas des oracles, mais des faiseurs qui ont produit le futur qu'ils envisageaient. Quand Sam Altman averti sur l'avènement des intelligences artificielles générales, le présentant comme une inéluctabilité, il faut bien garder en tête que c'est UN PROJET et non une prévision.
+        -->
+    </section>
+    
+    <section class="slide">
+        <h2>Concepts</h2>
+        
+        <div class="tag-cloud">
+            <span>Intelligence artificielle générale</span>
+            <span>High-Level Machine Intelligence (HLMI)</span>
+            <span>Superintelligence</span>
+            <span>Singularité</span>
+            <span>Explosion d'intelligence</span>
+            <span>Alien mind</span>
+            <span>IA faible</span>
+            <span>IA forte</span>
+        </div>
     </section>
     
     <section class="slide">
         <h2>Risques / bénéfices de l'IA</h2>
-        <!--
-        2023 Expert Survey on Progress in AI, AI Impacts.
-
-        Concepts : Intelligence artificielle générale, High-Level Machine Intelligence (HLMI), Superintelligence, Singularité, Explosion d'intelligence, Alien mind.
-
-        IA faible VS IA forte
-        -->
+        <blockquote>
+            50 % de chance d'une HLMI d'ici 2047 <em>2023 Expert Survey on Progress in AI, AI Impacts</em>
+        </blockquote>
     </section>
-    
+
     <section class="slide">
         <h2>Problème de l'alignement</h2>
+
         <!--
         1. La fonction d'utilité peut ne pas être parfaitement alignée avec les valeurs de l'humanité, qui sont (au mieux) très difficiles à définir.
         2. Tout système intelligent suffisamment capable préférera assurer sa propre existence continue [...] – non pour lui-même, mais pour réussir dans la tâche qui lui est assignée.
@@ -512,17 +606,34 @@
         Première loi : Un robot ne peut porter atteinte à un être humain ni, restant passif, laisser cet être humain exposé au danger.
         *Cercle Vicieux, Isaac Asimov, 1942*
         -->
+        
+        <blockquote style="margin-bottom: 1rem;">
+            <p>« C'est essentiellement l'ancienne histoire du génie dans la lampe, ou de l'apprenti sorcier, ou du roi Midas : vous obtenez exactement ce que vous demandez, pas ce que vous voulez. »</p>
+            <p style="text-align: right;"><em>Of Myths And Moonshine, Stuart Russell, 2014</em></p>
+        </blockquote>
+        
+        <blockquote>
+            <p>« Un robot ne peut porter atteinte à un être humain ni, restant passif, laisser cet être humain exposé au danger. »</p>
+            <p style="text-align: right;"><em>Cercle Vicieux, Isaac Asimov, 1942</em></p>
+        </blockquote>
+        
+        <p style="margin-top: 2rem;">→ Dans <em>Conflit Évitable</em> (Isaac Asimov, 1950), les machines ont décidé que la seule manière de suivre la première loi était de prendre contrôle de l'humanité.</p>
     </section>
-    
+
     <section class="slide">
         <h2>Rupture ou continuité ?</h2>
-        <!--
-        Loi d'Amara
-        -->
+        
+        <blockquote>
+            <p>« On a tendance à surestimer l'effet d'une technologie sur le court terme et à sous-estimer son effet sur le long terme. »</p>
+            <p style="text-align: right;">— Roy Amara</p>
+        </blockquote>
     </section>
     
     <section class="slide">
         <h2>Crise environnementale</h2>
+
+
+
         <!--
         Système d'IA générative nécessite 33 fois plus d'énergie pour réaliser une tâche donnée qu'avec un logiciel classique.
         Source: World Economic Forum, 2024
@@ -531,6 +642,11 @@
 
         Paradoxe de Jevons
         -->
+        
+        <blockquote>
+            <p>« C'est une confusion des idées que de supposer que l'utilisation économe d'un carburant est équivalent à une consommation diminuée. »</p>
+            <p style="text-align: right;"><em>Paradoxe de Jevons (effet rebond), The Coal Question, William Stanley Jevons, 1865</em></p>
+        </blockquote>
     </section>
     
     <section class="slide">
@@ -540,14 +656,25 @@
         Réseaux sociaux algorithmes
         Monde post-vérité
         -->
+        <div class="split-screen">
+            <div>
+                <img src="./prospective/click_farm.jpg" alt="Click farm">
+                <p class="source">Click farm</p>
+            </div>
+            <div>
+                <img src="./prospective/cambridge_analytica.jpg" alt="Cambridge Analytica">
+                <p class="source">Cambridge Analytica</p>
+            </div>
+        </div>
     </section>
     
     <section class="slide">
         <h2>Inégalités sociales</h2>
         <!--
-        Biais raciaux des IA
+        Biais raciaux des IA : si on montre que des chaises à 4 pieds alors système pas capable de reconnaître autre chose.
         The fragment on machines
         -->
+        <img src="./prospective/face_depixelizer_obama.jpg" alt="Face depixelizer Obama bias" class="slide-image">
     </section>
     
     <section class="slide">
@@ -558,5 +685,30 @@
         Les outils conviviaux
         -->
     </section>
+    <script>
+        function toggleFullscreen(element) {
+            if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement) {
+                if (element.requestFullscreen) {
+                    element.requestFullscreen();
+                } else if (element.webkitRequestFullscreen) {
+                    element.webkitRequestFullscreen();
+                } else if (element.mozRequestFullScreen) {
+                    element.mozRequestFullScreen();
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                }
+            }
+        }
+        
+        function showIAImages() {
+            window.open('https://duckduckgo.com/?origin=funnel_home_website&t=h_&q=intelligence+artificielle&ia=images&iax=images', '_blank', 'width=1200,height=800');
+        }
+    </script>
 </body>
 </html>
