@@ -36,45 +36,56 @@ section {
 
 .slide {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
+    margin-bottom: 10vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     overflow: hidden;
+    gap: 1rem;
+}
+
+.slide:not(:has(.slide-image, .slide-video, .slide-pdf, .pdf-container, .split-screen)) {
+    justify-content: center;
 }
 
 .tall-slide {
     height: auto;
-    min-height: 100vh;
+    min-height: 90vh;
     justify-content: flex-start;
     gap: 2rem;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
+    margin-bottom: 10vh;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .slide-image {
     max-width: 100%;
-    max-height: 90vh;
+    max-height: 65vh;
     width: auto;
     height: auto;
     object-fit: contain;
+    flex-shrink: 1;
 }
 
 .slide-video {
     max-width: 100%;
-    max-height: 85vh;
+    max-height: 50vh;
     width: 100%;
     height: auto;
+    flex-shrink: 1;
 }
 
 .slide-pdf {
     width: 100%;
-    height: 85vh;
+    height: 60vh;
+    flex-shrink: 1;
 }
 
 .image-with-year {
@@ -100,10 +111,11 @@ section {
 }
 
 .source {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-size: 1.7rem;
     text-align: right;
     font-style: italic;
+    flex-shrink: 0;
 }
 
 .source a {
@@ -122,11 +134,13 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 240%
+    font-size: 240%;
+    flex-shrink: 0;
 }
 
 h2 {
-    font-size: 200%
+    font-size: 200%;
+    flex-shrink: 0;
 }
 
 h3 {
@@ -148,6 +162,11 @@ footer {
 
 strong { 
     font-family: 'Silkscreen';
+}
+
+blockquote {
+    border-left: 4px solid var(--sebpiq-color1);
+    padding-left: 2rem;
 }
 
 blockquote p {
@@ -264,4 +283,8 @@ p {
 
 .comparison-table td > p:last-child {
     margin-top: 1em;
+}
+
+.excluded-slide {
+    display: none;
 }
